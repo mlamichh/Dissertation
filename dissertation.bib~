@@ -1,0 +1,219 @@
+%
+% Modified by Madan Lamichhane
+% Last Change: Jan Thus 27 2016 13:00 EST
+%
+
+
+
+@article{Born1912,
+  author =	 {M.Born and TH. Von Karman},
+  journal = 	 {Physik},
+  year = 	 {1912},
+  volume =	 {Z},
+  number =	 {13},
+  pages =	 {297}
+}
+@article{Perram88,
+author = { John W.   Perram  and  Henrik G.   Petersen  and  Simon W.   De Leeuw },
+title = {An algorithm for the simulation of condensed matter which grows as the 3/2 power of the number of particles},
+journal = {Molecular Physics},
+volume = {65},
+number = {4},
+pages = {875-893},
+year = {1988},
+doi = {10.1080/00268978800101471},
+
+URL = { http://dx.doi.org/10.1080/00268978800101471},
+
+}
+
+
+@article {Shimada93,
+author = {Shimada, Jiro and Kaneko, Hiroki and Takada, Toshikazu},
+title = {Efficient calculations of coulombic interactions in biomolecular simulations with periodic boundary conditions},
+journal = {Journal of Computational Chemistry},
+volume = {14},
+number = {7},
+publisher = {John Wiley & Sons, Inc.},
+issn = {1096-987X},
+url = {http://dx.doi.org/10.1002/jcc.540140712},
+doi = {10.1002/jcc.540140712},
+pages = {867--878},
+year = {1993},
+}
+
+
+@article{Luty95,
+   author = "Luty, Brock A. and Tironi, Ilario G. and van Gunsteren, Wilfred F.",
+   title = "Lattice‐sum methods for calculating electrostatic interactions in molecular simulations",
+   journal = "The Journal of Chemical Physics",
+   year = "1995",
+   volume = "103",
+   number = "8", 
+   eid = ,
+   pages = "3014-3021",
+   url = "http://scitation.aip.org/content/aip/journal/jcp/103/8/10.1063/1.470490",
+   doi = "http://dx.doi.org/10.1063/1.470490" 
+}
+
+@article{Darden93,
+   author = "Darden, Tom and York, Darrin and Pedersen, Lee",
+   title = "Particle mesh Ewald: An N⋅log(N) method for Ewald sums in large systems",
+   journal = "The Journal of Chemical Physics",
+   year = "1993",
+   volume = "98",
+   number = "12", 
+   eid = ,
+   pages = "10089-10092",
+   url = "http://scitation.aip.org/content/aip/journal/jcp/98/12/10.1063/1.464397",
+   doi = "http://dx.doi.org/10.1063/1.464397" 
+}
+@article{Essmann95,
+   author = "Essmann, Ulrich and Perera, Lalith and Berkowitz, Max L. and Darden, Tom and Lee, Hsing and Pedersen, Lee G.",
+   title = "A smooth particle mesh Ewald method",
+   journal = "The Journal of Chemical Physics",
+   year = "1995",
+   volume = "103",
+   number = "19", 
+   eid = ,
+   pages = "8577-8593",
+   url = "http://scitation.aip.org/content/aip/journal/jcp/103/19/10.1063/1.470117",
+   doi = "http://dx.doi.org/10.1063/1.470117" 
+}
+@article{Wolf99,
+   author = "Wolf, D. and Keblinski, P. and Phillpot, S. R. and Eggebrecht, J.",
+   title = "Exact method for the simulation of Coulombic systems by spherically truncated, pairwise r−1 summation",
+   journal = "The Journal of Chemical Physics",
+   year = "1999",
+   volume = "110",
+   number = "17", 
+   eid = ,
+   pages = "8254-8282",
+   url = "http://scitation.aip.org/content/aip/journal/jcp/110/17/10.1063/1.478738",
+   doi = "http://dx.doi.org/10.1063/1.478738" 
+}
+
+@article{Zahn02,
+author = {Dirk, Zahn  and Bernd, Schilling and Stefan, M. Kast*},
+title = {Enhancement of the Wolf Damped Coulomb Potential:  Static, Dynamic, and Dielectric Properties of Liquid Water from Molecular Simulation},
+journal = {The Journal of Physical Chemistry B},
+volume = {106},
+number = {41},
+pages = {10725-10732},
+year = {2002},
+doi = {10.1021/jp025949h},
+
+URL = { http://dx.doi.org/10.1021/jp025949h},
+    
+}
+@article{Gezelter06,
+   author = "Fennell, Christopher J. and Gezelter, J. Daniel",
+   title = "Is the Ewald summation still necessary? Pairwise alternatives to the accepted standard for long-range electrostatics",
+   journal = "The Journal of Chemical Physics",
+   year = "2006",
+   volume = "124",
+   number = "23", 
+   eid = 234104,
+   pages = "",
+   url = "http://scitation.aip.org/content/aip/journal/jcp/124/23/10.1063/1.2206581",
+   doi = "http://dx.doi.org/10.1063/1.2206581" 
+}
+@article{Roberts95,
+	Author = {J.~E. Roberts and J. Schnitker},
+	Date-Added = {2006-03-18 20:12:23 -0500},
+	Date-Modified = {2006-03-18 20:13:36 -0500},
+	Journal = {J. Phys. Chem.},
+	Pages = {1322-1331},
+	Title = {Boundary Conditions in Sumulations of Aqueous Ionic Solutions: A Systematic Study},
+	Volume = {99},
+	Year = {1995},
+}
+@article{Roberts94,
+	Author = {J.~E. Roberts and J. Schnitker},
+	Date-Added = {2006-03-18 20:10:37 -0500},
+	Date-Modified = {2006-03-18 20:12:19 -0500},
+	Journal = {J. Chem. Phys.},
+	Number = {6},
+	Pages = {5024-5031},
+	Title = {How the unit cell surface charge distriubution affects the energetics of ion-solvent interactions in simulations},
+	Volume = {101},
+	Year = {1994},
+}
+
+@article{Luty96,
+	Author = {B.~A. Luty and W.~F. {van~Gunsteren}},
+	Date-Added = {2006-03-18 20:59:19 -0500},
+	Date-Modified = {2006-03-18 21:00:33 -0500},
+	Journal = {J. Phys. Chem.},
+	Number = {7},
+	Pages = {2581-2587},
+	Title = {Calculating Electrostatic Interactions Using the Particle-Particle Particle-Mesh Method with Nonperiodic Long-Range Interactions},
+	Volume = {100},
+	Year = {1996},
+}
+
+@article{Hunenberger99a,
+	Author = {P.~H. H\"{u}nenberger and J.~A. McCammon},
+	Date-Added = {2006-03-18 20:14:24 -0500},
+	Date-Modified = {2006-03-18 20:16:01 -0500},
+	Journal = {J. Chem. Phys.},
+	Number = {4},
+	Pages = {1856-1872},
+	Title = {Ewald artifacts in computer simulations of ionic solvation and ion -- ion interaction: A continuum electrostatics study},
+	Volume = {110},
+	Year = {1999},
+}
+
+@article{Hunenberger99b,
+	Author = {P.~H. H\"{u}nenberger and J.~A. McCammon},
+	Date-Added = {2006-03-16 09:45:10 -0500},
+	Date-Modified = {2006-03-18 20:16:16 -0500},
+	Journal = {Biophys. Chem.},
+	Pages = {69-88},
+	Title = {Effect of artificial periodicity in simulations of biomolecules under Ewald boundary conditions: a continuum electrostatics study},
+	Volume = {78},
+	Year = {1999},
+}
+
+@article{Weber00,
+	Author = {W. Weber and P.~H. H\"{u}nenberger and J.~A. McCammon},
+	Date-Added = {2006-03-16 09:49:22 -0500},
+	Date-Modified = {2006-03-16 09:51:17 -0500},
+	Doi = {10.1021/jp9937757},
+	Journal = {J. Phys. Chem. B},
+	Number = {15},
+	Pages = {3668-3675},
+	Title = {Molecular Dynamics Simulations of a Polyalanine Octapeptide under Ewald Boundary Conditions: Influence of Artificial Periodicity on Peptide Conformation},
+	Volume = {104},
+	Year = {2000},
+	url = {http://dx.doi.org/10.1021/jp9937757},
+}
+
+@MISC{Allen04,
+    author = {Michael P. Allen},
+    title = {Introduction to molecular dynamics simulation},
+    year = {2004}
+}
+@article{Metropolis53,
+   author = "Metropolis, Nicholas and Rosenbluth, Arianna W. and Rosenbluth, Marshall N. and Teller, Augusta H. and Teller, Edward",
+   title = "Equation of State Calculations by Fast Computing Machines",
+   journal = "The Journal of Chemical Physics",
+   year = "1953",
+   volume = "21",
+   number = "6", 
+   eid = ,
+   pages = "1087-1092",
+   url = "http://scitation.aip.org/content/aip/journal/jcp/21/6/10.1063/1.1699114",
+   doi = "http://dx.doi.org/10.1063/1.1699114" 
+}
+
+@book{Allen89,
+ author = {Allen, M. P. and Tildesley, D. J.},
+ title = {Computer Simulation of Liquids},
+ year = {1989},
+ isbn = {0-19-855645-4},
+ publisher = {Clarendon Press},
+ address = {New York, NY, USA},
+} 
+[download]
+

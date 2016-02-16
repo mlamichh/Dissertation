@@ -1,0 +1,10 @@
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Schematic figure showing step-by-step process in Molecular dynamics simulation algorithm.}}{4}{figure.1.1}
+ {\vskip 0.4em} 
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Periodic Boundary Condition for two dimensional (2D) molecular system. The central box is outlined using thicker line and replicated through out the plane to form 2D lattice. Usually in simulations, the potential energy of a molecule is evaluated considering interactions with the molecules and images within a cutoff region as shown in blue circle}}{9}{figure.1.2}
+ {\vskip 0.4em} 
+\contentsline {figure}{\numberline {1.3}{\ignorespaces Region of neighbour list around the cutoff sphere. The molecules in cutoff region, neighbour list, and outer region are indicated by green, yellow, and violet circles. The neighbour list should be reconstructed before molecules in the outer region starts to penetrate cutoff region.}}{10}{figure.1.3}
+ {\vskip 0.4em} 
+\contentsline {figure}{\numberline {1.4}{\ignorespaces In Ewald method point charge is surrounded by the Gaussian distribution of the equal and opposite-signed charge evaluated in real-space. These Gaussian distributions are compensated by the corresponding opposite-singed distribution of the charges calculated in the reciprocal-space }}{14}{figure.1.4}
+ {\vskip 0.4em} 
+\addvspace {10\p@ }

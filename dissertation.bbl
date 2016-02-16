@@ -1,0 +1,140 @@
+\begin{thebibliography}{19}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Allen(2004)]{Allen04}
+M.~P. Allen.
+\newblock Introduction to molecular dynamics simulation, 2004.
+
+\bibitem[Allen and Tildesley(1989)]{Allen89}
+M.~P. Allen and D.~J. Tildesley.
+\newblock \emph{Computer Simulation of Liquids}.
+\newblock Clarendon Press, New York, NY, USA, 1989.
+\newblock ISBN 0-19-855645-4.
+
+\bibitem[Darden et~al.(1993)Darden, York, and Pedersen]{Darden93}
+T.~Darden, D.~York, and L.~Pedersen.
+\newblock Particle mesh ewald: An n⋅log(n) method for ewald sums in large
+  systems.
+\newblock \emph{The Journal of Chemical Physics}, 98\penalty0 (12), 1993.
+
+\bibitem[Dirk et~al.(2002)Dirk, Bernd, and Stefan]{Zahn02}
+Z.~Dirk, S.~Bernd, and M.~K. Stefan.
+\newblock Enhancement of the wolf damped coulomb potential:  static, dynamic,
+  and dielectric properties of liquid water from molecular simulation.
+\newblock \emph{The Journal of Physical Chemistry B}, 106\penalty0
+  (41):\penalty0 10725--10732, 2002.
+\newblock \doi{10.1021/jp025949h}.
+\newblock URL \url{http://dx.doi.org/10.1021/jp025949h}.
+
+\bibitem[Essmann et~al.(1995)Essmann, Perera, Berkowitz, Darden, Lee, and
+  Pedersen]{Essmann95}
+U.~Essmann, L.~Perera, M.~L. Berkowitz, T.~Darden, H.~Lee, and L.~G. Pedersen.
+\newblock A smooth particle mesh ewald method.
+\newblock \emph{The Journal of Chemical Physics}, 103\penalty0 (19), 1995.
+
+\bibitem[Fennell and Gezelter(2006)]{Gezelter06}
+C.~J. Fennell and J.~D. Gezelter.
+\newblock Is the ewald summation still necessary? pairwise alternatives to the
+  accepted standard for long-range electrostatics.
+\newblock \emph{The Journal of Chemical Physics}, 124\penalty0 (23):\penalty0
+  234104, 2006.
+\newblock \doi{http://dx.doi.org/10.1063/1.2206581}.
+\newblock URL
+  \url{http://scitation.aip.org/content/aip/journal/jcp/124/23/10.1063/1.2206581}.
+
+\bibitem[H\"{u}nenberger and McCammon(1999{\natexlab{a}})]{Hunenberger99a}
+P.~H. H\"{u}nenberger and J.~A. McCammon.
+\newblock Ewald artifacts in computer simulations of ionic solvation and ion --
+  ion interaction: A continuum electrostatics study.
+\newblock \emph{J. Chem. Phys.}, 110\penalty0 (4):\penalty0 1856--1872,
+  1999{\natexlab{a}}.
+
+\bibitem[H\"{u}nenberger and McCammon(1999{\natexlab{b}})]{Hunenberger99b}
+P.~H. H\"{u}nenberger and J.~A. McCammon.
+\newblock Effect of artificial periodicity in simulations of biomolecules under
+  ewald boundary conditions: a continuum electrostatics study.
+\newblock \emph{Biophys. Chem.}, 78:\penalty0 69--88, 1999{\natexlab{b}}.
+
+\bibitem[Luty and {van~Gunsteren}(1996)]{Luty96}
+B.~A. Luty and W.~F. {van~Gunsteren}.
+\newblock Calculating electrostatic interactions using the particle-particle
+  particle-mesh method with nonperiodic long-range interactions.
+\newblock \emph{J. Phys. Chem.}, 100\penalty0 (7):\penalty0 2581--2587, 1996.
+
+\bibitem[Luty et~al.(1995)Luty, Tironi, and van Gunsteren]{Luty95}
+B.~A. Luty, I.~G. Tironi, and W.~F. van Gunsteren.
+\newblock Lattice‐sum methods for calculating electrostatic interactions in
+  molecular simulations.
+\newblock \emph{The Journal of Chemical Physics}, 103\penalty0 (8), 1995.
+
+\bibitem[M.Born and Karman(1912)]{Born1912}
+M.Born and T.~V. Karman.
+\newblock \emph{Physik}, Z\penalty0 (13):\penalty0 297, 1912.
+
+\bibitem[Metropolis et~al.(1953)Metropolis, Rosenbluth, Rosenbluth, Teller, and
+  Teller]{Metropolis53}
+N.~Metropolis, A.~W. Rosenbluth, M.~N. Rosenbluth, A.~H. Teller, and E.~Teller.
+\newblock Equation of state calculations by fast computing machines.
+\newblock \emph{The Journal of Chemical Physics}, 21\penalty0 (6), 1953.
+
+\bibitem[Perram et~al.(1988)Perram, Petersen, and Leeuw]{Perram88}
+J.~W. Perram, H.~G. Petersen, and S.~W.~D. Leeuw.
+\newblock An algorithm for the simulation of condensed matter which grows as
+  the 3/2 power of the number of particles.
+\newblock \emph{Molecular Physics}, 65\penalty0 (4):\penalty0 875--893, 1988.
+\newblock \doi{10.1080/00268978800101471}.
+\newblock URL \url{http://dx.doi.org/10.1080/00268978800101471}.
+
+\bibitem[Roberts and Schnitker(1994)]{Roberts94}
+J.~E. Roberts and J.~Schnitker.
+\newblock How the unit cell surface charge distriubution affects the energetics
+  of ion-solvent interactions in simulations.
+\newblock \emph{J. Chem. Phys.}, 101\penalty0 (6):\penalty0 5024--5031, 1994.
+
+\bibitem[Roberts and Schnitker(1995)]{Roberts95}
+J.~E. Roberts and J.~Schnitker.
+\newblock Boundary conditions in sumulations of aqueous ionic solutions: A
+  systematic study.
+\newblock \emph{J. Phys. Chem.}, 99:\penalty0 1322--1331, 1995.
+
+\bibitem[Shimada et~al.(1993)Shimada, Kaneko, and Takada]{Shimada93}
+J.~Shimada, H.~Kaneko, and T.~Takada.
+\newblock Efficient calculations of coulombic interactions in biomolecular
+  simulations with periodic boundary conditions.
+\newblock \emph{Journal of Computational Chemistry}, 14\penalty0 (7):\penalty0
+  867--878, 1993.
+\newblock ISSN 1096-987X.
+\newblock \doi{10.1002/jcc.540140712}.
+\newblock URL \url{http://dx.doi.org/10.1002/jcc.540140712}.
+
+\bibitem[Toukmaji and Jr.(1996)]{Toukmaji96}
+A.~Y. Toukmaji and J.~A.~B. Jr.
+\newblock Ewald summation techniques in perspective: a survey.
+\newblock \emph{Computer Physics Communications}, 95\penalty0 (2–3):\penalty0
+  73 -- 92, 1996.
+\newblock ISSN 0010-4655.
+\newblock \doi{http://dx.doi.org/10.1016/0010-4655(96)00016-1}.
+\newblock URL
+  \url{http://www.sciencedirect.com/science/article/pii/0010465596000161}.
+
+\bibitem[Weber et~al.(2000)Weber, H\"{u}nenberger, and McCammon]{Weber00}
+W.~Weber, P.~H. H\"{u}nenberger, and J.~A. McCammon.
+\newblock Molecular dynamics simulations of a polyalanine octapeptide under
+  ewald boundary conditions: Influence of artificial periodicity on peptide
+  conformation.
+\newblock \emph{J. Phys. Chem. B}, 104\penalty0 (15):\penalty0 3668--3675,
+  2000.
+\newblock \doi{10.1021/jp9937757}.
+\newblock URL \url{http://dx.doi.org/10.1021/jp9937757}.
+
+\bibitem[Wolf et~al.(1999)Wolf, Keblinski, Phillpot, and Eggebrecht]{Wolf99}
+D.~Wolf, P.~Keblinski, S.~R. Phillpot, and J.~Eggebrecht.
+\newblock Exact method for the simulation of coulombic systems by spherically
+  truncated, pairwise r−1 summation.
+\newblock \emph{The Journal of Chemical Physics}, 110\penalty0 (17), 1999.
+
+\end{thebibliography}

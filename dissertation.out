@@ -1,0 +1,20 @@
+\BOOKMARK [0][-]{abstract.0}{Abstract}{}% 1
+\BOOKMARK [0][-]{dedication.0}{DEDICATION}{}% 2
+\BOOKMARK [0][-]{contents.0}{CONTENTS}{}% 3
+\BOOKMARK [0][-]{chapter*.3}{FIGURES}{}% 4
+\BOOKMARK [0][-]{chapter*.4}{TABLES}{}% 5
+\BOOKMARK [0][-]{chapter*.5}{ACKNOWLEDGMENTS}{}% 6
+\BOOKMARK [0][-]{chapter*.6}{SYMBOLS}{}% 7
+\BOOKMARK [0][-]{chapter.1}{CHAPTER 1: INTRODUCTION}{}% 8
+\BOOKMARK [1][-]{section.1.1}{1.1 Molecular Dynamics \(MD\) Simulation}{chapter.1}% 9
+\BOOKMARK [2][-]{subsection.1.1.1}{1.1.1 Peridic Boundary Condition \(PBC\)}{section.1.1}% 10
+\BOOKMARK [2][-]{subsection.1.1.2}{1.1.2 Spherical truncation and Neighbour list }{section.1.1}% 11
+\BOOKMARK [1][-]{section.1.2}{1.2 Monte Carlo \(MC\) Simulation}{chapter.1}% 12
+\BOOKMARK [1][-]{section.1.3}{1.3 Electrostatic Methods}{chapter.1}% 13
+\BOOKMARK [2][-]{subsection.1.3.1}{1.3.1 Ewald Method}{section.1.3}% 14
+\BOOKMARK [2][-]{subsection.1.3.2}{1.3.2 Fourier-based Ewald Methods}{section.1.3}% 15
+\BOOKMARK [2][-]{subsection.1.3.3}{1.3.3 Multipole-based Ewald Methods}{section.1.3}% 16
+\BOOKMARK [2][-]{subsection.1.3.4}{1.3.4 Real Space Methods}{section.1.3}% 17
+\BOOKMARK [0][-]{appendix.A}{APPENDIX A: GNU GENERALISMS}{}% 18
+\BOOKMARK [1][-]{section.A.1}{A.1 Definitions}{appendix.A}% 19
+\BOOKMARK [0][-]{appendix*.7}{BIBLIOGRAPHY}{}% 20
