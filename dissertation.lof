@@ -7,4 +7,9 @@
  {\vskip 0.4em} 
 \contentsline {figure}{\numberline {1.4}{\ignorespaces In Ewald method point charge is surrounded by the Gaussian distribution of the equal and opposite-signed charge evaluated in real-space. These Gaussian distributions are compensated by the corresponding opposite-singed distribution of the charges calculated in the reciprocal-space }}{14}{figure.1.4}
  {\vskip 0.4em} 
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.5}{\ignorespaces Schematic diagram showing grouping of ions in (a) 1D (b) 2D crystals. The interaction of the central ion with the group of ions decays faster than $1/r$. The direct spherical truncation breaks the ordering of the ions at the cut off sphere providing a net charge within the cutoff sphere. The breaking of the charge ordering increases with the crystal dimension resulting in a large net charge in the higher dimensional crystal.}}{18}{figure.1.5}
+ {\vskip 0.4em} 
+\contentsline {figure}{\numberline {1.6}{\ignorespaces Convergence of the lattice energy constants for a NaCl crystal as a function of cutoff radius for the direct (hard) cutoff method (black line). The orange line in the left figure is for charge neutralized cutoff sphere (when image charged placed on the surface of the cutoff sphere). The red dotted line represents Madelung energy for NaCl crystal}}{20}{figure.1.6}
+ {\vskip 0.4em} 
+\contentsline {figure}{\numberline {1.7}{\ignorespaces Convergence of the lattice energy constants for a NaCl crystal as a function of net charge within a cutoff sphere. The red dotted line represents Madelung energy for NaCl crystal}}{21}{figure.1.7}
+ {\vskip 0.4em} 

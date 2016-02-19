@@ -215,5 +215,97 @@ URL = { http://dx.doi.org/10.1021/jp025949h},
  publisher = {Clarendon Press},
  address = {New York, NY, USA},
 } 
-[download]
+@article{Toukmaji96,
+title = "Ewald summation techniques in perspective: a survey ",
+journal = "Computer Physics Communications ",
+volume = "95",
+number = "2–3",
+pages = "73 - 92",
+year = "1996",
+note = "",
+issn = "0010-4655",
+doi = "http://dx.doi.org/10.1016/0010-4655(96)00016-1",
+url = "http://www.sciencedirect.com/science/article/pii/0010465596000161",
+author = "Abdulnour Y. Toukmaji and John A. Board Jr.",
+keywords = "Ewald summation",
+keywords = "Fast multipole algorithm",
+keywords = "Particle-mesh algorithms",
+keywords = "Periodic boundary conditions",
+keywords = "Molecular dynamics",
+keywords = "Algorithms "
+}
+@article{Jacobs92,
+author = { Z. A.   Rycerz  and  P. W. M.   Jacobs },
+title = {Ewald Summation in the Molecular Dynamics Simulation of Large Ionic Systems},
+journal = {Molecular Simulation},
+volume = {8},
+number = {3-5},
+pages = {197-213},
+year = {1992},
+doi = {10.1080/08927029208022476},
 
+URL = { 
+        http://dx.doi.org/10.1080/08927029208022476
+    
+},
+eprint = { 
+        http://dx.doi.org/10.1080/08927029208022476
+    
+}
+
+}
+
+@article{Luty94,
+author = { Brock A.   Luty  and  Malcolm E.   Davis  and  Ilario G.   Tironi  and  Wilfred F.   Van Gunsteren },
+title = {A Comparison of Particle-Particle, Particle-Mesh and Ewald Methods for Calculating Electrostatic Interactions in Periodic Molecular Systems},
+journal = {Molecular Simulation},
+volume = {14},
+number = {1},
+pages = {11-20},
+year = {1994},
+doi = {10.1080/08927029408022004},
+
+URL = { 
+        http://dx.doi.org/10.1080/08927029408022004
+    
+},
+eprint = { 
+        http://dx.doi.org/10.1080/08927029408022004
+    
+}
+
+}
+@article{Rajagopal94,
+title = "An Optimized Ewald Method for Long-Ranged Potentials ",
+journal = "Journal of Computational Physics ",
+volume = "115",
+number = "2",
+pages = "399 - 405",
+year = "1994",
+note = "",
+issn = "0021-9991",
+doi = "http://dx.doi.org/10.1006/jcph.1994.1205",
+url = "http://www.sciencedirect.com/science/article/pii/S0021999184712058",
+author = "G. Rajagopal and R.J. Needs"
+}
+@book{Hockney88,
+  title={Computer simulation using particles},
+  author={Hockney, Roger W and Eastwood, James W},
+  year={1988},
+  publisher={CRC Press}
+}
+@article{Fukuda13,
+	Author = {Fukuda, Ikuo},
+	Date-Added = {2014-05-20 17:25:01 +0000},
+	Date-Modified = {2014-05-20 17:25:01 +0000},
+	Doi = {http://dx.doi.org/10.1063/1.4827055},
+	Eid = 174107,
+	Journal = jcp,
+	Number = {17},
+	Pages = {-},
+	Title = {Zero-multipole summation method for efficiently estimating electrostatic interactions in molecular system},
+	Url = {http://scitation.aip.org/content/aip/journal/jcp/139/17/10.1063/1.4827055},
+	Volume = {139},
+	Year = {2013},
+	Bdsk-Url-1 = {http://scitation.aip.org/content/aip/journal/jcp/139/17/10.1063/1.4827055},
+	Bdsk-Url-2 = {http://dx.doi.org/10.1063/1.4827055}}

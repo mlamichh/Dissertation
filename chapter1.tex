@@ -148,12 +148,12 @@ U_{reciporcal} = \frac{1}{2\pi V}\sum_{i,j}^{N}{\sum_{\mathbf{m} \neq 0}\frac{\e
 U_{self} = -\frac{\alpha}{\sqrt{\pi}} \sum_{i =1}^{N} {q_i}^2 ,\label{eq:ewald3}
 \end{gather}
 \end{subequations}
-where $V$ is the volume of the simulation box and $\mathbf{m}$ is a reciprocal-space vector. The self-term in the equation \ref{eq:ewald3} is to remove artificial interactions of a charge with its images located in the periodic replicas of the box. Since  $\mathrm{erf}(x) + \mathrm{erfc}(x) = 1$ we can write \ref{eq:totalElectrostatic} as,
+where $V$ is the volume of the simulation box, $\mathbf{m}$ is a reciprocal-space vector, and $\alpha$ is damping parameter which determines the rate of convergence in the real and reciprocal space. The self-term in the equation \ref{eq:ewald3} is to remove artificial interactions of a charge with its images located in the periodic replicas of the box. Since  $\mathrm{erf}(x) + \mathrm{erfc}(x) = 1$ we can write \ref{eq:totalElectrostatic} as,
 \begin{equation}
-U = \frac{1}{2}\sum_n^{'}{\sum_{i=1}^N { \sum_{j=1}^N {q_i q_j}}}\frac{\mathrm{erfc}(\alpha r_{ij,n})+\mathrm{erf}(\alpha r_{ij,n})}{r_{ij,n}},
+U = \frac{1}{2}\sum_n^{'}{\sum_{i=1}^N { \sum_{j=1}^N {q_i q_j}}}\frac{\mathrm{erfc}(\alpha r_{ij,n})+\mathrm{erf}(\alpha r_{ij,n})}{r_{ij,n}}.
 \label{eq:efforFuncElectrostatic}
 \end{equation}
-where $\alpha$ is damping parameter. The equation \ref{eq:ewald1} is obtained by taking complementary error function term and the equation \ref{eq:ewald2} can be obtained taking Fourier transform of the error function term in equation \ref{eq:efforFuncElectrostatic}.
+The equation \ref{eq:ewald1} is obtained by taking complementary error function term and the equation \ref{eq:ewald2} can be obtained taking Fourier transform of the error function term in equation \ref{eq:efforFuncElectrostatic}.
  
 Physically each point charge in the system can be assumed to be surrounded by a Gaussian distribution of equal magnitude and opposite signed charge (see figure \ref{fig:Ewaldsum}) with density,
 
@@ -161,7 +161,7 @@ Physically each point charge in the system can be assumed to be surrounded by a 
 \rho_i (r) = q_i \left(\frac{\alpha}{\sqrt{\pi}}\right)^3 \exp(-\alpha^2 r^2),
 \label{eq:chargeDistribution}
 \end{equation}
-where $\alpha$ is a damping parameter determines the distribution of the charge, $r$ is the position from the center of distribution. The imposed charge distribution around a charge screens the interactions between the charges making interaction a short-ranged and converges rapidly with distance. The imposed Gaussian distribution is counteracted by another Gaussian distribution of the charge with same magnitude but opposite in sign. The sum of potential energy due to second type of charge distributions converge rapidly in the reciprocal space. 
+where $\alpha$ is a damping parameter determines the distribution of the charge, $r$ is the position from the center of distribution. The imposed charge distribution around a charge screens the interactions between the charges making interaction a short-ranged and converges rapidly with distance. These Gaussian distributions are counteracted by other Gaussian distributions of the charges of same magnitude but opposite in sign as shown in figure \ref{fig:Ewaldsum}\cite{Toukmaji96}. The sum of potential energy due to second type of charge distributions converge in the reciprocal space. 
 
 \begin{figure}[tpb]
   \begin{center}
@@ -171,10 +171,59 @@ where $\alpha$ is a damping parameter determines the distribution of the charge,
   \end{center}
 \end{figure}
 
-\subsection{Fourier-based Ewald Methods}
+For minimum image convention scheme, i.e. each particle can interact with its nearest charge or image, the total number of interactions is $\frac{1}{2}N(N-1)$ in Ewald method. \textit{Recerz} and \textit{Jacobs} suggested that by choosing proper simulation parameters and minimum image convention schemes we can make reciprocal potential very small as compared to real-space potential so that it can be ignored \cite{Jacobs92}. However this method is only applicable for larger system and strongly dependent on configurations of the system. Perram et al. subdivided box into $m cross m cross m$ sub-boxes and selected damping parameter $\alpha = m \sqrt{-\log(\delta)}$ , where $\delta$ is the relative error constant for neglecting maximum term in the real-space sum, and using this technique they were able to reduce computational time   to $O(N^{3/2})$.
 
-\subsection{Multipole-based Ewald Methods}
+\subsection{Fourier-based Ewald Methods}
+The Ewald method has been modified using Fast Fourier transform (FFT) to reduce complexity to $O(N log(N))$. In these method charges are interpolated to 3D grid and reciprocal sum is evaluated using FFT. The particle-particle particle-mesh Ewald (PPPME) and particle-mesh Ewald (PME) methods are two widely used Fourier-based Ewald methods. 
+\subsubsection{Particle-Particle Particle-Mesh Ewald (PPPME)}
+\label{subsec:PPPME}
+The PPPME method was originally developed Hockmney and Eastwood \cite{Hockney88} then extended  by Luty et al.\cite{Luty94} and Rajagopal et al. \cite{Rajagopal94}. In this method electrostatic interaction is divided into short ranged real-space sum and long ranged reciprocal-space sum. The charges in the system are approximated as uniformly decreasing spherical charge density. The short-ranged potential within the cutoff radius $r < r_{cut}$ is calculated using electrostatic interactions between charge distributions. To calculate long-ranged potential, first of all charges are assigned to the 3D grid as shown in figure \ref{fig:PPPME} then transformed to the Fourier space for evaluating electrostatic potential. Since charges are assigned to the grid, it is very efficient to evaluate electrostatic interaction in the reciprocal space. Once potential energy is evaluated, inverse Fourier transformed is applied to calculate energy in real-space and this energy is numerically differentiated to get force acting on the grid. Finally we can interpolate electrostatic force (or energy) from the grid to particle locations to obtain actual force acting on the particle.
+
+Although PPPME has complexity $O(N \mathrm{log}N)$, for computational accuracy, we should either refine mesh or use better interpolation technique, both of which are computational expensive. In addition to this, using numerical differentiation to calculate force may introduced error in calculation. Therefore higher order differentiation schemes are often used in force calculation. In order to get optimal performance, all of the parameters; charge-distribution, interpolation technique, and differentiation schemes should be properly selected for a particular system which makes this method system-specific \cite{Toukomaji96}.
+
+\subsubsection{Particle-Mesh Ewald (PME)}
+\label{subsubsec:PME}
+This method is the modification of the PPPME method, in which the potential energy is divided into real-space and reciprocal-space sums and evaluated using the Ewald's Gaussian distribution of charge. The real-space sum within the cutoff sphere is evaluated using actual electrostatic interactions between charges whereas the reciprocal sum is calculated in Fourier-space using the idea of 3D grid as explained in PPPME method. Similarly unlike PPPME, this method evaluates force analytically differentiating electrostatic energy at a given grid point, which reduces memory requirement significantly. This method has also $O(N \mathrm{log}N)$ complexity and uses interpolation to map back electrostatic force from grid to particles. Therefore we should discover optimal interpolation technique to obtain excellent speed and accuracy for a simulation of given system and makes it system dependent.
+
+There are many Ewald-based methods that have been developed for calculating electrostatic interaction in molecular simulations but they are not being widely used be\end{split}cause of efficiency and difficulty in implementation. In addition, one particular method can not be used for all kind of molecular environments. We have already discussed widely used Ewald and Ewald-based methods. 
 
 \subsection{Real Space Methods}
+Before discussing about the real space methods, it is better to discuss about the fundamental property of the electrostatic interactions in the real condensed phase environments. The electrostatic interaction between two charged particles decays as $1/r$. But molecular system usually composed of an equal number of positive and negative charges. Thus the range of interaction between a particular charge and rest of the other charges in the system are different than the interaction between two bare charges. Consider a one dimensional (1D) crystal lattice composed of positive and negative charges. The potential energy of a particular ion can be considered as a sum of interactions with positive and negative ion pairs as shown in Figure ~\ref{fig:schematic}(a). Mathematically the potential energy for 1D crystal with alternating charges is given by a Madelung sum,
 
+\begin{equation}
+\begin{split}
+U^{Mad} & = -2q_iq_j\left(\frac{1}{a}-\frac{1}{2a}\right)-2q_iq_j\left(\frac{1}{3a}-\frac{1}{4a}\right)-2q_iq_j\left(\frac{1}{5a}-\frac{1}{6a}\right) + ... \\
+		& = -\left(\frac{ 2q_iq_j}{(1.414)^2a}\right)-\left(\frac{2q_iq_j}{(3.464)^2a}\right)-\left(\frac{2q_iq_j}{(5.477)^2a}\right) +...
+\end{split}
+\label{eq:1D}
+\end{equation} 
+ 
+\begin{figure}
+  \centering
+  \includegraphics[width=\linewidth]{1D_2DCrystal.pdf}
+  \caption{Schematic diagram showing grouping of ions in (a) 1D (b) 2D crystals. The interaction of the central ion with the group of ions decays faster than $1/r$. The direct spherical truncation breaks the ordering of the ions at the cut off sphere providing a net charge within the cutoff sphere. The breaking of the charge ordering increases with the crystal dimension resulting in a large net charge in the higher dimensional crystal.}
+   \label{fig:schematic}
+\end{figure}
 
+In equation(\ref{eq:1D}) we see that the interaction energy of a single ion with the pairs converges faster than ($1/r$). Similarly, in a two dimensional (2D) lattice, the potential energy of an ion can be described as a sum of positive and negative four body groups as seen in Figure ~\ref{fig:schematic}(b). The interaction energy between an ion and group of four ions decays much faster than the charge-charge interaction. For a three-dimensional (3D) crystal, the potential energy of an ion can be considered as due to its interaction with the group of eight ions forming a cube. From this generalization, we can conclude that the electrostatic interaction energy for an ion in the crystalline system is a short-ranged as compared to charge-charge interaction. Therefore, even the relatively small size of the system should be able to represent bulk long-ranged interactions of the system.
+\begin{figure}[tpb]
+  \begin{center}
+    \centerline{\includegraphics[scale=0.8]{energyVsCutoff.png}}
+    \caption{Convergence of the lattice energy constants for a NaCl crystal as a function of cutoff radius for the direct (hard) cutoff method (black line). The orange line in the left figure is for charge neutralized cutoff sphere (when image charged placed on the surface of the cutoff sphere). The red dotted line represents Madelung energy for NaCl crystal}
+    \label{fig:energyVsCutoff}
+  \end{center}
+\end{figure}
+
+\begin{figure}[tpb]
+  \begin{center}
+    \centerline{\includegraphics[scale=0.8]{energyVsNetcharge.png}}
+    \caption{Convergence of the lattice energy constants for a NaCl crystal as a function of net charge within a cutoff sphere. The red dotted line represents Madelung energy for NaCl crystal}
+    \label{fig:energyVsCharge}
+  \end{center}
+\end{figure}
+
+In order to reduce the computational expense of a molecular dynamics simulation, interactions between particles are only considered if the particles exist within a cutoff distance $r_c$, of one another. We first consider how the energy of a system behaves if we truncate the interactions at the cutoff radius.  Figure \ref{fig:energyVsCutoff} shows (black line) that the electrostatic potential energy does not converge to the Madelung energy upon increasing the cutoff radius for the direct truncation. On the other hand the energy is found to be closer to the Madelung constant when the net charge within the cutoff radius is zero (Figure ~\ref{fig:energyVsCharge}). This oscillation in the potential energy is due to the breaking in charge ordering on the surface of the cutoff sphere which results in a net charge within the cutoff sphere. The size of the net charge is proportional to the dimension of the crystal. Although the interaction energy is short ranged,  the direct truncation results in severe oscillation in the 3D crystal as shown in Figure \ref{fig:energyVsCutoff}. Dipolar (or quadrupolar) crystals are also formed by ordering of the dipolar (or quadrupolar) molecules. Therefore similar oscillatory behaviour in the potential energy is seen due to the breaking of the ordering of dipoles (or quadrupoles) on the surface of the truncated sphere. Even in liquids there is local ordering of the molecules due to electrostatic interaction and similar oscillatory behaviour in the electrostatic potential has been seen in the direct truncation.
+
+Wolf \textit{ et al.} proposed the idea of placing an image charge on the surface of cutoff sphere for every charge found within the sphere. The image charges would have opposite charge of those found within the sphere, thus guarantee charge neutralization  within the cutoff sphere  \cite{Wolf99}. This charge neutralization converges the potential energy to the correct Madelung energy as shown in Figure ~\ref{fig:energyVsCutoff} (orange line). In molecular dynamics (MD) simulations, the energy, force and torque should approach zero as the distance between molecules approaches the cutoff radius  in order to conserve total energy. However Wolf's forces and torques derived from the potential do not go to zero at the cutoff radius, which makes it inappropriate to use in MD simulations. More recently, Zahn \textit{et al.} and Fennell and Gezelter proposed the damped shifted force (DSF) potential, which incorporates Wolf's approach of image charges while ensuring the forces and torques approach zero at the cutoff radius \cite{Zahn02, Gezelter06}. Fukuda has also recently been successful with the neutralization of higher order moments in a system of point charges \cite{Fukuda13}.
+
+In our research, we have generalized Wolf's shifted potential (SP) to the higher order electrostatic multipoles. Similarly, we have also developed the gradient shifted force (GSF) and Taylor shifted force (TSF) potentials which are the extension of the damped shifted force (DSF) for higher order charge-multipoles. In the following chapter 2, I will discuss about the development of the SP, GSF, and TSF methods and evaluate the energy constants for various dipolar and quadrupolar crystals using newly developed methods and compare result with analytical method \cite{Lamichhane14_I}. Similarly in the chapter 3,  I will derive different physical properties such as; co-ordination number, orientational relaxation time, diffusivity, and  mean potential energy for the mixed liquid phase systems using our methods and compare results with Ewald method. Additionally, I will also compare the conservation of energy in the molecular dynamics simulations for SP, GSF, and TSF methods with the Ewald method \cite{Lamichhane14_II}.Chapter 4 discusses about how to use our methods to calculate correct dielectric properties for the condensed dipolar and quadrupolar systems. Finally I will conclude summary of my research in chapter 5. 

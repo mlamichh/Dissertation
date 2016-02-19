@@ -2,7 +2,6 @@ This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: dissertation.aux
 A level-1 auxiliary file: chapter1.aux
-A level-1 auxiliary file: appendix.aux
 The style file: abbrvnat.bst
 Database file #1: dissertation.bib
 You're missing a field part---line 53 of file dissertation.bib
@@ -25,48 +24,50 @@ You're missing a field part---line 204 of file dissertation.bib
  :    eid = 
  :          ,
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "galmira98:_gnus_milit"
-Warning--I didn't find a database entry for "gairley2000"
+Warning--string name "jcp" is undefined
+--line 303 of file dissertation.bib
+Warning--I didn't find a database entry for "Toukomaji96"
+Warning--empty journal in Fukuda13
 Warning--empty title in Born1912
-You've used 19 entries,
+You've used 26 entries,
             2773 wiz_defined-function locations,
-            747 strings with 8453 characters,
-and the built_in function-call counts, 8844 in all, are:
-= -- 790
-> -- 523
-< -- 10
-+ -- 176
-- -- 156
-* -- 771
-:= -- 1388
-add.period$ -- 70
-call.type$ -- 19
-change.case$ -- 107
-chr.to.int$ -- 18
-cite$ -- 39
-duplicate$ -- 379
-empty$ -- 707
-format.name$ -- 193
-if$ -- 1844
-int.to.chr$ -- 2
+            803 strings with 10140 characters,
+and the built_in function-call counts, 11986 in all, are:
+= -- 1081
+> -- 695
+< -- 14
++ -- 235
+- -- 207
+* -- 1049
+:= -- 1888
+add.period$ -- 104
+call.type$ -- 26
+change.case$ -- 144
+chr.to.int$ -- 24
+cite$ -- 54
+duplicate$ -- 522
+empty$ -- 958
+format.name$ -- 257
+if$ -- 2501
+int.to.chr$ -- 3
 int.to.str$ -- 1
-missing$ -- 19
-newline$ -- 116
-num.names$ -- 76
-pop$ -- 177
+missing$ -- 27
+newline$ -- 164
+num.names$ -- 104
+pop$ -- 234
 preamble$ -- 1
-purify$ -- 90
+purify$ -- 121
 quote$ -- 0
-skip$ -- 301
+skip$ -- 404
 stack$ -- 0
-substring$ -- 297
-swap$ -- 21
+substring$ -- 374
+swap$ -- 29
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 204
-warning$ -- 1
-while$ -- 69
+type$ -- 276
+warning$ -- 2
+while$ -- 93
 width$ -- 0
-write$ -- 279
+write$ -- 394
 (There were 5 error messages)

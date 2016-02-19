@@ -1,4 +1,4 @@
-\begin{thebibliography}{19}
+\begin{thebibliography}{26}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -46,6 +46,20 @@ C.~J. Fennell and J.~D. Gezelter.
 \newblock URL
   \url{http://scitation.aip.org/content/aip/journal/jcp/124/23/10.1063/1.2206581}.
 
+\bibitem[Fukuda(2013)]{Fukuda13}
+I.~Fukuda.
+\newblock Zero-multipole summation method for efficiently estimating
+  electrostatic interactions in molecular system.
+\newblock 139\penalty0 (17):\penalty0 174107, 2013.
+\newblock \doi{http://dx.doi.org/10.1063/1.4827055}.
+\newblock URL
+  \url{http://scitation.aip.org/content/aip/journal/jcp/139/17/10.1063/1.4827055}.
+
+\bibitem[Hockney and Eastwood(1988)]{Hockney88}
+R.~W. Hockney and J.~W. Eastwood.
+\newblock \emph{Computer simulation using particles}.
+\newblock CRC Press, 1988.
+
 \bibitem[H\"{u}nenberger and McCammon(1999{\natexlab{a}})]{Hunenberger99a}
 P.~H. H\"{u}nenberger and J.~A. McCammon.
 \newblock Ewald artifacts in computer simulations of ionic solvation and ion --
@@ -59,11 +73,40 @@ P.~H. H\"{u}nenberger and J.~A. McCammon.
   ewald boundary conditions: a continuum electrostatics study.
 \newblock \emph{Biophys. Chem.}, 78:\penalty0 69--88, 1999{\natexlab{b}}.
 
+\bibitem[Lamichhane et~al.(2014{\natexlab{a}})Lamichhane, Gezelter, and
+  Newman]{Lamichhane14_I}
+M.~Lamichhane, J.~D. Gezelter, and K.~E. Newman.
+\newblock Real space electrostatics for multipoles. i. development of methods.
+\newblock \emph{The Journal of Chemical Physics}, 141\penalty0 (13):\penalty0
+  134109, 2014{\natexlab{a}}.
+\newblock \doi{http://dx.doi.org/10.1063/1.4896627}.
+\newblock URL
+  \url{http://scitation.aip.org/content/aip/journal/jcp/141/13/10.1063/1.4896627}.
+
+\bibitem[Lamichhane et~al.(2014{\natexlab{b}})Lamichhane, Newman, and
+  Gezelter]{Lamichhane14_II}
+M.~Lamichhane, K.~E. Newman, and J.~D. Gezelter.
+\newblock Real space electrostatics for multipoles. ii. comparisons with the
+  ewald sum.
+\newblock \emph{The Journal of Chemical Physics}, 141\penalty0 (13):\penalty0
+  134110, 2014{\natexlab{b}}.
+\newblock \doi{http://dx.doi.org/10.1063/1.4896628}.
+\newblock URL
+  \url{http://scitation.aip.org/content/aip/journal/jcp/141/13/10.1063/1.4896628}.
+
 \bibitem[Luty and {van~Gunsteren}(1996)]{Luty96}
 B.~A. Luty and W.~F. {van~Gunsteren}.
 \newblock Calculating electrostatic interactions using the particle-particle
   particle-mesh method with nonperiodic long-range interactions.
 \newblock \emph{J. Phys. Chem.}, 100\penalty0 (7):\penalty0 2581--2587, 1996.
+
+\bibitem[Luty et~al.(1994)Luty, Davis, Tironi, and Gunsteren]{Luty94}
+B.~A. Luty, M.~E. Davis, I.~G. Tironi, and W.~F.~V. Gunsteren.
+\newblock A comparison of particle-particle, particle-mesh and ewald methods
+  for calculating electrostatic interactions in periodic molecular systems.
+\newblock \emph{Molecular Simulation}, 14\penalty0 (1):\penalty0 11--20, 1994.
+\newblock \doi{10.1080/08927029408022004}.
+\newblock URL \url{http://dx.doi.org/10.1080/08927029408022004}.
 
 \bibitem[Luty et~al.(1995)Luty, Tironi, and van Gunsteren]{Luty95}
 B.~A. Luty, I.~G. Tironi, and W.~F. van Gunsteren.
@@ -89,6 +132,16 @@ J.~W. Perram, H.~G. Petersen, and S.~W.~D. Leeuw.
 \newblock \doi{10.1080/00268978800101471}.
 \newblock URL \url{http://dx.doi.org/10.1080/00268978800101471}.
 
+\bibitem[Rajagopal and Needs(1994)]{Rajagopal94}
+G.~Rajagopal and R.~Needs.
+\newblock An optimized ewald method for long-ranged potentials.
+\newblock \emph{Journal of Computational Physics}, 115\penalty0 (2):\penalty0
+  399 -- 405, 1994.
+\newblock ISSN 0021-9991.
+\newblock \doi{http://dx.doi.org/10.1006/jcph.1994.1205}.
+\newblock URL
+  \url{http://www.sciencedirect.com/science/article/pii/S0021999184712058}.
+
 \bibitem[Roberts and Schnitker(1994)]{Roberts94}
 J.~E. Roberts and J.~Schnitker.
 \newblock How the unit cell surface charge distriubution affects the energetics
@@ -100,6 +153,15 @@ J.~E. Roberts and J.~Schnitker.
 \newblock Boundary conditions in sumulations of aqueous ionic solutions: A
   systematic study.
 \newblock \emph{J. Phys. Chem.}, 99:\penalty0 1322--1331, 1995.
+
+\bibitem[Rycerz and Jacobs(1992)]{Jacobs92}
+Z.~A. Rycerz and P.~W.~M. Jacobs.
+\newblock Ewald summation in the molecular dynamics simulation of large ionic
+  systems.
+\newblock \emph{Molecular Simulation}, 8\penalty0 (3-5):\penalty0 197--213,
+  1992.
+\newblock \doi{10.1080/08927029208022476}.
+\newblock URL \url{http://dx.doi.org/10.1080/08927029208022476}.
 
 \bibitem[Shimada et~al.(1993)Shimada, Kaneko, and Takada]{Shimada93}
 J.~Shimada, H.~Kaneko, and T.~Takada.
