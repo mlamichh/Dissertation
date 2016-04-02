@@ -1,2 +1,16 @@
- {\vskip 0.4em} 
 \addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {2.1}{\ignorespaces Self-interaction contributions for site ($a$) that has a charge $(C_a)$, dipole $(\mathbf {D}_a)$, and quadrupole $(\mathsf {Q}_a)$}}{39}{table.2.1}
+\contentsline {table}{\numberline {2.2}{\ignorespaces Radial functions used in the energy and torque equations. The $f, g, h, s, t, \mathrm {and\nobreakspace {}} u$ functions used in this table are defined in Appendices \ref {radialTSF} and \ref {radialGSF}. The gradient shifted (GSF) functions include the shifted potential (SP) contributions (\textit {cf.} Eqs. \ref {generic2} and \ref {eq:SP}).}}{42}{table.2.2}
+\contentsline {table}{\numberline {2.3}{\ignorespaces Radial functions used in the force equations. Gradient shifted (GSF) functions are constructed using the shifted potential (SP) functions. Some of these functions are simple modifications of the functions found in table \ref {tab:tableenergy}}}{43}{table.2.3}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {3.1}{\ignorespaces The parameters used in the systems used to evaluate the new real-space methods. The most comprehensive test was a liquid composed of 2000 soft DQ liquid molecules with 48 dissolved ions (24 {Na+} and 24 {Cl-} ions). This test exercises all orders of the multipolar interactions developed in the chapter 2.}}{59}{table.3.1}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {4.1}{\ignorespaces Expressions for the dipolar correction factor ($A$) for the real-space electrostatic methods in terms of the damping parameter ($\alpha $) and the cutoff radius ($r_c$). The Ewald-Kornfeld result derived in Refs. \cite {Adams80,Adams81,NeumannI83} is shown for comparison using the Ewald convergence parameter ($\kappa $) and the real-space cutoff value ($r_c$). }}{97}{table.4.1}
+ {\vskip 0.4em} 
+\contentsline {table}{\numberline {4.2}{\ignorespaces Expressions for the quadrupolar correction factor ($A$) for the real-space electrostatic methods in terms of the damping parameter ($\alpha $) and the cutoff radius ($r_c$). The dimension of the correction factor is $ length^{-2}$ in case of quadrupolar fluid.}}{105}{table.4.2}
+\contentsline {table}{\numberline {4.3}{\ignorespaces The mass, moment of intertia, Lennard-Jones, and electrostatic parameters for the test systems are listed below. }}{106}{table.4.3}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {B.1}{\ignorespaces Potential energy $(U)$, force $(\mathbf {F})$, and torque $(\mathbf {\tau })$ expressions for a multipolar site embedded in an electric field with spatial variations, $\mathbf {E}(\mathbf {r})$. }}{126}{table.B.1}
+ {\vskip 0.4em} 

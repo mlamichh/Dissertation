@@ -1,0 +1,196 @@
+%
+% Modified by Sameer Vijay
+% Last Change: Wed Jul 27 2005 13:00 CEST
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Sample Notre Dame Thesis/Dissertation
+% Using Donald Peterson's ndthesis classfile
+%
+% Written by Jeff Squyres and Don Peterson
+%
+% Provided by the Information Technology Committee of
+%   the Graduate Student Union
+%   http://www.gsu.nd.edu/
+%
+% Nothing in this document is serious except the format.  :-)
+%
+% If you have any suggestions, comments, questions, please send e-mail
+% to: ndthesis@gsu.nd.edu
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Appendix
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{RADIAL FUNCTIONS FOR REAL-SPACE ELECTROSTATIC METHODS}
+
+\section{Smith's $B_l(r)$ functions for damped-charge distributions}
+\label{SmithFunc}
+The following summarizes Smith's $B_l(r)$ functions and includes
+formulas given in his appendix.\cite{Smith98} The first function
+$B_0(r)$ is defined by
+%
+\begin{equation}
+B_0(r)=\frac{\text{erfc}(\alpha r)}{r} = \frac{2}{\sqrt{\pi}r}
+\int_{\alpha r}^{\infty} \text{e}^{-s^2} ds .
+\end{equation}
+%
+The first derivative of this function is
+%
+\begin{equation}
+\frac{dB_0(r)}{dr}=-\frac{1}{r^2}\text{erfc}(\alpha r)
+-\frac{2\alpha}{r\sqrt{\pi}}\text{e}^{-{\alpha}^2r^2}
+\end{equation}
+%
+which can be used to define a function $B_1(r)$:
+%
+\begin{equation}
+B_1(r)=-\frac{1}{r}\frac{dB_0(r)}{dr}
+\end{equation}
+%
+In general, the recurrence relation,
+\begin{equation}
+B_l(r)=-\frac{1}{r}\frac{dB_{l-1}(r)}{dr} 
+= \frac{1}{r^2} \left[ (2l-1)B_{l-1}(r) + \frac {(2\alpha^2)^l}{\alpha \sqrt{\pi}}
+\text{e}^{-{\alpha}^2r^2}
+\right] ,
+\end{equation}
+is very useful for building up higher derivatives. As noted by Smith,
+it is possible to approximate the $B_l(r)$ functions,
+%
+\begin{equation}
+B_l(r)=\frac{(2l)!}{l!2^lr^{2l+1}} - \frac {(2\alpha^2)^{l+1}}{(2l+1)\alpha \sqrt{\pi}}
++\text{O}(r) .
+\end{equation}
+
+\newpage
+\section{The $r$-dependent factors for TSF electrostatics}
+\label{radialTSF}
+
+Using the shifted damped functions $f_n(r)$ defined by:
+%
+\begin{equation}
+f_n(r)= B_0(r) -\sum_{m=0}^{n+1} \frac {(r-r_c)^m}{m!} B_0^{(m)}(r_c)  ,
+\end{equation}
+%
+where the superscript $(m)$ denotes the $m^\mathrm{th}$ derivative. In
+this Appendix, we provide formulas for successive derivatives of this
+function.  (If there is no damping, then $B_0(r)$ is replaced by
+$1/r$.)  First, we find:
+%
+\begin{equation}
+\frac{\partial f_n}{\partial r_\alpha}=\hat{r}_\alpha \frac{d f_n}{d r} .
+\end{equation}
+%
+This formula clearly brings in derivatives of Smith's $B_0(r)$
+function, and we define higher-order derivatives as follows:
+%
+\begin{align}
+g_n(r)=& \frac{d f_n}{d r} =
+B_0^{(1)}(r) -\sum_{m=0}^{n} \frac {(r-r_c)^m}{m!} B_0^{(m+1)}(r_c) \\
+h_n(r)=& \frac{d^2f_n}{d r^2} =
+B_0^{(2)}(r) -\sum_{m=0}^{n-1} \frac {(r-r_c)^m}{m!} B_0^{(m+2)}(r_c) \\
+s_n(r)=& \frac{d^3f_n}{d r^3} =
+B_0^{(3)}(r) -\sum_{m=0}^{n-2} \frac {(r-r_c)^m}{m!} B_0^{(m+3)}(r_c) \\
+t_n(r)=& \frac{d^4f_n}{d r^4} =
+B_0^{(4)}(r) -\sum_{m=0}^{n-3} \frac {(r-r_c)^m}{m!} B_0^{(m+4)}(r_c) \\
+u_n(r)=& \frac{d^5f_n}{d r^5} =
+B_0^{(5)}(r) -\sum_{m=0}^{n-4} \frac {(r-r_c)^m}{m!} B_0^{(m+5)}(r_c)  .
+\end{align}
+%
+We note that the last function needed (for quadrupole-quadrupole interactions) is
+%
+\begin{equation}
+u_4(r)=B_0^{(5)}(r) - B_0^{(5)}(r_c) .
+\end{equation}
+% The functions
+% needed are listed schematically below:
+% %
+% \begin{eqnarray}
+% f_0 \quad f_1 \qquad \qquad \quad & \nonumber \\
+% g_0 \quad g_1 \quad g_2 \quad g_3 \quad &g_4 \nonumber \\
+% h_1 \quad h_2 \quad h_3 \quad &h_4 \nonumber \\
+% s_2 \quad s_3 \quad &s_4 \nonumber \\
+% t_3 \quad &t_4 \nonumber \\
+% &u_4 \nonumber .
+% \end{eqnarray}
+The functions $f_n(r)$ to $u_n(r)$ can be computed recursively and
+stored on a grid for values of $r$ from $0$ to $r_c$.  Using these
+functions, we find
+%
+\begin{align}
+\frac{\partial f_n}{\partial r_\alpha} =&r_\alpha \frac {g_n}{r} \label{eq:b9}\\
+\frac{\partial^2 f_n}{\partial r_\alpha \partial r_\beta} =&\delta_{\alpha \beta}\frac {g_n}{r} 
++r_\alpha r_\beta \left( -\frac{g_n}{r^3} +\frac{h_n}{r^2}\right) \\
+\frac{\partial^3 f_n}{\partial r_\alpha \partial r_\beta \partial r_\gamma} =&
+\left( \delta_{\alpha \beta} r_\gamma + \delta_{\alpha \gamma} r_\beta + 
+\delta_{ \beta \gamma} r_\alpha \right)  
+\left(  -\frac{g_n}{r^3} +\frac{h_n}{r^2} \right) \nonumber \\
+& + r_\alpha r_\beta r_\gamma 
+\left(  \frac{3g_n}{r^5}-\frac{3h_n}{r^4} +\frac{s_n}{r^3} \right) \\
+\frac{\partial^4 f_n}{\partial r_\alpha \partial r_\beta \partial
+  r_\gamma \partial r_\delta} =& 
+\left( \delta_{\alpha \beta} \delta_{\gamma \delta} 
++ \delta_{\alpha \gamma} \delta_{\beta \delta}
+ +\delta_{ \beta \gamma} \delta_{\alpha \delta} \right)
+\left( - \frac{g_n}{r^3} + \frac{h_n}{r^2} \right)  \nonumber \\ 
+&+ \left( \delta_{\alpha \beta} r_\gamma r_\delta
++ \text{5 permutations}
+\right) \left( \frac{3 g_n}{r^5} - \frac{3h_n}{r^4} + \frac{s_n}{r^3} 
+\right) \nonumber \\
+&+ r_\alpha r_\beta r_\gamma r_\delta
+\left(  -\frac{15g_n}{r^7} + \frac{15h_n}{r^6} - \frac{6s_n}{r^5}
++ \frac{t_n}{r^4} \right)\\
+\frac{\partial^5 f_n}
+{\partial r_\alpha \partial r_\beta \partial r_\gamma \partial
+  r_\delta \partial r_\epsilon} =& 
+\left( \delta_{\alpha \beta} \delta_{\gamma \delta} r_\epsilon
++ \text{14 permutations} \right) 
+\left(  \frac{3g_n}{r^5}-\frac{3h_n}{r^4} +\frac{s_n}{r^3} \right) \nonumber \\
+&+ \left( \delta_{\alpha \beta} r_\gamma r_\delta r_\epsilon
++ \text{9 permutations}
+\right) \left(- \frac{15g_n}{r^7}+\frac{15h_n}{r^7} -\frac{6s_n}{r^5} +\frac{t_n}{r^4} 
+\right) \nonumber \\
+&+ r_\alpha r_\beta r_\gamma r_\delta r_\epsilon
+\left(  \frac{105g_n}{r^9} - \frac{105h_n}{r^8} + \frac{45s_n}{r^7}
+- \frac{10t_n}{r^6} +\frac{u_n}{r^5} \right) \label{eq:b13}
+\end{align}
+%
+%
+%
+\newpage
+\section{The $r$-dependent factors for GSF electrostatics}
+\label{radialGSF}
+
+In Gradient-shifted force electrostatics, the kernel is not expanded,
+and the expansion is carried out on the individual terms in the
+multipole interaction energies. For damped charges, this still brings
+multiple derivatives of the Smith's $B_0(r)$ function into the
+algebra. To denote these terms, we generalize the notation of the
+previous appendix. For either $f(r)=1/r$ (undamped) or $f(r)=B_0(r)$
+(damped),
+%
+\begin{align}
+g(r) &= \frac{df}{d r} &&                      &&=-\frac{1}{r^2}
+&&\mathrm{or~~~} -rB_1(r) \\
+h(r) &= \frac{dg}{d r} &&= \frac{d^2f}{d r^2} &&= \frac{2}{r^3} &&\mathrm{or~~~}-B_1(r) + r^2 B_2(r) \\
+s(r) &= \frac{dh}{d r} &&= \frac{d^3f}{d r^3} &&=-\frac{6}{r^4}&&\mathrm{or~~~}3rB_2(r) - r^3 B_3(r)\\
+t(r) &= \frac{ds}{d r} &&= \frac{d^4f}{d r^4} &&= \frac{24}{r^5} &&\mathrm{or~~~} 3
+B_2(r) - 6r^2 B_3(r) + r^4 B_4(r) \\
+u(r) &= \frac{dt}{d r} &&= \frac{d^5f}{d r^5} &&=-\frac{120}{r^6} &&\mathrm{or~~~} -15
+r B_3(r) + 10 r^3B_4(r) -r^5B_5(r).
+\end{align}
+%
+For undamped charges, Table I lists these derivatives under the Bare
+Coulomb column. Equations \ref{eq:b9} to \ref{eq:b13} are still
+correct for GSF electrostatics if the subscript $n$ is eliminated.
+
+% % uncomment the following lines,
+% if using chapter-wise bibliography
+%
+% \bibliographystyle{ndnatbib}
+% \bibliography{example}

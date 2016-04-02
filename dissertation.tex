@@ -77,6 +77,7 @@
 %           the textrefs option)
 % sort&compress (sorts and compresses numerical citations;
 %           is identical to sort when used with textrefs)
+\usepackage{braket}
 
 \begin{document}
 
@@ -102,29 +103,26 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % You must either set the copyright information or put your work in the public domain.
-\copyrightholder{Madan Lamichhane} % See template or documentation for
-\copyrightyear{2016}           % other copyright options.
-\makecopyright
+%\copyrightholder{Madan Lamichhane} % See template or documentation for
+%\copyrightyear{2016}           % other copyright options.
+%\makecopyright
 
 % An abstract is optional for a mster's thesis, and required for a doctoral dissertation.
 \begin{abstract}
  
 % This is just a way of writing equation 
-	\begin{align*}
-    a^2 + b^2 &= c^2 \\
-    E &= mc^2 \\
-    \frac{e}{m} &= c^2 \\
-    a^2 + b^2 &=\frac{e}{m}
-  \end{align*}
+\begin{align*}
+ a = a + b 
+ \end{align*}
 
  
 \end{abstract}
 
 % A dedication is optional.
-\renewcommand{\dedicationname}{DEDICATION}
-\begin{dedication}
-  To my father Late Hari Bahadur Lamichhane and mother Dropati Lamichhane for their hard work, consistent support, love, and inspiration. 
-\end{dedication}
+%\renewcommand{\dedicationname}{DEDICATION}
+%\begin{dedication}
+%  To my father Late Hari Bahadur Lamichhane and mother Dropati Lamichhane for their hard work, consistent support, love, and inspiration. 
+%\end{dedication}
 
 % These are required, and must be in this order.
 \tableofcontents
@@ -147,14 +145,14 @@
 
 % It's hard to tell from the information available from the Graduate
 % School in Spring 2013 whether or not an acknowledgements section is optional.
-\begin{acknowledge}
-
-\end{acknowledge}
-
-% A symbols section is optional.
-\begin{symbols}
-  
-\end{symbols}
+%\begin{acknowledge}
+%
+%\end{acknowledge}
+%
+%% A symbols section is optional.
+%\begin{symbols}
+%  
+%\end{symbols}
 
 \mainmatter
 % Place the text body here.
@@ -171,15 +169,25 @@
 %
 % Chapter 2
 %
+\include{chapter2}
+%
+% Chapter 3
+
+\include{chapter3}
+
+% Chapter 4
+
+\include{chapter4}
 
 %
 % Appendix (optional)
 %
-
 \appendix
 
+\include{appendix}
 %
 % Back stuff
+\include{appendixB}
 %
 
 % % comment out the following three lines

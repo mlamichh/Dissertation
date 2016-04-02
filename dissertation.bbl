@@ -1,13 +1,68 @@
-\begin{thebibliography}{26}
+\begin{thebibliography}{96}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
+\bibitem[sup()]{supplemental}
+See supplementary material document no. \underline{\hspace{1in}} for body-frame
+  expressions and converged energy constants.
+
+\bibitem[Adams(1980)]{Adams80}
+D.~Adams.
+\newblock Computer simulation of highly polar liquids: The hard sphere plus
+  point dipole potential.
+\newblock \emph{Molecular Physics}, 40\penalty0 (5):\penalty0 1261--1271, 1980.
+\newblock \doi{10.1080/00268978000102261}.
+
+\bibitem[Adams and Adams(1981)]{Adams81}
+D.~Adams and E.~Adams.
+\newblock Static dielectric properties of the stockmayer fluid from computer
+  simulation.
+\newblock \emph{Molecular Physics}, 42\penalty0 (4):\penalty0 907--926, 1981.
+\newblock \doi{10.1080/00268978100100701}.
+
+\bibitem[Adu-Gyamfi(1978)]{AduGyamfi78}
+D.~Adu-Gyamfi.
+\newblock On the electric quadrupole density of an isotropic non-polar fluid.
+\newblock \emph{Physica A: Statistical Mechanics and its Applications},
+  93\penalty0 (3):\penalty0 553 -- 558, 1978.
+\newblock ISSN 0378-4371.
+\newblock \doi{http://dx.doi.org/10.1016/0378-4371(78)90175-9}.
+\newblock URL
+  \url{http://www.sciencedirect.com/science/article/pii/0378437178901759}.
+
+\bibitem[Adu-Gyamfi(1981)]{AduGyamfi81}
+D.~Adu-Gyamfi.
+\newblock On the average moments of a polar molecule in a non-uniform electric
+  field.
+\newblock \emph{Physica A: Statistical Mechanics and its Applications},
+  108\penalty0 (1):\penalty0 205 -- 210, 1981.
+\newblock ISSN 0378-4371.
+\newblock \doi{http://dx.doi.org/10.1016/0378-4371(81)90174-6}.
+\newblock URL
+  \url{http://www.sciencedirect.com/science/article/pii/0378437181901746}.
+
+\bibitem[Aguado and Madden(2003)]{Aguado03}
+A.~Aguado and P.~A. Madden.
+\newblock Ewald summation of electrostatic multipole interactions up to the
+  quadrupolar level.
+\newblock \emph{J. Chem. Phys.}, 119\penalty0 (14):\penalty0 7471--7483, 2003.
+\newblock \doi{10.1063/1.1605941}.
+
 \bibitem[Allen(2004)]{Allen04}
 M.~P. Allen.
 \newblock Introduction to molecular dynamics simulation, 2004.
+
+\bibitem[Allen and Germano(2006)]{Allen06}
+M.~P. Allen and G.~Germano.
+\newblock Expressions for forces and torques in molecular simulations using
+  rigid bodies.
+\newblock 104\penalty0 (20-21):\penalty0 3225--3235, 2006.
+\newblock \doi{10.1080/00268970601075238}.
+\newblock URL
+  \url{http://www.tandfonline.com/doi/abs/10.1080/00268970601075238}.
 
 \bibitem[Allen and Tildesley(1989)]{Allen89}
 M.~P. Allen and D.~J. Tildesley.
@@ -15,11 +70,63 @@ M.~P. Allen and D.~J. Tildesley.
 \newblock Clarendon Press, New York, NY, USA, 1989.
 \newblock ISBN 0-19-855645-4.
 
+\bibitem[Beck et~al.(2005)Beck, Armen, and Daggett]{Beck05}
+D.~Beck, R.~Armen, and V.~Daggett.
+\newblock Cutoff size need not strongly influence molecular dynamics results
+  for solvated polypeptides.
+\newblock \emph{Biochemistry}, 44\penalty0 (2):\penalty0 609--616, 2005.
+\newblock ISSN 0006-2960.
+\newblock URL
+  \url{Http://Pubs3.Acs.Org/Acs/Journals/Doilookup?In_Doi=10.1021/Bi0486381}.
+
+\bibitem[Chen and Weeks(2006)]{Chen06}
+Y.~Chen and J.~Weeks.
+\newblock Local molecular field theory for effective attractions between like
+  charged objects in systems with strong coulomb interactions.
+\newblock 103:\penalty0 7560--7565, 2006.
+\newblock \doi{DOI 10.1073/pnas.0600282103}.
+
+\bibitem[Chen et~al.(2004)Chen, Kaur, and Weeks]{Chen04}
+Y.~Chen, C.~Kaur, and J.~Weeks.
+\newblock Connecting systems with short and long ranged interactions: Local
+  molecular field theory for ionic fluids.
+\newblock 108:\penalty0 19874--19884, 2004.
+\newblock \doi{DOI 10.1021/jp0469261}.
+
+\bibitem[Chitanvis(1996)]{Chitanvis96}
+S.~M. Chitanvis.
+\newblock A continuum solvation theory of quadrupolar fluids.
+\newblock \emph{The Journal of Chemical Physics}, 104\penalty0 (22):\penalty0
+  9065--9074, 1996.
+\newblock \doi{http://dx.doi.org/10.1063/1.471615}.
+\newblock URL
+  \url{http://scitation.aip.org/content/aip/journal/jcp/104/22/10.1063/1.471615}.
+
+\bibitem[Chowdhuri et~al.(2006)Chowdhuri, Tan, and Ichiye]{Chowdhuri06}
+S.~Chowdhuri, M.-L. Tan, and T.~Ichiye.
+\newblock Dynamical properties of the soft sticky dipole-quadrupole-octupole
+  water model: A molecular dynamics study.
+\newblock 125\penalty0 (14):\penalty0 144513--8, 2006.
+\newblock URL \url{Http://Link.Aip.Org/Link/?jcp/125/144513/1}.
+
 \bibitem[Darden et~al.(1993)Darden, York, and Pedersen]{Darden93}
 T.~Darden, D.~York, and L.~Pedersen.
-\newblock Particle mesh ewald: An n⋅log(n) method for ewald sums in large
+\newblock Particle mesh ewald: An nlog(n) method for ewald sums in large
   systems.
 \newblock \emph{The Journal of Chemical Physics}, 98\penalty0 (12), 1993.
+
+\bibitem[{de Leeuw} et~al.(1980){de Leeuw}, Perram, and Smith]{deLeeuw80}
+S.~W. {de Leeuw}, J.~W. Perram, and E.~R. Smith.
+\newblock Simulation of electostatic systems in periodic boundary conditions.
+  \uppercase{I. L}attice sums and dielectric constants.
+\newblock \emph{Proc. R. Soc. London Ser. A}, 373\penalty0 (1752):\penalty0
+  27--56, 1980.
+
+\bibitem[Denesyuk and Weeks(2008)]{Denesyuk08}
+N.~A. Denesyuk and J.~D. Weeks.
+\newblock A new approach for efficient simulation of {C}oulomb interactions in
+  ionic fluids.
+\newblock 128, 2008.
 
 \bibitem[Dirk et~al.(2002)Dirk, Bernd, and Stefan]{Zahn02}
 Z.~Dirk, S.~Bernd, and M.~K. Stefan.
@@ -29,6 +136,27 @@ Z.~Dirk, S.~Bernd, and M.~K. Stefan.
   (41):\penalty0 10725--10732, 2002.
 \newblock \doi{10.1021/jp025949h}.
 \newblock URL \url{http://dx.doi.org/10.1021/jp025949h}.
+
+\bibitem[Dullweber et~al.(1997)Dullweber, Leimkuhler, and
+  McLachlan]{Dullweber97}
+A.~Dullweber, B.~Leimkuhler, and R.~McLachlan.
+\newblock Symplectic splitting methods for rigid body molecular dynamics.
+\newblock 107\penalty0 (15):\penalty0 5840--5851, 1997.
+
+\bibitem[English(2008)]{English08}
+N.~J. English.
+\newblock Effect of electrostatics techniques on the estimation of thermal
+  conductivity via equilibrium molecular dynamics simulation: application to
+  methane hydrate.
+\newblock 106:\penalty0 1887--1898, 2008.
+\newblock \doi{DOI 10.1080/00268970802360348}.
+
+\bibitem[Ernst et~al.(1992)Ernst, Wu, Liu, Nagel, and Neubert]{Ernst92}
+R.~M. Ernst, L.~Wu, C.-h. Liu, S.~R. Nagel, and M.~E. Neubert.
+\newblock Quadrupolar susceptibility of complex fluids.
+\newblock \emph{Phys. Rev. B}, 45:\penalty0 667--672, Jan 1992.
+\newblock \doi{10.1103/PhysRevB.45.667}.
+\newblock URL \url{http://link.aps.org/doi/10.1103/PhysRevB.45.667}.
 
 \bibitem[Essmann et~al.(1995)Essmann, Perera, Berkowitz, Darden, Lee, and
   Pedersen]{Essmann95}
@@ -46,6 +174,16 @@ C.~J. Fennell and J.~D. Gezelter.
 \newblock URL
   \url{http://scitation.aip.org/content/aip/journal/jcp/124/23/10.1063/1.2206581}.
 
+\bibitem[Forrest et~al.(2012)Forrest, Pham, McLaughlin, Belof, Stern,
+  Zaworotko, and Space]{Forrest12}
+K.~A. Forrest, T.~Pham, K.~McLaughlin, J.~L. Belof, A.~C. Stern, M.~J.
+  Zaworotko, and B.~Space.
+\newblock Simulation of the mechanism of gas sorption in a metal--organic
+  framework with open metal sites: Molecular hydrogen in pcn-61.
+\newblock 116\penalty0 (29):\penalty0 15538--15549, 2012.
+\newblock \doi{10.1021/jp306084t}.
+\newblock URL \url{http://dx.doi.org/10.1021/jp306084t}.
+
 \bibitem[Fukuda(2013)]{Fukuda13}
 I.~Fukuda.
 \newblock Zero-multipole summation method for efficiently estimating
@@ -55,10 +193,60 @@ I.~Fukuda.
 \newblock URL
   \url{http://scitation.aip.org/content/aip/journal/jcp/139/17/10.1063/1.4827055}.
 
+\bibitem[Fukuda et~al.(2011)Fukuda, Yonezawa, and Nakamura]{Fukuda11}
+I.~Fukuda, Y.~Yonezawa, and H.~Nakamura.
+\newblock Molecular dynamics scheme for precise estimation of electrostatic
+  interaction via zero-dipole summation principle.
+\newblock 134\penalty0 (16):\penalty0 164107, 2011.
+\newblock \doi{http://dx.doi.org/10.1063/1.3582791}.
+\newblock URL
+  \url{http://scitation.aip.org/content/aip/journal/jcp/134/16/10.1063/1.3582791}.
+
+\bibitem[Fukuda et~al.(2012)Fukuda, Kamiya, Yonezawa, and Nakamura]{Fukuda12}
+I.~Fukuda, N.~Kamiya, Y.~Yonezawa, and H.~Nakamura.
+\newblock Simple and accurate scheme to compute electrostatic interaction:
+  Zero-dipole summation technique for molecular system and application to bulk
+  water.
+\newblock 137\penalty0 (5):\penalty0 054314, 2012.
+\newblock \doi{http://dx.doi.org/10.1063/1.4739789}.
+\newblock URL
+  \url{http://scitation.aip.org/content/aip/journal/jcp/137/5/10.1063/1.4739789}.
+
+\bibitem[Gezelter et~al.()Gezelter, Lamichhane, Louden, Michalka, Niedhart,
+  Lin, II, Fennell, Meineke, Kuang, Stocker, Marr, Sun, Li, Daily, and
+  Zheng]{Openmd2.3}
+J.~D. Gezelter, M.~Lamichhane, P.~Louden, J.~Michalka, S.~Niedhart, T.~Lin,
+  C.~F.~V. II, C.~J. Fennell, M.~A. Meineke, S.~Kuang, K.~Stocker, J.~Marr,
+  X.~Sun, C.~Li, K.~Daily, and Y.~Zheng.
+\newblock Openmd-2.3: Molecular dynamics in the open.
+\newblock Available at {\tt http://openmd.org}.
+
+\bibitem[Golubkov and Ren(2006)]{Golubkov06}
+P.~A. Golubkov and R.~Ren.
+\newblock Generalized coarse-grained model based on point multipole and
+  {G}ay-{B}erne potentials.
+\newblock 125:\penalty0 064103, 2006.
+
+\bibitem[Hansen et~al.(2012)Hansen, Schroder, and Dyre]{Hansen12}
+J.~S. Hansen, T.~B. Schroder, and J.~C. Dyre.
+\newblock Simplistic {C}oulomb forces in molecular dynamics: Comparing the
+  {W}olf and shifted-force approximations.
+\newblock 116:\penalty0 5738--5743, 2012.
+\newblock \doi{DOI 10.1021/jp300750g}.
+
 \bibitem[Hockney and Eastwood(1988)]{Hockney88}
 R.~W. Hockney and J.~W. Eastwood.
 \newblock \emph{Computer simulation using particles}.
 \newblock CRC Press, 1988.
+
+\bibitem[Horn et~al.(2004)Horn, Swope, Pitera, Madura, Dick, Hura, and
+  Head-Gordon]{Horn04}
+H.~W. Horn, W.~C. Swope, J.~W. Pitera, J.~D. Madura, T.~J. Dick, G.~L. Hura,
+  and T.~Head-Gordon.
+\newblock Development of an improved four-site water model for biomolecular
+  simulations: \uppercase{TIP4P-E}w.
+\newblock 120\penalty0 (20):\penalty0 9665--9678, 2004.
+\newblock \doi{10.1063/1.1683075}.
 
 \bibitem[H\"{u}nenberger and McCammon(1999{\natexlab{a}})]{Hunenberger99a}
 P.~H. H\"{u}nenberger and J.~A. McCammon.
@@ -73,26 +261,133 @@ P.~H. H\"{u}nenberger and J.~A. McCammon.
   ewald boundary conditions: a continuum electrostatics study.
 \newblock \emph{Biophys. Chem.}, 78:\penalty0 69--88, 1999{\natexlab{b}}.
 
-\bibitem[Lamichhane et~al.(2014{\natexlab{a}})Lamichhane, Gezelter, and
+\bibitem[Ichiye and Tan(2006)]{Ichiye06}
+T.~Ichiye and M.-L. Tan.
+\newblock Soft sticky dipole-quadrupole-octupole potential energy function for
+  liquid water: An approximate moment expansion.
+\newblock 124\penalty0 (13):\penalty0 134504--10, 2006.
+\newblock URL \url{Http://Link.Aip.Org/Link/?jcp/124/134504/1}.
+
+\bibitem[Impey et~al.(1982)Impey, Madden, and McDonald]{Impey82}
+R.~W. Impey, P.~A. Madden, and I.~R. McDonald.
+\newblock Spectroscopic and transport properties of water: \uppercase{M}odel
+  calculations and the interpretation of experimental results.
+\newblock 46\penalty0 (3):\penalty0 513--539, 1982.
+
+\bibitem[Izvekov et~al.(2008)Izvekov, Swanson, and Voth]{Izvekov08}
+S.~Izvekov, J.~M.~J. Swanson, and G.~A. Voth.
+\newblock Coarse-graining in interaction space: A systematic approach for
+  replacing long-range electrostatics with short-range potentials.
+\newblock 112:\penalty0 4711--4724, 2008.
+\newblock \doi{DOI 10.1021/jp710339n}.
+
+\bibitem[Jackson(1998)]{Jackson98}
+J.~D. Jackson.
+\newblock \emph{{Classical Electrodynamics Third Edition}}.
+\newblock Wiley, third edition, Aug. 1998.
+\newblock ISBN 047130932X.
+\newblock URL
+  \url{http://www.amazon.com/exec/obidos/redirect?tag=citeulike07-20\&path=ASIN/047130932X}.
+
+\bibitem[Jeon and Kim(2003{\natexlab{a}})]{JeonI03}
+J.~Jeon and H.~J. Kim.
+\newblock A continuum theory of solvation in quadrupolar solvents. i.
+  formulation.
+\newblock \emph{The Journal of Chemical Physics}, 119\penalty0 (16):\penalty0
+  8606--8625, 2003{\natexlab{a}}.
+\newblock \doi{http://dx.doi.org/10.1063/1.1605376}.
+\newblock URL
+  \url{http://scitation.aip.org/content/aip/journal/jcp/119/16/10.1063/1.1605376}.
+
+\bibitem[Jeon and Kim(2003{\natexlab{b}})]{JeonII03}
+J.~Jeon and H.~J. Kim.
+\newblock A continuum theory of solvation in quadrupolar solvents. ii.
+  solvation free energetics, dynamics, and solvatochromism.
+\newblock \emph{The Journal of Chemical Physics}, 119\penalty0 (16):\penalty0
+  8626--8635, 2003{\natexlab{b}}.
+\newblock \doi{http://dx.doi.org/10.1063/1.1605377}.
+\newblock URL
+  \url{http://scitation.aip.org/content/aip/journal/jcp/119/16/10.1063/1.1605377}.
+
+\bibitem[Kannam et~al.(2013)Kannam, Todd, Hansen, and Daivis]{kannam13}
+S.~K. Kannam, B.~D. Todd, J.~S. Hansen, and P.~J. Daivis.
+\newblock How fast does water flow in carbon nanotubes?
+\newblock 138\penalty0 (9):\penalty0 094701, 2013.
+\newblock \doi{10.1063/1.4793396}.
+\newblock URL \url{http://link.aip.org/link/?JCP/138/094701/1}.
+
+\bibitem[Kast et~al.(2003)Kast, Schmidt, and Schilling]{Kast03}
+S.~M. Kast, K.~F. Schmidt, and B.~Schilling.
+\newblock Integral equation theory for correcting truncation errors in
+  molecular simulations.
+\newblock 367:\penalty0 398--404, 2003.
+
+\bibitem[Kirkwood(1939)]{Kirkwood39}
+J.~G. Kirkwood.
+\newblock The dielectric polarization of polar liquids.
+\newblock \emph{The Journal of Chemical Physics}, 7\penalty0 (10):\penalty0
+  911--919, 1939.
+\newblock \doi{http://dx.doi.org/10.1063/1.1750343}.
+\newblock URL
+  \url{http://scitation.aip.org/content/aip/journal/jcp/7/10/10.1063/1.1750343}.
+
+\bibitem[Lamichhane et~al.(2014)Lamichhane, Gezelter, and
   Newman]{Lamichhane14_I}
 M.~Lamichhane, J.~D. Gezelter, and K.~E. Newman.
 \newblock Real space electrostatics for multipoles. i. development of methods.
 \newblock \emph{The Journal of Chemical Physics}, 141\penalty0 (13):\penalty0
-  134109, 2014{\natexlab{a}}.
+  134109, 2014.
 \newblock \doi{http://dx.doi.org/10.1063/1.4896627}.
 \newblock URL
   \url{http://scitation.aip.org/content/aip/journal/jcp/141/13/10.1063/1.4896627}.
 
-\bibitem[Lamichhane et~al.(2014{\natexlab{b}})Lamichhane, Newman, and
-  Gezelter]{Lamichhane14_II}
-M.~Lamichhane, K.~E. Newman, and J.~D. Gezelter.
-\newblock Real space electrostatics for multipoles. ii. comparisons with the
-  ewald sum.
-\newblock \emph{The Journal of Chemical Physics}, 141\penalty0 (13):\penalty0
-  134110, 2014{\natexlab{b}}.
-\newblock \doi{http://dx.doi.org/10.1063/1.4896628}.
+\bibitem[Logan(1981)]{LoganI81}
+D.~E. Logan.
+\newblock On the dielectric theory of fluids.
+\newblock \emph{Molecular Physics}, 44\penalty0 (6):\penalty0 1271--1295, 1981.
+\newblock \doi{10.1080/00268978100103181}.
+\newblock URL \url{http://dx.doi.org/10.1080/00268978100103181}.
+
+\bibitem[Logan(1982{\natexlab{a}})]{LoganII82}
+D.~E. Logan.
+\newblock On the dielectric theory of fluids.
+\newblock \emph{Molecular Physics}, 46\penalty0 (2):\penalty0 271--285,
+  1982{\natexlab{a}}.
+\newblock \doi{10.1080/00268978200101251}.
+\newblock URL \url{http://dx.doi.org/10.1080/00268978200101251}.
+
+\bibitem[Logan(1982{\natexlab{b}})]{LoganIII82}
+D.~E. Logan.
+\newblock On the dielectric theory of fluids.
+\newblock \emph{Molecular Physics}, 46\penalty0 (6):\penalty0 1155--1194,
+  1982{\natexlab{b}}.
+\newblock \doi{10.1080/00268978200101871}.
+\newblock URL \url{http://dx.doi.org/10.1080/00268978200101871}.
+
+\bibitem[Louden et~al.(2013)Louden, Schoenborn, and Lawrence]{Louden13}
+P.~Louden, R.~Schoenborn, and C.~P. Lawrence.
+\newblock Molecular dynamics simulations of the condensation coefficient of
+  water.
+\newblock \emph{Fluid Phase Equilibria}, 349\penalty0 (0):\penalty0 83--86,
+  2013.
+\newblock \doi{http://dx.doi.org/10.1016/j.fluid.2013.04.006}.
 \newblock URL
-  \url{http://scitation.aip.org/content/aip/journal/jcp/141/13/10.1063/1.4896628}.
+  \url{http://www.sciencedirect.com/science/article/pii/S037838121300174X}.
+
+\bibitem[Luttinger and Tisza(1946)]{LT}
+J.~M. Luttinger and L.~Tisza.
+\newblock Theory of dipole interaction in crystals.
+\newblock \emph{Phys. Rev.}, 70:\penalty0 954--964, Dec 1946.
+\newblock \doi{10.1103/PhysRev.70.954}.
+\newblock URL \url{http://link.aps.org/doi/10.1103/PhysRev.70.954}.
+
+\bibitem[Luttinger and Tisza(1947)]{LT2}
+J.~M. Luttinger and L.~Tisza.
+\newblock Errata: Theory of dipole interaction in crystals [phys. rev. 70, 954
+  (1946)].
+\newblock \emph{Phys. Rev.}, 72:\penalty0 257--257, Aug 1947.
+\newblock \doi{10.1103/PhysRev.72.257}.
+\newblock URL \url{http://link.aps.org/doi/10.1103/PhysRev.72.257}.
 
 \bibitem[Luty and {van~Gunsteren}(1996)]{Luty96}
 B.~A. Luty and W.~F. {van~Gunsteren}.
@@ -114,15 +409,93 @@ B.~A. Luty, I.~G. Tironi, and W.~F. van Gunsteren.
   molecular simulations.
 \newblock \emph{The Journal of Chemical Physics}, 103\penalty0 (8), 1995.
 
+\bibitem[Ma and Garofalini(2005)]{Ma05}
+Y.~Ma and S.~H. Garofalini.
+\newblock Modified wolf electrostatic summation: Incorporating an empirical
+  charge overlap.
+\newblock \emph{Mol. Simul.}, 31\penalty0 (11):\penalty0 739--748, 2005.
+
 \bibitem[M.Born and Karman(1912)]{Born1912}
 M.Born and T.~V. Karman.
 \newblock \emph{Physik}, Z\penalty0 (13):\penalty0 297, 1912.
+
+\bibitem[McCann and Acevedo(2013)]{McCann13}
+B.~W. McCann and O.~Acevedo.
+\newblock Pairwise alternatives to {E}wald summation for calculating long-range
+  electrostatics in ionic liquids.
+\newblock 9:\penalty0 944--950, 2013.
+\newblock \doi{DOI 10.1021/ct300961e}.
 
 \bibitem[Metropolis et~al.(1953)Metropolis, Rosenbluth, Rosenbluth, Teller, and
   Teller]{Metropolis53}
 N.~Metropolis, A.~W. Rosenbluth, M.~N. Rosenbluth, A.~H. Teller, and E.~Teller.
 \newblock Equation of state calculations by fast computing machines.
 \newblock \emph{The Journal of Chemical Physics}, 21\penalty0 (6), 1953.
+
+\bibitem[Nagai and Nakamura(1960)]{Nagai60}
+O.~Nagai and T.~Nakamura.
+\newblock Quadrupole interaction in crystals.
+\newblock \emph{Progress of Theoretical Physics}, 24\penalty0 (2):\penalty0
+  432--454, 1960.
+\newblock \doi{10.1143/PTP.24.432}.
+\newblock URL \url{http://ptp.oxfordjournals.org/content/24/2/432.abstract}.
+
+\bibitem[Nagai and Nakamura(1963)]{Nagai63}
+O.~Nagai and T.~Nakamura.
+\newblock Quadrupole interaction in crystals.
+\newblock \emph{Progress of Theoretical Physics}, 30\penalty0 (3):\penalty0
+  412, 1963.
+\newblock \doi{10.1143/PTP.30.412a}.
+\newblock URL \url{http://ptp.oxfordjournals.org/content/30/3/412.1.short}.
+
+\bibitem[Neumann(1983)]{NeumannI83}
+M.~Neumann.
+\newblock Dipole moment fluctuation formulas in computer simulations of polar
+  systems.
+\newblock \emph{Molecular Physics}, 50\penalty0 (4):\penalty0 841--858, 1983.
+\newblock \doi{10.1080/00268978300102721}.
+
+\bibitem[Neumann(1985)]{Neumann85}
+M.~Neumann.
+\newblock The dielectric constant of water. \uppercase{C}omputer simulations
+  with the \uppercase{MCY} potential.
+\newblock 82\penalty0 (12):\penalty0 5663--5672, 1985.
+
+\bibitem[Neumann and Steinhauser(1983)]{NeumannII83}
+M.~Neumann and O.~Steinhauser.
+\newblock On the calculation of the dielectric constant using the
+  ewald-kornfeld tensor.
+\newblock \emph{Chemical Physics Letters}, 95\penalty0 (4--5):\penalty0 417 --
+  422, 1983.
+\newblock ISSN 0009-2614.
+\newblock \doi{http://dx.doi.org/10.1016/0009-2614(83)80585-5}.
+
+\bibitem[Neumann et~al.(1984)Neumann, Steinhauser, and Pawley]{Neumann84}
+M.~Neumann, O.~Steinhauser, and G.~S. Pawley.
+\newblock Consistent calculation of the static and frequency-dependent
+  dielectric constant in computer simulations.
+\newblock 52\penalty0 (1):\penalty0 97--113, 1984.
+
+\bibitem[Onsager(1936)]{Onsagar36}
+L.~Onsager.
+\newblock Electric moments of molecules in liquids.
+\newblock \emph{Journal of the American Chemical Society}, 58\penalty0
+  (8):\penalty0 1486--1493, 1936.
+\newblock \doi{10.1021/ja01299a050}.
+\newblock URL \url{http://dx.doi.org/10.1021/ja01299a050}.
+
+\bibitem[Orsi and Essex({2011})]{Orsi11}
+M.~Orsi and J.~W. Essex.
+\newblock {The ELBA Force Field for Coarse-Grain Modeling of Lipid Membranes}.
+\newblock \emph{{PLOS ONE}}, {6}\penalty0 ({12}):\penalty0 {e28637}, {2011}.
+\newblock ISSN {1932-6203}.
+
+\bibitem[Orsi et~al.({2010})Orsi, Michel, and Essex]{Orsi10}
+M.~Orsi, J.~Michel, and J.~W. Essex.
+\newblock {Coarse-grain modelling of DMPC and DOPC lipid bilayers}.
+\newblock \emph{J. Phys. - Cond. Matt.}, {22}\penalty0 ({15}):\penalty0
+  {155106}, {2010}.
+\newblock ISSN {0953-8984}.
 
 \bibitem[Perram et~al.(1988)Perram, Petersen, and Leeuw]{Perram88}
 J.~W. Perram, H.~G. Petersen, and S.~W.~D. Leeuw.
@@ -131,6 +504,25 @@ J.~W. Perram, H.~G. Petersen, and S.~W.~D. Leeuw.
 \newblock \emph{Molecular Physics}, 65\penalty0 (4):\penalty0 875--893, 1988.
 \newblock \doi{10.1080/00268978800101471}.
 \newblock URL \url{http://dx.doi.org/10.1080/00268978800101471}.
+
+\bibitem[Ponder et~al.(2010)Ponder, Wu, Ren, Pande, Chodera, Schnieders, Haque,
+  Mobley, Lambrecht, DiStasio, Head-Gordon, Clark, Johnson, and
+  Head-Gordon]{Ponder10}
+J.~W. Ponder, C.~Wu, P.~Ren, V.~S. Pande, J.~D. Chodera, M.~J. Schnieders,
+  I.~Haque, D.~L. Mobley, D.~S. Lambrecht, R.~A. DiStasio, Jr, M.~Head-Gordon,
+  G.~N.~I. Clark, M.~E. Johnson, and T.~Head-Gordon.
+\newblock Current status of the {AMOEBA} polarizable force field.
+\newblock 114\penalty0 (8):\penalty0 2549--64, 2010.
+\newblock \doi{10.1021/jp910674d}.
+
+\bibitem[Price et~al.(1984)Price, Stone, and Alderton]{Price84}
+S.~Price, A.~Stone, and M.~Alderton.
+\newblock Explicit formulae for the electrostatic energy, forces and torques
+  between a pair of molecules of arbitrary symmetry.
+\newblock 52\penalty0 (4):\penalty0 987--1001, 1984.
+\newblock \doi{10.1080/00268978400101721}.
+\newblock URL
+  \url{http://www.tandfonline.com/doi/abs/10.1080/00268978400101721}.
 
 \bibitem[Rajagopal and Needs(1994)]{Rajagopal94}
 G.~Rajagopal and R.~Needs.
@@ -141,6 +533,13 @@ G.~Rajagopal and R.~Needs.
 \newblock \doi{http://dx.doi.org/10.1006/jcph.1994.1205}.
 \newblock URL
   \url{http://www.sciencedirect.com/science/article/pii/S0021999184712058}.
+
+\bibitem[Ren et~al.(2011)Ren, Wu, and Ponder]{Ren11}
+P.~Ren, C.~Wu, and J.~W. Ponder.
+\newblock Polarizable atomic multipole-based molecular mechanics for organic
+  molecules.
+\newblock 7\penalty0 (10):\penalty0 3143--3161, 2011.
+\newblock \doi{10.1021/ct200304d}.
 
 \bibitem[Roberts and Schnitker(1994)]{Roberts94}
 J.~E. Roberts and J.~Schnitker.
@@ -154,6 +553,14 @@ J.~E. Roberts and J.~Schnitker.
   systematic study.
 \newblock \emph{J. Phys. Chem.}, 99:\penalty0 1322--1331, 1995.
 
+\bibitem[Rodgers et~al.(2006)Rodgers, Kaur, Chen, and Weeks]{Rodgers06}
+J.~M. Rodgers, C.~Kaur, Y.-G. Chen, and J.~D. Weeks.
+\newblock Attraction between like-charged walls: Short-ranged simulations using
+  local molecular field theory.
+\newblock \emph{Phys. Rev. Lett.}, 97:\penalty0 097801, Aug 2006.
+\newblock \doi{10.1103/PhysRevLett.97.097801}.
+\newblock URL \url{http://link.aps.org/doi/10.1103/PhysRevLett.97.097801}.
+
 \bibitem[Rycerz and Jacobs(1992)]{Jacobs92}
 Z.~A. Rycerz and P.~W.~M. Jacobs.
 \newblock Ewald summation in the molecular dynamics simulation of large ionic
@@ -162,6 +569,30 @@ Z.~A. Rycerz and P.~W.~M. Jacobs.
   1992.
 \newblock \doi{10.1080/08927029208022476}.
 \newblock URL \url{http://dx.doi.org/10.1080/08927029208022476}.
+
+\bibitem[Sauer(1940)]{Sauer}
+J.~A. Sauer.
+\newblock Magnetic energy constants of dipolar lattices.
+\newblock \emph{Phys. Rev.}, 57:\penalty0 142--146, 1940.
+\newblock \doi{10.1103/PhysRev.57.142}.
+\newblock URL \url{http://link.aps.org/doi/10.1103/PhysRev.57.142}.
+
+\bibitem[Schnieders et~al.(2007)Schnieders, Baker, Ren, and
+  Ponder]{schnieders07}
+M.~J. Schnieders, N.~A. Baker, P.~Ren, and J.~W. Ponder.
+\newblock Polarizable atomic multipole solutes in a poisson-boltzmann
+  continuum.
+\newblock 126\penalty0 (12):\penalty0 124114, 2007.
+\newblock \doi{10.1063/1.2714528}.
+\newblock URL \url{http://link.aip.org/link/?JCP/126/124114/1}.
+
+\bibitem[Shi and Luebke(2013)]{Shi13}
+W.~Shi and D.~R. Luebke.
+\newblock Enhanced gas absorption in the ionic liquid
+  1-n-hexyl-3-methylimidazolium bis(trifluoromethylsulfonyl)amide
+  ([hmim][{Tf2N}]) confined in silica slit pores: A molecular simulation study.
+\newblock \emph{Langmuir}, 29\penalty0 (18):\penalty0 5563--5572, 2013.
+\newblock \doi{10.1021/la400226g}.
 
 \bibitem[Shimada et~al.(1993)Shimada, Kaneko, and Takada]{Shimada93}
 J.~Shimada, H.~Kaneko, and T.~Takada.
@@ -173,6 +604,88 @@ J.~Shimada, H.~Kaneko, and T.~Takada.
 \newblock \doi{10.1002/jcc.540140712}.
 \newblock URL \url{http://dx.doi.org/10.1002/jcc.540140712}.
 
+\bibitem[Slavchov(2014)]{SalvchovII14}
+R.~I. Slavchov.
+\newblock Quadrupole terms in the maxwell equations: Debye-hückel theory in
+  quadrupolarizable solvent and self-salting-out of electrolytes.
+\newblock \emph{The Journal of Chemical Physics}, 140\penalty0 (16):\penalty0
+  164510, 2014.
+\newblock \doi{http://dx.doi.org/10.1063/1.4871661}.
+\newblock URL
+  \url{http://scitation.aip.org/content/aip/journal/jcp/140/16/10.1063/1.4871661}.
+
+\bibitem[Slavchov and Ivanov(2014)]{SalvchovI14}
+R.~I. Slavchov and T.~I. Ivanov.
+\newblock Quadrupole terms in the maxwell equations: Born energy, partial molar
+  volume, and entropy of ions.
+\newblock \emph{The Journal of Chemical Physics}, 140\penalty0 (7):\penalty0
+  074503, 2014.
+\newblock \doi{http://dx.doi.org/10.1063/1.4865878}.
+\newblock URL
+  \url{http://scitation.aip.org/content/aip/journal/jcp/140/7/10.1063/1.4865878}.
+
+\bibitem[Smith(1982)]{Smith82}
+W.~Smith.
+\newblock Point multipoles in the \uppercase{E}wald summation.
+\newblock \emph{CCP5 Information Quarterly}, 4:\penalty0 13--25, 1982.
+
+\bibitem[Smith(1998)]{Smith98}
+W.~Smith.
+\newblock Point multipoles in the \uppercase{E}wald summation (revisited).
+\newblock \emph{CCP5 Information Quarterly}, 46:\penalty0 18--30, 1998.
+
+\bibitem[Stern and Feller(2003{\natexlab{a}})]{Stern-Feller03}
+H.~A. Stern and S.~E. Feller.
+\newblock Calculation of the dielectric permittivity profile for a nonuniform
+  system: Application to a lipid bilayer simulation.
+\newblock \emph{The Journal of Chemical Physics}, 118\penalty0 (7):\penalty0
+  3401--3412, 2003{\natexlab{a}}.
+\newblock \doi{http://dx.doi.org/10.1063/1.1537244}.
+\newblock URL
+  \url{http://scitation.aip.org/content/aip/journal/jcp/118/7/10.1063/1.1537244}.
+
+\bibitem[Stern and Feller(2003{\natexlab{b}})]{Stern03}
+H.~A. Stern and S.~E. Feller.
+\newblock Calculation of the dielectric permittivity profile for a nonuniform
+  system: Application to a lipid bilayer simulation.
+\newblock \emph{The Journal of Chemical Physics}, 118\penalty0 (7):\penalty0
+  3401--3412, 2003{\natexlab{b}}.
+\newblock \doi{http://dx.doi.org/10.1063/1.1537244}.
+\newblock URL
+  \url{http://scitation.aip.org/content/aip/journal/jcp/118/7/10.1063/1.1537244}.
+
+\bibitem[Te and Ichiye(2010{\natexlab{a}})]{Te10vn}
+J.~A. Te and T.~Ichiye.
+\newblock Understanding structural effects of multipole moments on aqueous
+  solvation of ions using the soft-sticky dipole-quadrupole-octupole water
+  model.
+\newblock 499\penalty0 (4-6):\penalty0 219--225, 2010{\natexlab{a}}.
+\newblock ISSN 0009-2614.
+\newblock \doi{10.1016/j.cplett.2010.09.043}.
+
+\bibitem[Te and Ichiye(2010{\natexlab{b}})]{Te10ys}
+J.~A. Te and T.~Ichiye.
+\newblock Temperature and pressure dependence of the optimized soft-sticky
+  dipole-quadrupole-octupole water model.
+\newblock 132\penalty0 (11):\penalty0 114511, 2010{\natexlab{b}}.
+\newblock ISSN 0021-9606.
+\newblock \doi{10.1063/1.3359432}.
+
+\bibitem[Te et~al.(2010)Te, Tan, and Ichiye]{Te10rt}
+J.~A. Te, M.-L. Tan, and T.~Ichiye.
+\newblock Solvation of glucose, trehalose, and sucrose by the soft-sticky
+  dipole-quadrupole-octupole water model.
+\newblock 491\penalty0 (4-6):\penalty0 218--223, 2010.
+\newblock ISSN 0009-2614.
+\newblock \doi{10.1016/j.cplett.2010.04.020}.
+
+\bibitem[Tokumasu et~al.(2013)Tokumasu, Meurisse, Fillot, and
+  Vergne]{Tokumasu13}
+T.~Tokumasu, M.-H. Meurisse, N.~Fillot, and P.~Vergne.
+\newblock A molecular dynamics study of a nanoscale liquid bridge under shear.
+\newblock \emph{Tribology International}, 59:\penalty0 10--16, 2013.
+\newblock \doi{DOI 10.1016/j.triboint.2012.08.009}.
+
 \bibitem[Toukmaji and Jr.(1996)]{Toukmaji96}
 A.~Y. Toukmaji and J.~A.~B. Jr.
 \newblock Ewald summation techniques in perspective: a survey.
@@ -182,6 +695,14 @@ A.~Y. Toukmaji and J.~A.~B. Jr.
 \newblock \doi{http://dx.doi.org/10.1016/0010-4655(96)00016-1}.
 \newblock URL
   \url{http://www.sciencedirect.com/science/article/pii/0010465596000161}.
+
+\bibitem[Trzesniak et~al.(2007)Trzesniak, Kunz, and van Gunsteren]{Wilfred07}
+D.~Trzesniak, A.-P.~E. Kunz, and W.~F. van Gunsteren.
+\newblock A comparison of methods to compute the potential of mean force.
+\newblock \emph{ChemPhysChem}, 8\penalty0 (1):\penalty0 162--169, 2007.
+\newblock ISSN 1439-7641.
+\newblock \doi{10.1002/cphc.200600527}.
+\newblock URL \url{http://dx.doi.org/10.1002/cphc.200600527}.
 
 \bibitem[Weber et~al.(2000)Weber, H\"{u}nenberger, and McCammon]{Weber00}
 W.~Weber, P.~H. H\"{u}nenberger, and J.~A. McCammon.
@@ -193,10 +714,36 @@ W.~Weber, P.~H. H\"{u}nenberger, and J.~A. McCammon.
 \newblock \doi{10.1021/jp9937757}.
 \newblock URL \url{http://dx.doi.org/10.1021/jp9937757}.
 
+\bibitem[Wolf(1992)]{Wolf92}
+D.~Wolf.
+\newblock Reconstruction of nacl surfaces from a dipolar solution to the
+  madelung problem.
+\newblock 68\penalty0 (22):\penalty0 3315--3318, 1992.
+
+\bibitem[Wolf(1995)]{Wolf95}
+D.~Wolf.
+\newblock Simulation of ionic surfaces from an absolutely convergent solution
+  of the madelung problem.
+\newblock In D.~Landau, K.~Mon, and H.-B. Sch{\"u}ttler, editors,
+  \emph{Computer Simulation Studies in Condensed-Matter Physics VIII},
+  volume~80 of \emph{Springer Proceedings in Physics}, pages 57--68. Springer
+  Berlin Heidelberg, 1995.
+\newblock ISBN 978-3-642-79993-8.
+\newblock \doi{10.1007/978-3-642-79991-4_6}.
+\newblock URL \url{http://dx.doi.org/10.1007/978-3-642-79991-4_6}.
+
 \bibitem[Wolf et~al.(1999)Wolf, Keblinski, Phillpot, and Eggebrecht]{Wolf99}
 D.~Wolf, P.~Keblinski, S.~R. Phillpot, and J.~Eggebrecht.
 \newblock Exact method for the simulation of coulombic systems by spherically
   truncated, pairwise r−1 summation.
 \newblock \emph{The Journal of Chemical Physics}, 110\penalty0 (17), 1999.
+
+\bibitem[Wu and Brooks(2005)]{Wu05}
+X.~Wu and B.~R. Brooks.
+\newblock Isotropic periodic sum: A method for the calculation of long-range
+  interactions.
+\newblock 122\penalty0 (4):\penalty0 044107, 2005.
+\newblock \doi{10.1063/1.1836733}.
+\newblock URL \url{Http://Link.Aip.Org/Link/?jcp/122/044107/1}.
 
 \end{thebibliography}

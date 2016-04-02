@@ -1,0 +1,274 @@
+%
+% Modified by Sameer Vijay
+% Last Change: Wed Jul 27 2005 13:00 CEST
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Sample Notre Dame Thesis/Dissertation
+% Using Donald Peterson's ndthesis classfile
+%
+% Written by Jeff Squyres and Don Peterson
+%
+% Provided by the Information Technology Committee of
+%   the Graduate Student Union
+%   http://www.gsu.nd.edu/
+%
+% Nothing in this document is serious except the format.  :-)
+%
+% If you have any suggestions, comments, questions, please send e-mail
+% to: ndthesis@gsu.nd.edu
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Appendix
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{POINT MULTIPOLES, FIELD, AND FIELD GRADIENT }
+
+\section{Point-multipolar interactions with a spatially-varying electric field}
+
+We can treat objects $a$, $b$, and $c$ containing embedded collections
+of charges. When we define the primitive moments, we sum over that
+collections of charges using a local coordinate system within each
+object.  The point charge, dipole, and quadrupole for object $a$ are
+given by $C_a$, $\mathbf{D}_a$, and $\mathsf{Q}_a$, respectively.
+These are the primitive multipoles which can be expressed as a
+distribution of charges,
+\begin{align}
+C_a =&\sum_{k \, \text{in }a} q_k , \label{eq:charge} \\
+D_{a\alpha} =&\sum_{k \, \text{in }a} q_k r_{k\alpha}, \label{eq:dipole}\\
+Q_{a\alpha\beta} =& \frac{1}{2} \sum_{k \, \text{in }  a} q_k
+r_{k\alpha}  r_{k\beta} . \label{eq:quadrupole}
+\end{align}
+Note that the definition of the primitive quadrupole here differs from
+the standard traceless form, and contains an additional Taylor-series
+based factor of $1/2$.  In Paper 1, we derived the forces and torques
+each object exerts on the others.
+
+Here we must also consider an external electric field that varies in
+space: $\mathbf E(\mathbf r)$.  Each of the local charges $q_k$ in
+object $a$ will then experience a slightly different field.  This
+electric field can be expanded in a Taylor series around the local
+origin of each object.  A different Taylor series expansion is carried
+out for each object.
+
+For a particular charge $q_k$, the electric field at that site's
+position is given by:
+\begin{equation}
+E_\gamma + \nabla_\delta E_\gamma r_{k \delta} 
++ \frac {1}{2} \nabla_\delta \nabla_\varepsilon E_\gamma r_{k \delta}
+r_{k \varepsilon} + ... 
+\end{equation}
+Note that the electric field is always evaluated at the origin of the
+objects, and treating each object using point multipoles simplifies
+this greatly.
+
+To find the force exerted on object $a$ by the electric field, one
+takes the electric field expression, and multiplies it by $q_k$, and
+then sum over all charges in $a$:
+
+\begin{align}
+F_\gamma &=  \sum_{k \textrm{~in~} a} q_k \lbrace E_\gamma + \nabla_\delta E_\gamma r_{k \delta} 
++ \frac {1}{2} \nabla_\delta \nabla_\varepsilon E_\gamma r_{k \delta}
+r_{k \varepsilon} + ...  \rbrace  \\
+ &= C_a E_\gamma + D_{a  \delta} \nabla_\delta E_\gamma 
++ Q_{a \delta \varepsilon} \nabla_\delta \nabla_\varepsilon E_\gamma +
+... 
+\end{align}
+
+Similarly, the torque exerted by the field on $a$ can be expressed as
+\begin{align}
+\tau_\alpha &=  \sum_{k \textrm{~in~} a} (\mathbf r_k \times q_k \mathbf E)_\alpha \\
+ & =  \sum_{k \textrm{~in~} a} \epsilon_{\alpha \beta \gamma} q_k
+ r_{k\beta} E_\gamma(\mathbf r_k) \\
+ & = \epsilon_{\alpha \beta \gamma} D_\beta E_\gamma 
++ 2 \epsilon_{\alpha \beta \gamma} Q_{\beta \delta} \nabla_\delta
+E_\gamma + ...
+\end{align}
+
+The last term is essentially identical with form derived by Torres del
+Castillo and M\'{e}ndez Garrido,\cite{Torres-del-Castillo:2006uo} although their derivation
+utilized a traceless form of the quadrupole that is different than the
+primitive definition in use here.  We note that the Levi-Civita symbol
+can be eliminated by utilizing the matrix cross product in an
+identical form as in Ref. \onlinecite{Smith98}:
+\begin{equation}
+\left[\mathsf{A} \times \mathsf{B}\right]_\alpha = \sum_\beta
+\left[\mathsf{A}_{\alpha+1,\beta} \mathsf{B}_{\alpha+2,\beta}
+  -\mathsf{A}_{\alpha+2,\beta} \mathsf{B}_{\alpha+1,\beta} 
+\right]
+\label{eq:matrixCross}
+\end{equation}
+where $\alpha+1$ and $\alpha+2$ are regarded as cyclic permuations of
+the matrix indices.  In table \ref{tab:UFT} we give compact
+expressions for how the multipole sites interact with an external
+field that has exhibits spatial variations.
+
+\begin{table}
+\caption{Potential energy $(U)$, force $(\mathbf{F})$, and torque
+  $(\mathbf{\tau})$ expressions for a multipolar site embedded in an
+  electric field with spatial variations, $\mathbf{E}(\mathbf{r})$.
+\label{tab:UFT}}
+\centering
+\begin{tabular}{r|ccc}
+  & Charge & Dipole & Quadrupole \\ \hline
+$U$ &  $C \phi(\mathbf{r})$ & $-\mathbf{D} \cdot \mathbf{E}(\mathbf{r})$ & $- \mathsf{Q}:\nabla \mathbf{E}(\mathbf{r})$ \\
+$\mathbf{F}$ & $C \mathbf{E}(\mathbf{r})$ & $+\mathbf{D} \cdot \nabla \mathbf{E}(\mathbf{r})$ &  $+\mathsf{Q} : \nabla\nabla\mathbf{E}(\mathbf{r})$ \\
+$\mathbf{\tau}$ & & $\mathbf{D} \times \mathbf{E}(\mathbf{r})$ & $+2 \mathsf{Q} \times \nabla \mathbf{E}(\mathbf{r})$
+\end{tabular}
+\end{table}
+
+\newpage
+
+\section{Gradient of the field due to quadrupolar polarization}
+\label{singularQuad}
+In this section, we will discuss the gradient of the field produced by
+quadrupolar polarization. For this purpose, we consider a distribution
+of charge ${\rho}(r)$ which gives rise to an electric field
+$\vec{E}(r)$ and gradient of the field $\vec{\nabla} \vec{E}(r)$
+throughout space. The total gradient of the electric field over volume
+due to the all charges within the sphere of radius $R$ is given by
+(cf. Jackson equation 4.14):
+\begin{equation}
+\int_{r<R} \vec{\nabla}\vec{E}\;d^3r = -\int_{r=R} R^2 \vec{E}\;\hat{n}\; d\Omega
+\label{eq:8}
+\end{equation}
+where $d\Omega$ is the solid angle and $\hat{n}$ is the normal vector
+of the surface of the sphere which is equal to
+$sin[\theta]cos[\phi]\hat{x} + sin[\theta]sin[\phi]\hat{y} +
+cos[\theta]\hat{z}$
+in spherical coordinates.  For the charge density ${\rho}(r')$, the
+total gradient of the electric field can be written as (cf. Jackson
+equation 4.16),
+\begin{equation}
+\int_{r<R} \vec{\nabla}\vec{E}\; d^3r=-\int_{r=R} R^2\; \vec{\nabla}\Phi\; \hat{n}\; d\Omega  =-\frac{1}{4\pi\;\epsilon_o}\int_{r=R} R^2\; \vec{\nabla}\;\left(\int \frac{\rho(r')}{|\vec{r}-\vec{r'}|}\;d^3r'\right) \hat{n}\; d\Omega
+\label{eq:9}
+\end{equation}
+The radial function in the equation (\ref{eq:9}) can be expressed in
+terms of spherical harmonics as (cf. Jackson equation 3.70),
+\begin{equation}
+\frac{1}{|\vec{r} - \vec{r'}|} = 4\pi \sum_{l=0}^{\infty}\sum_{m=-l}^{m=l}\frac{1}{2l+1}\;\frac{{r^l_<}}{{r^{l+1}_>}}\;{Y^*}_{lm}(\theta', \phi')\;Y_{lm}(\theta, \phi)
+\label{eq:10}
+\end{equation}
+If the sphere completely encloses the charge density then $ r_< = r'$ and $r_> = R$. Substituting equation (\ref{eq:10}) into (\ref{eq:9}) we get,
+\begin{equation}
+\begin{split}
+\int_{r<R} \vec{\nabla}\vec{E}\;d^3r &=-\frac{R^2}{\epsilon_o}\int_{r=R} \; \vec{\nabla}\;\left(\int \rho(r')\sum_{l=0}^{\infty}\sum_{m=-l}^{m=l}\frac{1}{2l+1}\;\frac{{r'^l}}{{R^{l+1}}}\;{Y^*}_{lm}(\theta', \phi')\;Y_{lm}(\theta, \phi)\;d^3r'\right) \hat{n}\; d\Omega \\
+ &= -\frac{R^2}{\epsilon_o}\sum_{l=0}^{\infty}\sum_{m=-l}^{m=l}\frac{1}{2l+1}\;\int \rho(r')\;{r'^l}\;{Y^*}_{lm}(\theta', \phi')\left(\int_{r=R}\vec{\nabla}\left({R^{-(l+1)}}\;Y_{lm}(\theta, \phi)\right)\hat{n}\; d\Omega \right)d^3r
+'
+\end{split}
+\label{eq:11}
+\end{equation} 
+The gradient of the product of radial function and spherical harmonics
+is given by (cf. Arfken, p.811 eq. 16.94):
+\begin{equation}
+\begin{split}
+\vec{\nabla}\left[ f(r)\;Y_{lm}(\theta, \phi)\right] = &-\left(\frac{l+1}{2l+1}\right)^{1/2}\; \left[\frac{\partial}{\partial r}-\frac{l}{r} \right]f(r)\; Y_{l, l+1, m}(\theta, \phi)\\ &+ \left(\frac{l}{2l+1}\right)^{1/2}\left[\frac
+{\partial}{\partial r}+\frac{l}{r} \right]f(r)\; Y_{l, l-1, m}(\theta, \phi).
+\end{split}
+\label{eq:12}
+\end{equation}
+Using equation (\ref{eq:12}) we get,
+\begin{equation}
+\vec{\nabla}\left({R^{-(l+1)}}\;Y_{lm}(\theta, \phi)\right) = [(l+1)(2l+1)]^{1/2}\; Y_{l,l+1,m}(\theta, \phi) \; \frac{1}{R^{l+2}},
+\label{eq:13}
+\end{equation}
+where $ Y_{l,l+1,m}(\theta, \phi)$ is the vector spherical harmonics
+which can be expressed in terms of spherical harmonics as shown in
+below (cf. Arfkan p.811),
+\begin{equation}
+Y_{l,l+1,m}(\theta, \phi) = \sum_{m_1, m_2} C(l+1,1,l|m_1,m_2,m)\; {Y_{l+1}}^{m_1}(\theta,\phi)\; \hat{e}_{m_2},
+\label{eq:14}
+\end{equation}
+where $C(l+1,1,l|m_1,m_2,m)$ is a Clebsch-Gordan coefficient and
+$\hat{e}_{m_2}$ is a spherical tensor of rank 1 which can be expressed
+in terms of Cartesian coordinates,
+\begin{equation}
+{\hat{e}}_{+1} = - \frac{\hat{x}+i\hat{y}}{\sqrt{2}},\quad {\hat{e}}_{0} = \hat{z},\quad and \quad {\hat{e}}_{-1} = \frac{\hat{x}-i\hat{y}}{\sqrt{2}}
+\label{eq:15}
+\end{equation} 
+The normal vector $\hat{n} $ can be expressed in terms of spherical tensor of rank 1 as shown in below,
+\begin{equation}
+\hat{n} = \sqrt{\frac{4\pi}{3}}\left(-{Y_1}^{-1}{\hat{e}}_1 -{Y_1}^{1}{\hat{e}}_{-1} + {Y_1}^{0}{\hat{e}}_0 \right)
+\label{eq:16}
+\end{equation}
+The surface integral of the product of $\hat{n}$ and
+${Y_{l+1}}^{m_1}(\theta, \phi)$ gives,
+\begin{equation}
+\begin{split}
+\int \hat{n}\;{Y_{l+1}}^{m_1}\;d\Omega &= \int \sqrt{\frac{4\pi}{3}}\left(-{Y_1}^{-1}{\hat{e}}_1 -{Y_1}^{1}{\hat{e}}_{-1} + {Y_1}^{0}{\hat{e}}_0 \right)\;{Y_{l+1}}^{m_1}\; d\Omega \\
+&=  \int \sqrt{\frac{4\pi}{3}}\left({{Y_1}^{1}}^* {\hat{e}}_1 +{{Y_1}^{-1}}^* {\hat{e}}_{-1} + {{Y_1}^{0}}^* {\hat{e}}_0 \right)\;{Y_{l+1}}^{m_1}\; d\Omega \\
+&=   \sqrt{\frac{4\pi}{3}}\left({\delta}_{l+1, 1}\;{\delta}_{1, m_1}\;{\hat{e}}_1 + {\delta}_{l+1, 1}\;{\delta}_{-1, m_1}\;{\hat{e}}_{-1}+ {\delta}_{l+1, 1}\;{\delta}_{0, m_1} \;{\hat{e}}_0\right),
+\end{split}
+\label{eq:17}
+\end{equation}
+where ${Y_{l}}^{-m} = (-1)^m\;{{Y_{l}}^{m}}^* $ and
+$ \int {{Y_{l}}^{m}}^*\;{Y_{l'}}^{m'}\;d\Omega =
+\delta_{ll'}\delta_{mm'} $.
+Non-vanishing values of equation \ref{eq:17} require $l = 0$,
+therefore the value of $ m = 0 $. Since the values of $ m_1$ are -1,
+1, and 0 then $m_2$ takes the values 1, -1, and 0, respectively
+provided that $m = m_1 + m_2$.  Equation \ref{eq:11} can therefore be
+modified,
+\begin{equation}
+\begin{split}
+\int_{r<R} \vec{\nabla}\vec{E}\;d^3r = &- \sqrt{\frac{4\pi}{{3}}}\;\frac{1}{\epsilon_o}\int \rho(r')\;{Y^*}_{00}(\theta', \phi')[ C(1, 1, 0|-1,1,0)\;{\hat{e}_{-1}}{\hat{e}_{1}}\\  &+ C(1, 1, 0|-1,1,0)\;{\hat{e}_{1}}{\hat{e}_{-1}}+C(
+1, 1, 0|0,0,0)\;{\hat{e}_{0}}{\hat{e}_{0}} ]\; d^3r'.
+\end{split}
+\label{eq:18} 
+\end{equation}
+After substituting ${Y^*}_{00} = \frac{1}{\sqrt{4\pi}} $ and using the
+values of the Clebsch-Gorden coefficients:  $ C(1, 1, 0|-1,1,0) =
+\frac{1}{\sqrt{3}}, \;   C(1, 1, 0|-1,1,0)= \frac{1}{\sqrt{3}}$ and $
+C(1, 1, 0|0,0,0) = -\frac{1}{\sqrt{3}}$ in equation \ref{eq:18} we
+obtain,
+\begin{equation}
+\begin{split}
+\int_{r<R} \vec{\nabla}\vec{E}\;d^3r &= -\sqrt{\frac{4\pi}{{3}}}\;\frac{1}{\epsilon_o}\int \rho(r')\;d^3r'\left({\hat{e}_{-1}}{\hat{e}_{1}}+{\hat{e}_{1}}{\hat{e}_{-1}}-{\hat{e}_{0}}{\hat{e}_{0}}\right)\\
+&= - \sqrt{\frac{4\pi}{{3}}}\;\frac{1}{\epsilon_o}\;C_{total}\;\left({\hat{e}_{-1}}{\hat{e}_{1}}+{\hat{e}_{1}}{\hat{e}_{-1}}-{\hat{e}_{0}}{\hat{e}_{0}}\right).
+\end{split}
+\label{eq:19} 
+\end{equation}
+Equation (\ref{eq:19}) gives the total gradient of the field over a
+sphere due to the distribution of the charges. For quadrupolar fluids
+the total charge within a sphere is zero, therefore
+$ \int_{r<R} \vec{\nabla}\vec{E}\;d^3r = 0 $.  Hence the quadrupolar
+polarization produces zero net gradient of the field inside the
+sphere.
+
+\newpage
+
+\section{Applied field or field gradient}
+\label{Ap:fieldOrGradient}
+
+To satisfy the condition $ \nabla . E = 0 $, within the box of molecules we have taken electrostatic potential in the following form
+\begin{equation}
+\begin{split}
+\phi(x, y, z) =\; &-g_o \left(\frac{1}{2}(a_1\;b_1 - \frac{cos\psi}{3})\;x^2+\frac{1}{2}(a_2\;b_2 - \frac{cos\psi}{3})\;y^2 + \frac{1}{2}(a_3\;b_3 - \frac{cos\psi}{3})\;z^2 \right. \\
+& \left. + \frac{(a_1\;b_2 + a_2\;b_1)}{2} x\;y + \frac{(a_1\;b_3 + a_3\;b_1)}{2} x\;z +  \frac{(a_2\;b_3 + a_3\;b_2)}{2} y\;z \right),
+\end{split}
+\label{eq:appliedPotential}
+\end{equation} 
+where $a = (a_1, a_2, a_3)$ and $b = (b_1, b_2, b_3)$ are basis vectors  determine coefficients in x, y, and z direction. And $g_o$ and $\psi$ are overall strength of the potential and angle between basis vectors respectively. The electric field derived from the above potential is,
+\[\bf{E} 
+=\frac{g_o}{2} \left(\begin{array}{ccc}
+2(a_1\; b_1 - \frac{cos\psi}{3})\;x \;+  (a_1\; b_2 \;+ a_2\; b_1)\;y + (a_1\; b_3 \;+ a_3\; b_1)\;z \\
+ (a_2\; b_1 \;+ a_1\; b_2)\;x + 2(a_2\; b_2 \;- \frac{cos\psi}{3})\;y +  (a_2\; b_3 \;+ a_3\; b_3)\;z \\
+(a_3\; b_1 \;+ a_3\; b_2)\;x +  (a_3\; b_2 \;+ a_2\; b_3)y + 2(a_3\; b_3 \;- \frac{cos\psi}{3})\;z 
+\end{array} \right).\] 
+The gradient of the applied field derived from the potential can be written in the following form,
+\[\nabla\bf{E} 
+= \frac{g_o}{2}\left(\begin{array}{ccc}
+2(a_1\; b_1 - \frac{cos\psi}{3}) &  (a_1\; b_2 \;+ a_2\; b_1) & (a_1\; b_3 \;+ a_3\; b_1)\;z \\
+ (a_2\; b_1 \;+ a_1\; b_2) & 2(a_2\; b_2 \;- \frac{cos\psi}{3}) & (a_2\; b_3 \;+ a_3\; b_3)\;z \\
+(a_3\; b_1 \;+ a_3\; b_2) & (a_3\; b_2 \;+ a_2\; b_3) & 2(a_3\; b_3 \;- \frac{cos\psi}{3})\;z 
+\end{array} \right).\] 
+
+% % uncomment the following lines,
+% if using chapter-wise bibliography
+%
+% \bibliographystyle{ndnatbib}
+% \bibliography{example}
