@@ -1,75 +1,84 @@
 \BOOKMARK [0][-]{abstract.0}{Abstract}{}% 1
-\BOOKMARK [0][-]{contents.0}{CONTENTS}{}% 2
-\BOOKMARK [0][-]{chapter*.2}{FIGURES}{}% 3
-\BOOKMARK [0][-]{chapter*.3}{TABLES}{}% 4
-\BOOKMARK [0][-]{chapter.1}{CHAPTER 1: INTRODUCTION}{}% 5
-\BOOKMARK [1][-]{section.1.1}{1.1 Molecular Dynamics \(MD\) Simulations}{chapter.1}% 6
-\BOOKMARK [2][-]{subsection.1.1.1}{1.1.1 Peridic Boundary Condition \(PBC\)}{section.1.1}% 7
-\BOOKMARK [2][-]{subsection.1.1.2}{1.1.2 Spherical truncation and Neighbor lists }{section.1.1}% 8
-\BOOKMARK [1][-]{section.1.2}{1.2 Monte Carlo \(MC\) Simulation}{chapter.1}% 9
-\BOOKMARK [1][-]{section.1.3}{1.3 Electrostatic Methods}{chapter.1}% 10
-\BOOKMARK [2][-]{subsection.1.3.1}{1.3.1 Ewald Method}{section.1.3}% 11
-\BOOKMARK [2][-]{subsection.1.3.2}{1.3.2 Fourier-based Ewald Methods}{section.1.3}% 12
-\BOOKMARK [3][-]{subsubsection.1.3.2.1}{1.3.2.1 Particle-Particle Particle-Mesh Ewald \(PPPME\)}{subsection.1.3.2}% 13
-\BOOKMARK [3][-]{subsubsection.1.3.2.2}{1.3.2.2 Particle-Mesh Ewald \(PME\)}{subsection.1.3.2}% 14
-\BOOKMARK [2][-]{subsection.1.3.3}{1.3.3 Real Space Methods}{section.1.3}% 15
-\BOOKMARK [0][-]{chapter.2}{CHAPTER 2: DEVELOPMENT OF METHODS}{}% 16
-\BOOKMARK [1][-]{section.2.1}{2.1 Introduction}{chapter.2}% 17
-\BOOKMARK [1][-]{section.2.2}{2.2 Methodology}{chapter.2}% 18
-\BOOKMARK [2][-]{subsection.2.2.1}{2.2.1 Self-neutralization, damping, and force-shifting}{section.2.2}% 19
-\BOOKMARK [2][-]{subsection.2.2.2}{2.2.2 The multipole expansion}{section.2.2}% 20
-\BOOKMARK [2][-]{subsection.2.2.3}{2.2.3 Damped Coulomb interactions}{section.2.2}% 21
-\BOOKMARK [2][-]{subsection.2.2.4}{2.2.4 Shifted-force methods}{section.2.2}% 22
-\BOOKMARK [2][-]{subsection.2.2.5}{2.2.5 Taylor-shifted force \(TSF\) electrostatics}{section.2.2}% 23
-\BOOKMARK [2][-]{subsection.2.2.6}{2.2.6 Gradient-shifted force \(GSF\) electrostatics}{section.2.2}% 24
-\BOOKMARK [2][-]{subsection.2.2.7}{2.2.7 Generalization of the Wolf shifted potential \(SP\)}{section.2.2}% 25
-\BOOKMARK [2][-]{subsection.2.2.8}{2.2.8 Body and space axes}{section.2.2}% 26
-\BOOKMARK [2][-]{subsection.2.2.9}{2.2.9 The Self-Interaction }{section.2.2}% 27
-\BOOKMARK [1][-]{section.2.3}{2.3 Interaction energies, forces, and torques}{chapter.2}% 28
-\BOOKMARK [2][-]{subsection.2.3.1}{2.3.1 Forces}{section.2.3}% 29
-\BOOKMARK [2][-]{subsection.2.3.2}{2.3.2 Torques}{section.2.3}% 30
-\BOOKMARK [1][-]{section.2.4}{2.4 Comparison to known multipolar energies}{chapter.2}% 31
-\BOOKMARK [1][-]{section.2.5}{2.5 Summary}{chapter.2}% 32
-\BOOKMARK [0][-]{chapter.3}{CHAPTER 3: COMPARISONS WITH THE EWALD SUM}{}% 33
-\BOOKMARK [1][-]{section.3.1}{3.1 Introduction}{chapter.3}% 34
-\BOOKMARK [1][-]{section.3.2}{3.2 Methodology}{chapter.3}% 35
-\BOOKMARK [2][-]{subsection.3.2.1}{3.2.1 Implementation}{section.3.2}% 36
-\BOOKMARK [2][-]{subsection.3.2.2}{3.2.2 Model systems}{section.3.2}% 37
-\BOOKMARK [2][-]{subsection.3.2.3}{3.2.3 Accuracy of Energy Differences, Forces and Torques}{section.3.2}% 38
-\BOOKMARK [2][-]{subsection.3.2.4}{3.2.4 Analysis of vector quantities}{section.3.2}% 39
-\BOOKMARK [2][-]{subsection.3.2.5}{3.2.5 Energy conservation}{section.3.2}% 40
-\BOOKMARK [1][-]{section.3.3}{3.3 Results}{chapter.3}% 41
-\BOOKMARK [2][-]{subsection.3.3.1}{3.3.1 Configurational energy differences}{section.3.3}% 42
-\BOOKMARK [2][-]{subsection.3.3.2}{3.3.2 Magnitude of the force and torque vectors}{section.3.3}% 43
-\BOOKMARK [2][-]{subsection.3.3.3}{3.3.3 Directionality of the force and torque vectors}{section.3.3}% 44
-\BOOKMARK [2][-]{subsection.3.3.4}{3.3.4 Energy conservation}{section.3.3}% 45
-\BOOKMARK [2][-]{subsection.3.3.5}{3.3.5 Reproduction of Structural \046 Dynamical Features}{section.3.3}% 46
-\BOOKMARK [1][-]{section.3.4}{3.4 Summary}{chapter.3}% 47
-\BOOKMARK [0][-]{chapter.4}{CHAPTER 4: DIELECTRIC PROPERTIES}{}% 48
-\BOOKMARK [1][-]{section.4.1}{4.1 Introduction}{chapter.4}% 49
-\BOOKMARK [1][-]{section.4.2}{4.2 Boltzmann average for orientational polarization}{chapter.4}% 50
-\BOOKMARK [2][-]{subsection.4.2.1}{4.2.1 Dipole}{section.4.2}% 51
-\BOOKMARK [2][-]{subsection.4.2.2}{4.2.2 Quadrupole}{section.4.2}% 52
-\BOOKMARK [1][-]{section.4.3}{4.3 Macroscopic Polarizability}{chapter.4}% 53
-\BOOKMARK [2][-]{subsection.4.3.1}{4.3.1 External field perturbation}{section.4.3}% 54
-\BOOKMARK [2][-]{subsection.4.3.2}{4.3.2 Fluctuation formula}{section.4.3}% 55
-\BOOKMARK [1][-]{section.4.4}{4.4 Potential of mean force}{chapter.4}% 56
-\BOOKMARK [1][-]{section.4.5}{4.5 Correction factor}{chapter.4}% 57
-\BOOKMARK [2][-]{subsection.4.5.1}{4.5.1 Dipolar system}{section.4.5}% 58
-\BOOKMARK [2][-]{subsection.4.5.2}{4.5.2 Quadrupolar system}{section.4.5}% 59
-\BOOKMARK [1][-]{section.4.6}{4.6 Methodology}{chapter.4}% 60
-\BOOKMARK [2][-]{subsection.4.6.1}{4.6.1 Implementation}{section.4.6}% 61
-\BOOKMARK [2][-]{subsection.4.6.2}{4.6.2 Model systems}{section.4.6}% 62
-\BOOKMARK [1][-]{section.4.7}{4.7 Results}{chapter.4}% 63
-\BOOKMARK [2][-]{subsection.4.7.1}{4.7.1 Dipolar fluid}{section.4.7}% 64
-\BOOKMARK [2][-]{subsection.4.7.2}{4.7.2 Quadrupolar fluid}{section.4.7}% 65
-\BOOKMARK [1][-]{section.4.8}{4.8 Summary}{chapter.4}% 66
-\BOOKMARK [0][-]{appendix.A}{APPENDIX A: RADIAL FUNCTIONS FOR REAL-SPACE ELECTROSTATIC METHODS}{}% 67
+\BOOKMARK [0][-]{dedication.0}{}{}% 2
+\BOOKMARK [0][-]{contents.0}{CONTENTS}{}% 3
+\BOOKMARK [0][-]{chapter*.3}{FIGURES}{}% 4
+\BOOKMARK [0][-]{chapter*.4}{TABLES}{}% 5
+\BOOKMARK [0][-]{chapter*.5}{ACKNOWLEDGMENTS}{}% 6
+\BOOKMARK [0][-]{chapter.1}{CHAPTER 1: INTRODUCTION}{}% 7
+\BOOKMARK [1][-]{section.1.1}{1.1 Molecular Dynamics \(MD\) Simulations}{chapter.1}% 8
+\BOOKMARK [2][-]{subsection.1.1.1}{1.1.1 Peridic Boundary Condition \(PBC\)}{section.1.1}% 9
+\BOOKMARK [2][-]{subsection.1.1.2}{1.1.2 Spherical truncation and Neighbor lists }{section.1.1}% 10
+\BOOKMARK [1][-]{section.1.2}{1.2 Monte Carlo \(MC\) Simulation}{chapter.1}% 11
+\BOOKMARK [1][-]{section.1.3}{1.3 Electrostatic Methods}{chapter.1}% 12
+\BOOKMARK [2][-]{subsection.1.3.1}{1.3.1 Ewald Method}{section.1.3}% 13
+\BOOKMARK [2][-]{subsection.1.3.2}{1.3.2 Fourier-based Ewald Methods}{section.1.3}% 14
+\BOOKMARK [3][-]{subsubsection.1.3.2.1}{1.3.2.1 Particle-Particle Particle-Mesh Ewald \(PPPME\)}{subsection.1.3.2}% 15
+\BOOKMARK [3][-]{subsubsection.1.3.2.2}{1.3.2.2 Particle-Mesh Ewald \(PME\)}{subsection.1.3.2}% 16
+\BOOKMARK [2][-]{subsection.1.3.3}{1.3.3 Real Space Methods}{section.1.3}% 17
+\BOOKMARK [0][-]{chapter.2}{CHAPTER 2: DEVELOPMENT OF METHODS}{}% 18
+\BOOKMARK [1][-]{section.2.1}{2.1 Introduction}{chapter.2}% 19
+\BOOKMARK [1][-]{section.2.2}{2.2 Methodology}{chapter.2}% 20
+\BOOKMARK [2][-]{subsection.2.2.1}{2.2.1 Self-neutralization, damping, and force-shifting}{section.2.2}% 21
+\BOOKMARK [2][-]{subsection.2.2.2}{2.2.2 The multipole expansion}{section.2.2}% 22
+\BOOKMARK [2][-]{subsection.2.2.3}{2.2.3 Damped Coulomb interactions}{section.2.2}% 23
+\BOOKMARK [2][-]{subsection.2.2.4}{2.2.4 Shifted-force methods}{section.2.2}% 24
+\BOOKMARK [2][-]{subsection.2.2.5}{2.2.5 Taylor-shifted force \(TSF\) electrostatics}{section.2.2}% 25
+\BOOKMARK [2][-]{subsection.2.2.6}{2.2.6 Gradient-shifted force \(GSF\) electrostatics}{section.2.2}% 26
+\BOOKMARK [2][-]{subsection.2.2.7}{2.2.7 Generalization of the Wolf shifted potential \(SP\)}{section.2.2}% 27
+\BOOKMARK [2][-]{subsection.2.2.8}{2.2.8 Body and space axes}{section.2.2}% 28
+\BOOKMARK [2][-]{subsection.2.2.9}{2.2.9 The Self-Interaction }{section.2.2}% 29
+\BOOKMARK [1][-]{section.2.3}{2.3 Interaction energies, forces, and torques}{chapter.2}% 30
+\BOOKMARK [2][-]{subsection.2.3.1}{2.3.1 Forces}{section.2.3}% 31
+\BOOKMARK [2][-]{subsection.2.3.2}{2.3.2 Torques}{section.2.3}% 32
+\BOOKMARK [1][-]{section.2.4}{2.4 Comparison to known multipolar energies}{chapter.2}% 33
+\BOOKMARK [1][-]{section.2.5}{2.5 Summary}{chapter.2}% 34
+\BOOKMARK [0][-]{chapter.3}{CHAPTER 3: COMPARISONS WITH THE EWALD SUM}{}% 35
+\BOOKMARK [1][-]{section.3.1}{3.1 Introduction}{chapter.3}% 36
+\BOOKMARK [1][-]{section.3.2}{3.2 Methodology}{chapter.3}% 37
+\BOOKMARK [2][-]{subsection.3.2.1}{3.2.1 Implementation}{section.3.2}% 38
+\BOOKMARK [2][-]{subsection.3.2.2}{3.2.2 Model systems}{section.3.2}% 39
+\BOOKMARK [2][-]{subsection.3.2.3}{3.2.3 Accuracy of Energy Differences, Forces and Torques}{section.3.2}% 40
+\BOOKMARK [2][-]{subsection.3.2.4}{3.2.4 Analysis of vector quantities}{section.3.2}% 41
+\BOOKMARK [2][-]{subsection.3.2.5}{3.2.5 Energy conservation}{section.3.2}% 42
+\BOOKMARK [1][-]{section.3.3}{3.3 Results}{chapter.3}% 43
+\BOOKMARK [2][-]{subsection.3.3.1}{3.3.1 Configurational energy differences}{section.3.3}% 44
+\BOOKMARK [2][-]{subsection.3.3.2}{3.3.2 Magnitude of the force and torque vectors}{section.3.3}% 45
+\BOOKMARK [2][-]{subsection.3.3.3}{3.3.3 Directionality of the force and torque vectors}{section.3.3}% 46
+\BOOKMARK [2][-]{subsection.3.3.4}{3.3.4 Energy conservation}{section.3.3}% 47
+\BOOKMARK [2][-]{subsection.3.3.5}{3.3.5 Reproduction of Structural \046 Dynamical Features}{section.3.3}% 48
+\BOOKMARK [1][-]{section.3.4}{3.4 Summary}{chapter.3}% 49
+\BOOKMARK [0][-]{chapter.4}{CHAPTER 4: DIELECTRIC PROPERTIES}{}% 50
+\BOOKMARK [1][-]{section.4.1}{4.1 Introduction}{chapter.4}% 51
+\BOOKMARK [1][-]{section.4.2}{4.2 Dipolar Fluids and the Dielectric Constant}{chapter.4}% 52
+\BOOKMARK [2][-]{subsection.4.2.1}{4.2.1 Response to External Perturbations}{section.4.2}% 53
+\BOOKMARK [2][-]{subsection.4.2.2}{4.2.2 Fluctuation Formula}{section.4.2}% 54
+\BOOKMARK [2][-]{subsection.4.2.3}{4.2.3 Correction Factors}{section.4.2}% 55
+\BOOKMARK [1][-]{section.4.3}{4.3 Quadrupolar Fluids and the Quadrupolar Susceptibility}{chapter.4}% 56
+\BOOKMARK [2][-]{subsection.4.3.1}{4.3.1 Response to External Perturbations}{section.4.3}% 57
+\BOOKMARK [2][-]{subsection.4.3.2}{4.3.2 Fluctuation Formula}{section.4.3}% 58
+\BOOKMARK [2][-]{subsection.4.3.3}{4.3.3 Correction Factors}{section.4.3}% 59
+\BOOKMARK [1][-]{section.4.4}{4.4 Screening of Charges by Multipolar Fluids}{chapter.4}% 60
+\BOOKMARK [1][-]{section.4.5}{4.5 Simulation Methodology}{chapter.4}% 61
+\BOOKMARK [1][-]{section.4.6}{4.6 Results}{chapter.4}% 62
+\BOOKMARK [2][-]{subsection.4.6.1}{4.6.1 Dipolar fluid}{section.4.6}% 63
+\BOOKMARK [2][-]{subsection.4.6.2}{4.6.2 Quadrupolar fluid}{section.4.6}% 64
+\BOOKMARK [1][-]{section.4.7}{4.7 Summary}{chapter.4}% 65
+\BOOKMARK [0][-]{chapter.5}{CHAPTER 5: CONCLUSIONS}{}% 66
+\BOOKMARK [0][-]{appendix.A}{APPENDIX A: }{}% 67
 \BOOKMARK [1][-]{section.A.1}{A.1 Smith's Bl\(r\) functions for damped-charge distributions}{appendix.A}% 68
 \BOOKMARK [1][-]{section.A.2}{A.2 The r-dependent factors for TSF electrostatics}{appendix.A}% 69
 \BOOKMARK [1][-]{section.A.3}{A.3 The r-dependent factors for GSF electrostatics}{appendix.A}% 70
-\BOOKMARK [0][-]{appendix.B}{APPENDIX B: POINT MULTIPOLES, FIELD, AND FIELD GRADIENT }{}% 71
-\BOOKMARK [1][-]{section.B.1}{B.1 Point-multipolar interactions with a spatially-varying electric field}{appendix.B}% 72
-\BOOKMARK [1][-]{section.B.2}{B.2 Gradient of the field due to quadrupolar polarization}{appendix.B}% 73
-\BOOKMARK [1][-]{section.B.3}{B.3 Applied field or field gradient}{appendix.B}% 74
-\BOOKMARK [0][-]{appendix*.4}{BIBLIOGRAPHY}{}% 75
+\BOOKMARK [0][-]{appendix.B}{APPENDIX B: }{}% 71
+\BOOKMARK [1][-]{section.B.1}{B.1 Contraction of the quadrupolar tensor with the traceless quadrupole moment}{appendix.B}% 72
+\BOOKMARK [1][-]{section.B.2}{B.2 Quadrupolar correction factor for the Ewald-Kornfeld \(EK\) method}{appendix.B}% 73
+\BOOKMARK [1][-]{section.B.3}{B.3 Generating Uniform Field Gradients}{appendix.B}% 74
+\BOOKMARK [1][-]{section.B.4}{B.4 Point-multipolar interactions with a spatially-varying electric field}{appendix.B}% 75
+\BOOKMARK [1][-]{section.B.5}{B.5 Boltzmann averages for orientational polarization}{appendix.B}% 76
+\BOOKMARK [2][-]{subsection.B.5.1}{B.5.1 Dipoles}{section.B.5}% 77
+\BOOKMARK [2][-]{subsection.B.5.2}{B.5.2 Quadrupoles}{section.B.5}% 78
+\BOOKMARK [1][-]{section.B.6}{B.6 Gradient of the field due to quadrupolar polarization}{appendix.B}% 79
+\BOOKMARK [1][-]{section.B.7}{B.7 Quadrupole tensors and electric field gradients}{appendix.B}% 80
+\BOOKMARK [2][-]{subsection.B.7.1}{B.7.1 General results}{section.B.7}% 81
+\BOOKMARK [2][-]{subsection.B.7.2}{B.7.2 Special cases of quadrupole tensors}{section.B.7}% 82
+\BOOKMARK [1][-]{section.B.8}{B.8 Alternative method for calculating correction factor B}{appendix.B}% 83
+\BOOKMARK [0][-]{appendix*.6}{BIBLIOGRAPHY}{}% 84

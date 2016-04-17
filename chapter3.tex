@@ -32,23 +32,22 @@
 \chapter{COMPARISONS WITH THE EWALD SUM}
 \label{chap:compEwald}
 
-We have briefly discussed the short-ranged nature of the electrostatic interaction in the crystalline environment. In this chapter we discuss this property in more detail and extend this idea for the case of liquid simulation. We also compare energies, forces and torques calculated using real-space methods with the result obtained from the Ewald sum. Additionally we derive different static and dynamic properties using newly developed real-space method and compare result with the Ewald sum. Finally we test the conservation of total energy in the molecular dynamics simulation using various real-space as well as Ewald method.  
+In the previous chapter, I briefly discussed the short-ranged nature of the electrostatic interaction in the crystalline environment. This chapter discusses the property of the electrostatic interactions in more detail and extend the idea of the short-ranged nature of the interaction in the case of liquid simulation. I present the comparison of the energies, forces and torques calculated using real-space methods with the Ewald sum. Additionally I derive different static and dynamic properties using newly developed real-space methods and compare result with the Ewald. Finally I report on the conservation of total energy in the molecular dynamics simulation for the various real-space and Ewald methods.  
 
 \section{Introduction}
 
-As I mentioned earlier Wolf \textit{et al.}\cite{Wolf99} proposed a real space $O(N)$ method for calculating electrostatic interactions between point charges. They argued that the effective Coulomb interaction in most condensed phase systems is effectively short
+As we mentioned earlier Wolf \textit{et al.}\cite{Wolf99} proposed a real space $O(N)$ method for calculating electrostatic interactions between point charges. They argued that the effective Coulomb interaction in most condensed phase systems is effectively short
 ranged.\cite{Wolf92,Wolf95} For an ordered lattice (e.g., when
 computing the Madelung constant of an ionic solid), the material can
 be considered as a set of ions interacting with neutral dipolar or
 quadrupolar ``molecules'' giving an effective distance dependence for
-the electrostatic interactions of $r^{-5}$ (see figure
-\ref{fig:schematic}). If one views the \ce{NaCl} crystal as a simple
-cubic (SC) structure with an octupolar \ce{(NaCl)4} basis, the
+the electrostatic interactions of $r^{-5}$ (see Fig.~\ref{fig:schematic1}). If one views the \ce{NaCl} crystal as a simple
+cubic (SC) structure with an octupolar \ce{$\mathrm{(NaCl)_4$}} basis, the
 electrostatic energy per ion converges more rapidly to the Madelung
 energy than the dipolar approximation.\cite{Wolf92} To find the
 correct Madelung constant, Lacman suggested that the NaCl structure
 could be constructed in a way that the finite crystal terminates with
-complete \ce{(NaCl)4} molecules.\cite{Lacman65} The central ion sees
+complete \ce{$\mathrm{(NaCl)_4$}} molecules.\cite{Lacman65} The central ion sees
 what is effectively a set of octupoles at large distances. These facts
 suggest that the Madelung constants are relatively short ranged for
 perfect ionic crystals.\cite{Wolf99} For this reason, careful
@@ -68,7 +67,7 @@ energy would not be conserved in molecular dynamics (MD)
 simulations.\cite{Zahn02} Zahn \textit{et al.}, and Fennell and
 Gezelter later proposed shifted force variants of the Wolf method with
 commensurate force and energy expressions that do not exhibit this
-problem.\cite{Zahn0,Gezelter06} Related real-space methods
+problem.\cite{Zahn02,Gezelter06} Related real-space methods
 were also proposed by Chen \textit{et al.} \cite{Chen04,Chen06,Denesyuk08,Rodgers06}
 and by Wu and Brooks.\cite{Wu05} Recently, Fukuda has successfully
 used additional neutralization of higher order moments for systems of
@@ -87,7 +86,7 @@ point charges.\cite{Fukuda13}
     orientational averaging helps to reduce the effective range of the
     interactions in the fluid.  Placement of reversed image multipoles
     on the surface of the cutoff sphere recovers the effective
-    higher-order multipole behavior. \label{fig:schematic}}
+    higher-order multipole behavior. \label{fig:schematic1}}
 \end{figure}
 
 One can make a similar effective range argument for crystals of point
@@ -109,7 +108,7 @@ while ionic crystals with net charge in each unit cell would be
 unstable.
 
 In ionic crystals, real-space truncation can break the effective
-multipolar arrangements (see Fig. \ref{fig:schematic}), causing
+multipolar arrangements (see Fig. \ref{fig:schematic1}), causing
 significant swings in the electrostatic energy as individual ions move
 back and forth across the boundary.  This is why the image charges are
 necessary for the Wolf sum to exhibit rapid convergence.  Similarly,
@@ -126,7 +125,7 @@ cutoff sphere that are integral to the Wolf and damped shifted force
 (DSF) approaches retain the effective multipolar interactions as the
 charges traverse the cutoff boundary.
 
-In multipolar fluids (see Fig. \ref{fig:schematic}) there is
+In multipolar fluids (see Fig. \ref{fig:schematic1}) there is
 significant orientational averaging that additionally reduces the
 effect of long-range multipolar interactions.  The image multipoles
 that are introduced in the Taylor shifted force (TSF), gradient
@@ -155,7 +154,7 @@ arrays.\cite{Sauer,LT,Nagai60,Nagai63} In this work, we
 used the multipolar Ewald sum as a reference method for comparing
 energies, forces, and torques for molecular models that mimic
 disordered and ordered condensed-phase systems.  The parameters used
-in the test cases are given in table~\ref{tab:pars}. 
+in the test cases are given in Table~\ref{tab:pars}. 
 
 \begin{sidewaystable}
   \caption{The parameters used in the systems used to evaluate the new
@@ -217,7 +216,7 @@ contributions to the forces and torques.
 \subsection{Implementation}
 The real-space methods developed in the chapter 2 in this series
 have been implemented in our group's open source molecular simulation
-program, OpenMD,\cite{openmd2.3} which was used for all calculations in
+program, OpenMD,\cite{openmd} which was used for all calculations in
 this work.  The complementary error function can be a relatively slow
 function on some processors, so all of the radial functions are
 precomputed on a fine grid and are spline-interpolated to provide
@@ -229,7 +228,7 @@ the Ewald sum is a re-implementation of the algorithm originally
 proposed by Smith that does not use the particle mesh or smoothing
 approximations.\cite{Smith82,Smith98} This implementation was tested
 extensively against the analytic energy constants for the multipolar
-lattices that are discussed in reference \cite{PaperI}.  In all
+lattices that are discussed in reference.\cite{PaperI} In all
 cases discussed below, the quantities being compared are the
 electrostatic contributions to energies, force, and torques.  All
 other contributions to these quantities (i.e. from Lennard-Jones
@@ -330,7 +329,7 @@ p_f(\theta) = \frac{\kappa}{2 \sinh\kappa}\sin\theta e^{\kappa \cos\theta}
 \label{eq:pdf}
 \end{equation}
 where $\kappa$ measures directional dispersion of the data around the
-mean direction.\cite{fisher53} This quantity $(\kappa)$ can be
+mean direction.\cite{Fisher53} This quantity $(\kappa)$ can be
 estimated as a reciprocal of the circular variance.\cite{Allen91} To
 quantify the directional error, forces obtained from the Ewald sum
 were taken as the mean (or correct) direction and the angle between
@@ -390,7 +389,7 @@ model must allow for long simulation times with minimal energy drift.
 \end{figure} 
 
 The combined coefficient of determination and slope for all six
-systems is shown in Figure ~\ref{fig:slopeCorr_energy}.  Most of the
+systems is shown in Fig.~\ref{fig:slopeCorr_energy}.  Most of the
 methods reproduce the Ewald configurational energy differences with
 remarkable fidelity.  Undamped hard cutoffs introduce a significant
 amount of random scatter in the energy differences which is apparent
@@ -419,7 +418,7 @@ use in Monte Carlo simulations.
 \subsection{Magnitude of the force and torque vectors}
 
 The comparisons of the magnitudes of the forces and torques for the
-data accumulated from all six systems are shown in Figures
+data accumulated from all six systems are shown in Fig.
 ~\ref{fig:slopeCorr_force} and \ref{fig:slopeCorr_torque}. The
 correlation and slope for the forces agree well with the Ewald sum
 even for the hard cutoffs.
@@ -558,7 +557,7 @@ damping coefficient was also varied from the undamped case ($\alpha =
 the real space methods.  A sample was also run using the multipolar
 Ewald sum with the same real-space cutoff.
 
-In figure~\ref{fig:energyDrift} we show the both the linear drift in
+In Fig.~\ref{fig:energyDrift} we show the both the linear drift in
 energy over time, $\delta E_1$, and the standard deviation of energy
 fluctuations around this drift $\delta E_0$.  Both of the
 shifted-force methods (GSF and TSF) provide excellent energy

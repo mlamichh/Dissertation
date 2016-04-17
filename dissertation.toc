@@ -1,5 +1,6 @@
-\contentsline {chapter}{FIGURES}{v}{chapter*.2}
-\contentsline {chapter}{TABLES}{ix}{chapter*.3}
+\contentsline {chapter}{FIGURES}{vi}{chapter*.3}
+\contentsline {chapter}{TABLES}{xi}{chapter*.4}
+\contentsline {chapter}{ACKNOWLEDGMENTS}{xii}{chapter*.5}
 \contentsline {chapter}{{CHAPTER\ 1: INTRODUCTION}}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Molecular Dynamics (MD) Simulations}{3}{section.1.1}
 \contentsline {subsection}{\numberline {1.1.1}Peridic Boundary Condition (PBC)}{7}{subsection.1.1.1}
@@ -18,11 +19,11 @@
 \contentsline {subsection}{\numberline {2.2.2}The multipole expansion}{28}{subsection.2.2.2}
 \contentsline {subsection}{\numberline {2.2.3}Damped Coulomb interactions}{31}{subsection.2.2.3}
 \contentsline {subsection}{\numberline {2.2.4}Shifted-force methods}{32}{subsection.2.2.4}
-\contentsline {subsection}{\numberline {2.2.5}Taylor-shifted force (TSF) electrostatics}{32}{subsection.2.2.5}
-\contentsline {subsection}{\numberline {2.2.6}Gradient-shifted force (GSF) electrostatics}{34}{subsection.2.2.6}
-\contentsline {subsection}{\numberline {2.2.7}Generalization of the Wolf shifted potential (SP)}{35}{subsection.2.2.7}
-\contentsline {subsection}{\numberline {2.2.8}Body and space axes}{36}{subsection.2.2.8}
-\contentsline {subsection}{\numberline {2.2.9}The Self-Interaction }{38}{subsection.2.2.9}
+\contentsline {subsection}{\numberline {2.2.5}Taylor-shifted force (TSF) electrostatics}{33}{subsection.2.2.5}
+\contentsline {subsection}{\numberline {2.2.6}Gradient-shifted force (GSF) electrostatics}{35}{subsection.2.2.6}
+\contentsline {subsection}{\numberline {2.2.7}Generalization of the Wolf shifted potential (SP)}{36}{subsection.2.2.7}
+\contentsline {subsection}{\numberline {2.2.8}Body and space axes}{37}{subsection.2.2.8}
+\contentsline {subsection}{\numberline {2.2.9}The Self-Interaction }{39}{subsection.2.2.9}
 \contentsline {section}{\numberline {2.3}Interaction energies, forces, and torques}{40}{section.2.3}
 \contentsline {subsection}{\numberline {2.3.1}Forces}{41}{subsection.2.3.1}
 \contentsline {subsection}{\numberline {2.3.2}Torques}{45}{subsection.2.3.2}
@@ -45,29 +46,36 @@
 \contentsline {section}{\numberline {3.4}Summary}{80}{section.3.4}
 \contentsline {chapter}{{CHAPTER\ 4: DIELECTRIC PROPERTIES}}{83}{chapter.4}
 \contentsline {section}{\numberline {4.1}Introduction}{83}{section.4.1}
-\contentsline {section}{\numberline {4.2}Boltzmann average for orientational polarization}{86}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Dipole}{87}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Quadrupole}{88}{subsection.4.2.2}
-\contentsline {section}{\numberline {4.3}Macroscopic Polarizability}{89}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}External field perturbation}{90}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}Fluctuation formula}{91}{subsection.4.3.2}
-\contentsline {section}{\numberline {4.4}Potential of mean force}{92}{section.4.4}
-\contentsline {section}{\numberline {4.5}Correction factor}{93}{section.4.5}
-\contentsline {subsection}{\numberline {4.5.1}Dipolar system}{93}{subsection.4.5.1}
-\contentsline {subsection}{\numberline {4.5.2}Quadrupolar system}{98}{subsection.4.5.2}
-\contentsline {section}{\numberline {4.6}Methodology}{104}{section.4.6}
-\contentsline {subsection}{\numberline {4.6.1}Implementation}{107}{subsection.4.6.1}
-\contentsline {subsection}{\numberline {4.6.2}Model systems}{108}{subsection.4.6.2}
-\contentsline {section}{\numberline {4.7}Results}{110}{section.4.7}
-\contentsline {subsection}{\numberline {4.7.1}Dipolar fluid}{110}{subsection.4.7.1}
-\contentsline {subsection}{\numberline {4.7.2}Quadrupolar fluid}{113}{subsection.4.7.2}
-\contentsline {section}{\numberline {4.8}Summary}{116}{section.4.8}
-\contentsline {chapter}{{APPENDIX\ A: RADIAL FUNCTIONS FOR REAL-SPACE ELECTROSTATIC METHODS}}{119}{appendix.A}
-\contentsline {section}{\numberline {A.1}Smith's $B_l(r)$ functions for damped-charge distributions}{119}{section.A.1}
+\contentsline {section}{\numberline {4.2}Dipolar Fluids and the Dielectric Constant}{87}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Response to External Perturbations}{87}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Fluctuation Formula}{88}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Correction Factors}{89}{subsection.4.2.3}
+\contentsline {section}{\numberline {4.3}Quadrupolar Fluids and the Quadrupolar Susceptibility}{94}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Response to External Perturbations}{94}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Fluctuation Formula}{95}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}Correction Factors}{95}{subsection.4.3.3}
+\contentsline {section}{\numberline {4.4}Screening of Charges by Multipolar Fluids}{102}{section.4.4}
+\contentsline {section}{\numberline {4.5}Simulation Methodology}{103}{section.4.5}
+\contentsline {section}{\numberline {4.6}Results}{107}{section.4.6}
+\contentsline {subsection}{\numberline {4.6.1}Dipolar fluid}{107}{subsection.4.6.1}
+\contentsline {subsection}{\numberline {4.6.2}Quadrupolar fluid}{111}{subsection.4.6.2}
+\contentsline {section}{\numberline {4.7}Summary}{115}{section.4.7}
+\contentsline {chapter}{{CHAPTER\ 5: CONCLUSIONS}}{117}{chapter.5}
+\contentsline {chapter}{{APPENDIX\ A: }}{120}{appendix.A}
+\contentsline {section}{\numberline {A.1}Smith's $B_l(r)$ functions for damped-charge distributions}{120}{section.A.1}
 \contentsline {section}{\numberline {A.2}The $r$-dependent factors for TSF electrostatics}{121}{section.A.2}
 \contentsline {section}{\numberline {A.3}The $r$-dependent factors for GSF electrostatics}{123}{section.A.3}
-\contentsline {chapter}{{APPENDIX\ B: POINT MULTIPOLES, FIELD, AND FIELD GRADIENT }}{124}{appendix.B}
-\contentsline {section}{\numberline {B.1}Point-multipolar interactions with a spatially-varying electric field}{124}{section.B.1}
-\contentsline {section}{\numberline {B.2}Gradient of the field due to quadrupolar polarization}{127}{section.B.2}
-\contentsline {section}{\numberline {B.3}Applied field or field gradient}{131}{section.B.3}
-\contentsline {chapter}{BIBLIOGRAPHY}{132}{appendix*.4}
+\contentsline {chapter}{{APPENDIX\ B: }}{124}{appendix.B}
+\contentsline {section}{\numberline {B.1}Contraction of the quadrupolar tensor with the traceless quadrupole moment}{124}{section.B.1}
+\contentsline {section}{\numberline {B.2}Quadrupolar correction factor for the Ewald-Kornfeld (EK) method}{126}{section.B.2}
+\contentsline {section}{\numberline {B.3}Generating Uniform Field Gradients}{128}{section.B.3}
+\contentsline {section}{\numberline {B.4}Point-multipolar interactions with a spatially-varying electric field}{132}{section.B.4}
+\contentsline {section}{\numberline {B.5}Boltzmann averages for orientational polarization}{134}{section.B.5}
+\contentsline {subsection}{\numberline {B.5.1}Dipoles}{135}{subsection.B.5.1}
+\contentsline {subsection}{\numberline {B.5.2}Quadrupoles}{136}{subsection.B.5.2}
+\contentsline {section}{\numberline {B.6}Gradient of the field due to quadrupolar polarization}{137}{section.B.6}
+\contentsline {section}{\numberline {B.7}Quadrupole tensors and electric field gradients}{140}{section.B.7}
+\contentsline {subsection}{\numberline {B.7.1}General results}{141}{subsection.B.7.1}
+\contentsline {subsection}{\numberline {B.7.2}Special cases of quadrupole tensors}{143}{subsection.B.7.2}
+\contentsline {section}{\numberline {B.8}Alternative method for calculating correction factor $\mathrm {B}$}{145}{section.B.8}
+\contentsline {chapter}{BIBLIOGRAPHY}{149}{appendix*.6}

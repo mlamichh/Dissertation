@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.5.1)  2 MAR 2016 17:27
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.5.1)  17 APR 2016 10:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2180,11 +2180,11 @@ Missing character: There is no M in font nullfont!
 Missing character: There is no D in font nullfont!
 Missing character: There is no , in font nullfont!
 Missing character: There is no [ in font nullfont!
-\citation{Openmd2.3}
+\citation{openmd}
 ! Undefined control sequence.
 <write> ...: Citation `\@citeb ' on page \thepage 
                                                   \space undefined\on@line .
-l.38 ...hods as code into OpenMD, \cite{Openmd2.3}
+l.38 ...methods as code into OpenMD, \cite{openmd}
                                                    an open source C++-based ...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2193,7 +2193,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Citation `Openmd2.3' on page  undefined on input line 38.
+LaTeX Warning: Citation `openmd' on page  undefined on input line 38.
 
 Missing character: There is no ] in font nullfont!
 Missing character: There is no a in font nullfont!
@@ -4878,16 +4878,14 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no d in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no n in font nullfont!
-Missing character: There is no f in font nullfont!
+Missing character: There is no F in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no g in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no e in font nullfont!
+Missing character: There is no . in font nullfont!
 ! Undefined control sequence.
 <write> ...g: Reference `fig:MD' on page \thepage 
                                                   \space undefined\on@line .
-l.56 ... for MD is outlined in figure~\ref{fig:MD}
+l.56 ...ss for MD is outlined in Fig.~\ref{fig:MD}
                                                   .
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -6633,19 +6631,15 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no h in font nullfont!
 Missing character: There is no e in font nullfont!
-Missing character: There is no e in font nullfont!
+Missing character: There is no E in font nullfont!
 Missing character: There is no q in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no n in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no ( in font nullfont!
 ! Undefined control sequence.
 <write> ...ng: Reference `eq:LJ' on page \thepage 
                                                   \space undefined\on@line .
-l.88 ...l. The $1/r^6$ in the equation~\ref{eq:LJ}
-                                                   is short-ranged. The $1/r...
+l.88 ...ntial. The $1/r^6$ in the Eq.~(\ref{eq:LJ}
+                                                  ) is short-ranged. The $1/...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -6655,6 +6649,7 @@ and I'll forget about whatever was undefined.
 
 LaTeX Warning: Reference `eq:LJ' on page  undefined on input line 88.
 
+Missing character: There is no ) in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no s in font nullfont!
@@ -8643,16 +8638,14 @@ Missing character: There is no ( in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no e in font nullfont!
-Missing character: There is no f in font nullfont!
+Missing character: There is no F in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no g in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no e in font nullfont!
+Missing character: There is no . in font nullfont!
 ! Undefined control sequence.
 <write> ...: Reference `fig:PBC' on page \thepage 
                                                   \space undefined\on@line .
-l.100 ...n a central box (see figure~\ref{fig:PBC}
+l.100 ... in a central box (see Fig.~\ref{fig:PBC}
                                                   ). Therefore the system ac...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -10383,16 +10376,14 @@ Missing character: There is no w in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no n in font nullfont!
-Missing character: There is no f in font nullfont!
+Missing character: There is no F in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no g in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no e in font nullfont!
+Missing character: There is no . in font nullfont!
 ! Undefined control sequence.
 <write> ...: Reference `fig:PBC' on page \thepage 
                                                   \space undefined\on@line .
-l.112 ...d in PBC is shown in figure~\ref{fig:PBC}
+l.112 ...ted in PBC is shown in Fig.~\ref{fig:PBC}
                                                   .
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -10667,16 +10658,14 @@ Missing character: There is no w in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no n in font nullfont!
-Missing character: There is no f in font nullfont!
+Missing character: There is no F in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no g in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no e in font nullfont!
+Missing character: There is no . in font nullfont!
 ! Undefined control sequence.
 <write> ...e `fig:neighbourList' on page \thepage 
                                                   \space undefined\on@line .
-l.114 ...s shown in figure~\ref{fig:neighbourList}
+l.114 ... as shown in Fig.~\ref{fig:neighbourList}
                                                   . At the beginning of the ...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -13101,19 +13090,15 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no h in font nullfont!
 Missing character: There is no e in font nullfont!
-Missing character: There is no e in font nullfont!
+Missing character: There is no E in font nullfont!
 Missing character: There is no q in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no n in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no ( in font nullfont!
 ! Undefined control sequence.
 <write> ...ce `eq:electrostatic' on page \thepage 
                                                   \space undefined\on@line .
-l.134 ...ed in the equation~\ref{eq:electrostatic}
-                                                   for simplicity. The total...
+l.134 ...ropped in the Eq.~(\ref{eq:electrostatic}
+                                                  ) for simplicity. The tota...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -13124,6 +13109,7 @@ and I'll forget about whatever was undefined.
 LaTeX Warning: Reference `eq:electrostatic' on page  undefined on input line 13
 4.
 
+Missing character: There is no ) in font nullfont!
 Missing character: There is no f in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no r in font nullfont!
@@ -13349,19 +13335,15 @@ Missing character: There is no f in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no h in font nullfont!
 Missing character: There is no e in font nullfont!
-Missing character: There is no e in font nullfont!
+Missing character: There is no E in font nullfont!
 Missing character: There is no q in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no n in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no ( in font nullfont!
 ! Undefined control sequence.
 <write> ...q:totalElectrostatic' on page \thepage 
                                                   \space undefined\on@line .
-l.139 ... the equation~\ref{eq:totalElectrostatic}
-                                                   is due to removal $i \neq...
+l.139 ...t of the Eq.~(\ref{eq:totalElectrostatic}
+                                                  ) is due to removal $i \ne...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -13372,6 +13354,7 @@ and I'll forget about whatever was undefined.
 LaTeX Warning: Reference `eq:totalElectrostatic' on page  undefined on input li
 ne 139.
 
+Missing character: There is no ) in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no d in font nullfont!
@@ -13547,19 +13530,15 @@ Missing character: There is no s in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no g in font nullfont!
-Missing character: There is no e in font nullfont!
+Missing character: There is no E in font nullfont!
 Missing character: There is no q in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no n in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no ( in font nullfont!
 ! Undefined control sequence.
 <write> ...ce `eq:electrostatic' on page \thepage 
                                                   \space undefined\on@line .
-l.141 ...ted using equation~\ref{eq:electrostatic}
-                                                   converges conditionally t...
+l.141 ...aluated using Eq.~(\ref{eq:electrostatic}
+                                                  ) converges conditionally ...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -13570,6 +13549,7 @@ and I'll forget about whatever was undefined.
 LaTeX Warning: Reference `eq:electrostatic' on page  undefined on input line 14
 1.
 
+Missing character: There is no ) in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no n in font nullfont!
@@ -14084,19 +14064,15 @@ Missing character: There is no r in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no e in font nullfont!
-Missing character: There is no e in font nullfont!
+Missing character: There is no E in font nullfont!
 Missing character: There is no q in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no n in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no ( in font nullfont!
 ! Undefined control sequence.
 <write> ...q:totalElectrostatic' on page \thepage 
                                                   \space undefined\on@line .
-l.144 ...rite equation~\ref{eq:totalElectrostatic}
-                                                   as,
+l.144 ...an write Eq.~(\ref{eq:totalElectrostatic}
+                                                  ) as,
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -14107,6 +14083,7 @@ and I'll forget about whatever was undefined.
 LaTeX Warning: Reference `eq:totalElectrostatic' on page  undefined on input li
 ne 144.
 
+Missing character: There is no ) in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no , in font nullfont!
@@ -14384,19 +14361,15 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no h in font nullfont!
 Missing character: There is no e in font nullfont!
-Missing character: There is no e in font nullfont!
+Missing character: There is no E in font nullfont!
 Missing character: There is no q in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no n in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no ( in font nullfont!
 ! Undefined control sequence.
 <write> ...rorFuncElectrostatic' on page \thepage 
                                                   \space undefined\on@line .
-l.150 ... equation~\ref{eq:errorFuncElectrostatic}
-                                                  . Similarly reciprocal-spa...
+l.150 ... the Eq.~(\ref{eq:errorFuncElectrostatic}
+                                                  ). Similarly reciprocal-sp...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -14407,6 +14380,7 @@ and I'll forget about whatever was undefined.
 LaTeX Warning: Reference `eq:errorFuncElectrostatic' on page  undefined on inpu
 t line 150.
 
+Missing character: There is no ) in font nullfont!
 Missing character: There is no . in font nullfont!
 Missing character: There is no S in font nullfont!
 Missing character: There is no i in font nullfont!
@@ -14512,19 +14486,15 @@ Missing character: There is no r in font nullfont!
 Missing character: There is no m in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no n in font nullfont!
-Missing character: There is no e in font nullfont!
+Missing character: There is no E in font nullfont!
 Missing character: There is no q in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no n in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no ( in font nullfont!
 ! Undefined control sequence.
 <write> ...rorFuncElectrostatic' on page \thepage 
                                                   \space undefined\on@line .
-l.150 ... equation~\ref{eq:errorFuncElectrostatic}
-                                                  . The self-term present in...
+l.150 ...m in Eq.~(\ref{eq:errorFuncElectrostatic}
+                                                  ). The self-term present i...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -14535,6 +14505,7 @@ and I'll forget about whatever was undefined.
 LaTeX Warning: Reference `eq:errorFuncElectrostatic' on page  undefined on inpu
 t line 150.
 
+Missing character: There is no ) in font nullfont!
 Missing character: There is no . in font nullfont!
 Missing character: There is no T in font nullfont!
 Missing character: There is no h in font nullfont!
@@ -15067,16 +15038,14 @@ Missing character: There is no ( in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no e in font nullfont!
-Missing character: There is no f in font nullfont!
+Missing character: There is no F in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no g in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no e in font nullfont!
+Missing character: There is no . in font nullfont!
 ! Undefined control sequence.
 <write> ...erence `fig:Ewaldsum' on page \thepage 
                                                   \space undefined\on@line .
-l.161 ...ned charge (see figure~\ref{fig:Ewaldsum}
+l.161 ...igned charge (see Fig.~\ref{fig:Ewaldsum}
                                                   ) with density,
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -15508,16 +15477,14 @@ Missing character: There is no w in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no n in font nullfont!
-Missing character: There is no f in font nullfont!
+Missing character: There is no F in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no g in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no e in font nullfont!
+Missing character: There is no . in font nullfont!
 ! Undefined control sequence.
 <write> ...erence `fig:Ewaldsum' on page \thepage 
                                                   \space undefined\on@line .
-l.167 ...ign as shown in figure~\ref{fig:Ewaldsum}
+l.167 ... sign as shown in Fig.~\ref{fig:Ewaldsum}
                                                   . \cite{Toukmaji96} The su...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -15534,7 +15501,7 @@ Missing character: There is no [ in font nullfont!
 ! Undefined control sequence.
 <write> ...: Citation `\@citeb ' on page \thepage 
                                                   \space undefined\on@line .
-l.167 ...ure~\ref{fig:Ewaldsum}. \cite{Toukmaji96}
+l.167 ...ig.~\ref{fig:Ewaldsum}. \cite{Toukmaji96}
                                                    The sum of potential ener...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -17951,16 +17918,14 @@ Missing character: There is no w in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no n in font nullfont!
-Missing character: There is no f in font nullfont!
+Missing character: There is no F in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no g in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no e in font nullfont!
+Missing character: There is no . in font nullfont!
 ! Undefined control sequence.
 <write> ...Reference `fig:PPPME' on page \thepage 
                                                   \space undefined\on@line .
-l.191 ...D grid as shown in figure~\ref{fig:PPPME}
+l.191 ... 3D grid as shown in Fig.~\ref{fig:PPPME}
                                                    and transformed to the Fo...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -20475,16 +20440,14 @@ Missing character: There is no w in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no n in font nullfont!
-Missing character: There is no f in font nullfont!
+Missing character: There is no F in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no g in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no e in font nullfont!
+Missing character: There is no . in font nullfont!
 ! Undefined control sequence.
 <write> ...rence `fig:schematic' on page \thepage 
                                                   \space undefined\on@line .
-l.200 ...rs as shown in figure~\ref{fig:schematic}
+l.200 ...airs as shown in Fig.~\ref{fig:schematic}
                                                   (a). Mathematically the po...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -20839,19 +20802,15 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no h in font nullfont!
 Missing character: There is no e in font nullfont!
-Missing character: There is no e in font nullfont!
+Missing character: There is no E in font nullfont!
 Missing character: There is no q in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no n in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no ( in font nullfont!
 ! Undefined control sequence.
 <write> ...ng: Reference `eq:1D' on page \thepage 
                                                   \space undefined\on@line .
-l.217 ...r all 3 terms in the equation~\ref{eq:1D}
-                                                   and compare their distanc...
+l.217 ...sider all 3 terms in the Eq.~(\ref{eq:1D}
+                                                  ) and compare their distan...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -20861,6 +20820,7 @@ and I'll forget about whatever was undefined.
 
 LaTeX Warning: Reference `eq:1D' on page  undefined on input line 217.
 
+Missing character: There is no ) in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no d in font nullfont!
@@ -20940,16 +20900,14 @@ Missing character: There is no w in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no n in font nullfont!
-Missing character: There is no f in font nullfont!
+Missing character: There is no F in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no g in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no e in font nullfont!
+Missing character: There is no . in font nullfont!
 ! Undefined control sequence.
 <write> ...rence `fig:schematic' on page \thepage 
                                                   \space undefined\on@line .
-l.217 ...ns as shown in figure~\ref{fig:schematic}
+l.217 ...ions as shown in Fig.~\ref{fig:schematic}
                                                   (a), we clearly see that t...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -21173,16 +21131,14 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no n in font nullfont!
-Missing character: There is no f in font nullfont!
+Missing character: There is no F in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no g in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no e in font nullfont!
+Missing character: There is no . in font nullfont!
 ! Undefined control sequence.
 <write> ...rence `fig:schematic' on page \thepage 
                                                   \space undefined\on@line .
-l.217 ...ups as seen in figure~\ref{fig:schematic}
+l.217 ...roups as seen in Fig.~\ref{fig:schematic}
                                                   (b). The interaction energ...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -21954,13 +21910,11 @@ Missing character: There is no . in font nullfont!
 Missing character: There is no F in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no g in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no e in font nullfont!
+Missing character: There is no . in font nullfont!
 ! Undefined control sequence.
 <write> ... `fig:energyVsCutoff' on page \thepage 
                                                   \space undefined\on@line .
-l.220 ... radius.  Figure~\ref{fig:energyVsCutoff}
+l.220 ...ff radius.  Fig.~\ref{fig:energyVsCutoff}
                                                    shows (black line) that t...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -22214,16 +22168,14 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no r in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no ( in font nullfont!
-Missing character: There is no f in font nullfont!
+Missing character: There is no F in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no g in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no e in font nullfont!
+Missing character: There is no . in font nullfont!
 ! Undefined control sequence.
 <write> ... `fig:energyVsCharge' on page \thepage 
                                                   \space undefined\on@line .
-l.220 ... is zero (figure~\ref{fig:energyVsCharge}
+l.220 ...us is zero (Fig.~\ref{fig:energyVsCharge}
                                                   ). This oscillation in the...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -22559,16 +22511,14 @@ Missing character: There is no w in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no n in font nullfont!
-Missing character: There is no f in font nullfont!
+Missing character: There is no F in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no g in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no e in font nullfont!
+Missing character: There is no . in font nullfont!
 ! Undefined control sequence.
 <write> ... `fig:energyVsCutoff' on page \thepage 
                                                   \space undefined\on@line .
-l.220 ... shown in figure~\ref{fig:energyVsCutoff}
+l.220 ...as shown in Fig.~\ref{fig:energyVsCutoff}
                                                   . Dipolar (or quadrupolar)...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -24010,16 +23960,14 @@ Missing character: There is no w in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no n in font nullfont!
-Missing character: There is no f in font nullfont!
+Missing character: There is no F in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no g in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no e in font nullfont!
+Missing character: There is no . in font nullfont!
 ! Undefined control sequence.
 <write> ... `fig:energyVsCutoff' on page \thepage 
                                                   \space undefined\on@line .
-l.237 ... shown in figure~\ref{fig:energyVsCutoff}
+l.237 ...as shown in Fig.~\ref{fig:energyVsCutoff}
                                                    (orange line). In molecul...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -25412,10 +25360,10 @@ Missing character: There is no ] in font nullfont!
  
 Here is how much of TeX's memory you used:
  71 strings out of 494985
- 885 string characters out of 6180357
+ 882 string characters out of 6180357
  56094 words of memory out of 5000000
  3382 multiletter control sequences out of 15000+600000
  4913 words of font info for 18 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 18i,8n,25p,1888b,117s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 18i,8n,25p,1885b,117s stack positions out of 5000i,500n,10000p,200000b,80000s
 !  ==> Fatal error occurred, no output PDF file produced!

@@ -26,7 +26,7 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\chapter{RADIAL FUNCTIONS FOR REAL-SPACE ELECTROSTATIC METHODS}
+\chapter{}
 
 \section{Smith's $B_l(r)$ functions for damped-charge distributions}
 \label{SmithFunc}
@@ -67,7 +67,6 @@ B_l(r)=\frac{(2l)!}{l!2^lr^{2l+1}} - \frac {(2\alpha^2)^{l+1}}{(2l+1)\alpha \sqr
 +\text{O}(r) .
 \end{equation}
 
-\newpage
 \section{The $r$-dependent factors for TSF electrostatics}
 \label{radialTSF}
 
@@ -86,22 +85,22 @@ $1/r$.)  First, we find:
 \frac{\partial f_n}{\partial r_\alpha}=\hat{r}_\alpha \frac{d f_n}{d r} .
 \end{equation}
 %
+
 This formula clearly brings in derivatives of Smith's $B_0(r)$
 function, and we define higher-order derivatives as follows:
-%
 \begin{align}
 g_n(r)=& \frac{d f_n}{d r} =
 B_0^{(1)}(r) -\sum_{m=0}^{n} \frac {(r-r_c)^m}{m!} B_0^{(m+1)}(r_c) \\
 h_n(r)=& \frac{d^2f_n}{d r^2} =
 B_0^{(2)}(r) -\sum_{m=0}^{n-1} \frac {(r-r_c)^m}{m!} B_0^{(m+2)}(r_c) \\
 s_n(r)=& \frac{d^3f_n}{d r^3} =
-B_0^{(3)}(r) -\sum_{m=0}^{n-2} \frac {(r-r_c)^m}{m!} B_0^{(m+3)}(r_c) \\
+B_0^{(3)}(r) -\sum_{m=0}^{n-2} \frac {(r-r_c)^m}{m!} B_0^{(m+3)}(r_c) \end{align}
+\begin{align}
 t_n(r)=& \frac{d^4f_n}{d r^4} =
 B_0^{(4)}(r) -\sum_{m=0}^{n-3} \frac {(r-r_c)^m}{m!} B_0^{(m+4)}(r_c) \\
 u_n(r)=& \frac{d^5f_n}{d r^5} =
 B_0^{(5)}(r) -\sum_{m=0}^{n-4} \frac {(r-r_c)^m}{m!} B_0^{(m+5)}(r_c)  .
 \end{align}
-%
 We note that the last function needed (for quadrupole-quadrupole interactions) is
 %
 \begin{equation}
@@ -159,10 +158,8 @@ functions, we find
 \left(  \frac{105g_n}{r^9} - \frac{105h_n}{r^8} + \frac{45s_n}{r^7}
 - \frac{10t_n}{r^6} +\frac{u_n}{r^5} \right) \label{eq:b13}
 \end{align}
-%
-%
-%
-\newpage
+
+
 \section{The $r$-dependent factors for GSF electrostatics}
 \label{radialGSF}
 
@@ -186,8 +183,10 @@ r B_3(r) + 10 r^3B_4(r) -r^5B_5(r).
 \end{align}
 %
 For undamped charges, Table I lists these derivatives under the Bare
-Coulomb column. Equations \ref{eq:b9} to \ref{eq:b13} are still
+Coulomb column. Eqs.~(\ref{eq:b9}) to (\ref{eq:b13}) are still
 correct for GSF electrostatics if the subscript $n$ is eliminated.
+
+
 
 % % uncomment the following lines,
 % if using chapter-wise bibliography

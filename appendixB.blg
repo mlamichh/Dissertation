@@ -1,11 +1,11 @@
 This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
-The top-level auxiliary file: chapter4.aux
-I found no \bibdata command---while reading file chapter4.aux
-I found no \bibstyle command---while reading file chapter4.aux
-You've used 31 entries,
+The top-level auxiliary file: appendixB.aux
+I found no \bibdata command---while reading file appendixB.aux
+I found no \bibstyle command---while reading file appendixB.aux
+You've used 13 entries,
             0 wiz_defined-function locations,
-            144 strings with 1056 characters,
+            109 strings with 766 characters,
 and the built_in function-call counts, 0 in all, are:
 = -- 0
 > -- 0

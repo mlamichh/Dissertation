@@ -1,749 +1,785 @@
-\begin{thebibliography}{96}
-\providecommand{\natexlab}[1]{#1}
-\providecommand{\url}[1]{\texttt{#1}}
-\expandafter\ifx\csname urlstyle\endcsname\relax
-  \providecommand{\doi}[1]{doi: #1}\else
-  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+\providecommand{\latin}[1]{#1}
+\providecommand*\mcitethebibliography{\thebibliography}
+\csname @ifundefined\endcsname{endmcitethebibliography}
+  {\let\endmcitethebibliography\endthebibliography}{}
+\begin{mcitethebibliography}{107}
+\providecommand*\natexlab[1]{#1}
+\providecommand*\mciteSetBstSublistMode[1]{}
+\providecommand*\mciteSetBstMaxWidthForm[2]{}
+\providecommand*\mciteBstWouldAddEndPuncttrue
+  {\def\EndOfBibitem{\unskip.}}
+\providecommand*\mciteBstWouldAddEndPunctfalse
+  {\let\EndOfBibitem\relax}
+\providecommand*\mciteSetBstMidEndSepPunct[3]{}
+\providecommand*\mciteSetBstSublistLabelBeginEnd[3]{}
+\providecommand*\EndOfBibitem{}
+\mciteSetBstSublistMode{f}
+\mciteSetBstMaxWidthForm{subitem}{(\alph{mcitesubitemcount})}
+\mciteSetBstSublistLabelBeginEnd
+  {\mcitemaxwidthsubitemform\space}
+  {\relax}
+  {\relax}
 
-\bibitem[sup()]{supplemental}
-See supplementary material document no. \underline{\hspace{1in}} for body-frame
-  expressions and converged energy constants.
-
-\bibitem[Adams(1980)]{Adams80}
-D.~Adams.
-\newblock Computer simulation of highly polar liquids: The hard sphere plus
-  point dipole potential.
-\newblock \emph{Molecular Physics}, 40\penalty0 (5):\penalty0 1261--1271, 1980.
-\newblock \doi{10.1080/00268978000102261}.
-
-\bibitem[Adams and Adams(1981)]{Adams81}
-D.~Adams and E.~Adams.
-\newblock Static dielectric properties of the stockmayer fluid from computer
-  simulation.
-\newblock \emph{Molecular Physics}, 42\penalty0 (4):\penalty0 907--926, 1981.
-\newblock \doi{10.1080/00268978100100701}.
-
-\bibitem[Adu-Gyamfi(1978)]{AduGyamfi78}
-D.~Adu-Gyamfi.
-\newblock On the electric quadrupole density of an isotropic non-polar fluid.
-\newblock \emph{Physica A: Statistical Mechanics and its Applications},
-  93\penalty0 (3):\penalty0 553 -- 558, 1978.
-\newblock ISSN 0378-4371.
-\newblock \doi{http://dx.doi.org/10.1016/0378-4371(78)90175-9}.
-\newblock URL
-  \url{http://www.sciencedirect.com/science/article/pii/0378437178901759}.
-
-\bibitem[Adu-Gyamfi(1981)]{AduGyamfi81}
-D.~Adu-Gyamfi.
-\newblock On the average moments of a polar molecule in a non-uniform electric
-  field.
-\newblock \emph{Physica A: Statistical Mechanics and its Applications},
-  108\penalty0 (1):\penalty0 205 -- 210, 1981.
-\newblock ISSN 0378-4371.
-\newblock \doi{http://dx.doi.org/10.1016/0378-4371(81)90174-6}.
-\newblock URL
-  \url{http://www.sciencedirect.com/science/article/pii/0378437181901746}.
-
-\bibitem[Aguado and Madden(2003)]{Aguado03}
-A.~Aguado and P.~A. Madden.
-\newblock Ewald summation of electrostatic multipole interactions up to the
-  quadrupolar level.
-\newblock \emph{J. Chem. Phys.}, 119\penalty0 (14):\penalty0 7471--7483, 2003.
-\newblock \doi{10.1063/1.1605941}.
-
-\bibitem[Allen(2004)]{Allen04}
-M.~P. Allen.
-\newblock Introduction to molecular dynamics simulation, 2004.
-
-\bibitem[Allen and Germano(2006)]{Allen06}
-M.~P. Allen and G.~Germano.
-\newblock Expressions for forces and torques in molecular simulations using
-  rigid bodies.
-\newblock 104\penalty0 (20-21):\penalty0 3225--3235, 2006.
-\newblock \doi{10.1080/00268970601075238}.
-\newblock URL
-  \url{http://www.tandfonline.com/doi/abs/10.1080/00268970601075238}.
-
-\bibitem[Allen and Tildesley(1989)]{Allen89}
-M.~P. Allen and D.~J. Tildesley.
-\newblock \emph{Computer Simulation of Liquids}.
-\newblock Clarendon Press, New York, NY, USA, 1989.
-\newblock ISBN 0-19-855645-4.
-
-\bibitem[Beck et~al.(2005)Beck, Armen, and Daggett]{Beck05}
-D.~Beck, R.~Armen, and V.~Daggett.
-\newblock Cutoff size need not strongly influence molecular dynamics results
-  for solvated polypeptides.
-\newblock \emph{Biochemistry}, 44\penalty0 (2):\penalty0 609--616, 2005.
-\newblock ISSN 0006-2960.
-\newblock URL
-  \url{Http://Pubs3.Acs.Org/Acs/Journals/Doilookup?In_Doi=10.1021/Bi0486381}.
-
-\bibitem[Chen and Weeks(2006)]{Chen06}
-Y.~Chen and J.~Weeks.
-\newblock Local molecular field theory for effective attractions between like
-  charged objects in systems with strong coulomb interactions.
-\newblock 103:\penalty0 7560--7565, 2006.
-\newblock \doi{DOI 10.1073/pnas.0600282103}.
-
-\bibitem[Chen et~al.(2004)Chen, Kaur, and Weeks]{Chen04}
-Y.~Chen, C.~Kaur, and J.~Weeks.
-\newblock Connecting systems with short and long ranged interactions: Local
-  molecular field theory for ionic fluids.
-\newblock 108:\penalty0 19874--19884, 2004.
-\newblock \doi{DOI 10.1021/jp0469261}.
-
-\bibitem[Chitanvis(1996)]{Chitanvis96}
-S.~M. Chitanvis.
-\newblock A continuum solvation theory of quadrupolar fluids.
-\newblock \emph{The Journal of Chemical Physics}, 104\penalty0 (22):\penalty0
-  9065--9074, 1996.
-\newblock \doi{http://dx.doi.org/10.1063/1.471615}.
-\newblock URL
-  \url{http://scitation.aip.org/content/aip/journal/jcp/104/22/10.1063/1.471615}.
-
-\bibitem[Chowdhuri et~al.(2006)Chowdhuri, Tan, and Ichiye]{Chowdhuri06}
-S.~Chowdhuri, M.-L. Tan, and T.~Ichiye.
-\newblock Dynamical properties of the soft sticky dipole-quadrupole-octupole
-  water model: A molecular dynamics study.
-\newblock 125\penalty0 (14):\penalty0 144513--8, 2006.
-\newblock URL \url{Http://Link.Aip.Org/Link/?jcp/125/144513/1}.
-
-\bibitem[Darden et~al.(1993)Darden, York, and Pedersen]{Darden93}
-T.~Darden, D.~York, and L.~Pedersen.
-\newblock Particle mesh ewald: An nlog(n) method for ewald sums in large
-  systems.
-\newblock \emph{The Journal of Chemical Physics}, 98\penalty0 (12), 1993.
-
-\bibitem[{de Leeuw} et~al.(1980){de Leeuw}, Perram, and Smith]{deLeeuw80}
-S.~W. {de Leeuw}, J.~W. Perram, and E.~R. Smith.
-\newblock Simulation of electostatic systems in periodic boundary conditions.
-  \uppercase{I. L}attice sums and dielectric constants.
-\newblock \emph{Proc. R. Soc. London Ser. A}, 373\penalty0 (1752):\penalty0
-  27--56, 1980.
-
-\bibitem[Denesyuk and Weeks(2008)]{Denesyuk08}
-N.~A. Denesyuk and J.~D. Weeks.
-\newblock A new approach for efficient simulation of {C}oulomb interactions in
-  ionic fluids.
-\newblock 128, 2008.
-
-\bibitem[Dirk et~al.(2002)Dirk, Bernd, and Stefan]{Zahn02}
-Z.~Dirk, S.~Bernd, and M.~K. Stefan.
-\newblock Enhancement of the wolf damped coulomb potential:  static, dynamic,
-  and dielectric properties of liquid water from molecular simulation.
-\newblock \emph{The Journal of Physical Chemistry B}, 106\penalty0
-  (41):\penalty0 10725--10732, 2002.
-\newblock \doi{10.1021/jp025949h}.
-\newblock URL \url{http://dx.doi.org/10.1021/jp025949h}.
-
-\bibitem[Dullweber et~al.(1997)Dullweber, Leimkuhler, and
-  McLachlan]{Dullweber97}
-A.~Dullweber, B.~Leimkuhler, and R.~McLachlan.
-\newblock Symplectic splitting methods for rigid body molecular dynamics.
-\newblock 107\penalty0 (15):\penalty0 5840--5851, 1997.
-
-\bibitem[English(2008)]{English08}
-N.~J. English.
-\newblock Effect of electrostatics techniques on the estimation of thermal
-  conductivity via equilibrium molecular dynamics simulation: application to
-  methane hydrate.
-\newblock 106:\penalty0 1887--1898, 2008.
-\newblock \doi{DOI 10.1080/00268970802360348}.
-
-\bibitem[Ernst et~al.(1992)Ernst, Wu, Liu, Nagel, and Neubert]{Ernst92}
-R.~M. Ernst, L.~Wu, C.-h. Liu, S.~R. Nagel, and M.~E. Neubert.
-\newblock Quadrupolar susceptibility of complex fluids.
-\newblock \emph{Phys. Rev. B}, 45:\penalty0 667--672, Jan 1992.
-\newblock \doi{10.1103/PhysRevB.45.667}.
-\newblock URL \url{http://link.aps.org/doi/10.1103/PhysRevB.45.667}.
-
-\bibitem[Essmann et~al.(1995)Essmann, Perera, Berkowitz, Darden, Lee, and
-  Pedersen]{Essmann95}
-U.~Essmann, L.~Perera, M.~L. Berkowitz, T.~Darden, H.~Lee, and L.~G. Pedersen.
-\newblock A smooth particle mesh ewald method.
-\newblock \emph{The Journal of Chemical Physics}, 103\penalty0 (19), 1995.
-
-\bibitem[Fennell and Gezelter(2006)]{Gezelter06}
-C.~J. Fennell and J.~D. Gezelter.
-\newblock Is the ewald summation still necessary? pairwise alternatives to the
-  accepted standard for long-range electrostatics.
-\newblock \emph{The Journal of Chemical Physics}, 124\penalty0 (23):\penalty0
-  234104, 2006.
-\newblock \doi{http://dx.doi.org/10.1063/1.2206581}.
-\newblock URL
-  \url{http://scitation.aip.org/content/aip/journal/jcp/124/23/10.1063/1.2206581}.
-
-\bibitem[Forrest et~al.(2012)Forrest, Pham, McLaughlin, Belof, Stern,
-  Zaworotko, and Space]{Forrest12}
-K.~A. Forrest, T.~Pham, K.~McLaughlin, J.~L. Belof, A.~C. Stern, M.~J.
-  Zaworotko, and B.~Space.
-\newblock Simulation of the mechanism of gas sorption in a metal--organic
-  framework with open metal sites: Molecular hydrogen in pcn-61.
-\newblock 116\penalty0 (29):\penalty0 15538--15549, 2012.
-\newblock \doi{10.1021/jp306084t}.
-\newblock URL \url{http://dx.doi.org/10.1021/jp306084t}.
-
-\bibitem[Fukuda(2013)]{Fukuda13}
-I.~Fukuda.
-\newblock Zero-multipole summation method for efficiently estimating
-  electrostatic interactions in molecular system.
-\newblock 139\penalty0 (17):\penalty0 174107, 2013.
-\newblock \doi{http://dx.doi.org/10.1063/1.4827055}.
-\newblock URL
-  \url{http://scitation.aip.org/content/aip/journal/jcp/139/17/10.1063/1.4827055}.
-
-\bibitem[Fukuda et~al.(2011)Fukuda, Yonezawa, and Nakamura]{Fukuda11}
-I.~Fukuda, Y.~Yonezawa, and H.~Nakamura.
-\newblock Molecular dynamics scheme for precise estimation of electrostatic
-  interaction via zero-dipole summation principle.
-\newblock 134\penalty0 (16):\penalty0 164107, 2011.
-\newblock \doi{http://dx.doi.org/10.1063/1.3582791}.
-\newblock URL
-  \url{http://scitation.aip.org/content/aip/journal/jcp/134/16/10.1063/1.3582791}.
-
-\bibitem[Fukuda et~al.(2012)Fukuda, Kamiya, Yonezawa, and Nakamura]{Fukuda12}
-I.~Fukuda, N.~Kamiya, Y.~Yonezawa, and H.~Nakamura.
-\newblock Simple and accurate scheme to compute electrostatic interaction:
-  Zero-dipole summation technique for molecular system and application to bulk
-  water.
-\newblock 137\penalty0 (5):\penalty0 054314, 2012.
-\newblock \doi{http://dx.doi.org/10.1063/1.4739789}.
-\newblock URL
-  \url{http://scitation.aip.org/content/aip/journal/jcp/137/5/10.1063/1.4739789}.
-
-\bibitem[Gezelter et~al.()Gezelter, Lamichhane, Louden, Michalka, Niedhart,
-  Lin, II, Fennell, Meineke, Kuang, Stocker, Marr, Sun, Li, Daily, and
-  Zheng]{Openmd2.3}
-J.~D. Gezelter, M.~Lamichhane, P.~Louden, J.~Michalka, S.~Niedhart, T.~Lin,
-  C.~F.~V. II, C.~J. Fennell, M.~A. Meineke, S.~Kuang, K.~Stocker, J.~Marr,
-  X.~Sun, C.~Li, K.~Daily, and Y.~Zheng.
-\newblock Openmd-2.3: Molecular dynamics in the open.
-\newblock Available at {\tt http://openmd.org}.
-
-\bibitem[Golubkov and Ren(2006)]{Golubkov06}
-P.~A. Golubkov and R.~Ren.
-\newblock Generalized coarse-grained model based on point multipole and
-  {G}ay-{B}erne potentials.
-\newblock 125:\penalty0 064103, 2006.
-
-\bibitem[Hansen et~al.(2012)Hansen, Schroder, and Dyre]{Hansen12}
-J.~S. Hansen, T.~B. Schroder, and J.~C. Dyre.
-\newblock Simplistic {C}oulomb forces in molecular dynamics: Comparing the
-  {W}olf and shifted-force approximations.
-\newblock 116:\penalty0 5738--5743, 2012.
-\newblock \doi{DOI 10.1021/jp300750g}.
-
-\bibitem[Hockney and Eastwood(1988)]{Hockney88}
-R.~W. Hockney and J.~W. Eastwood.
-\newblock \emph{Computer simulation using particles}.
-\newblock CRC Press, 1988.
-
-\bibitem[Horn et~al.(2004)Horn, Swope, Pitera, Madura, Dick, Hura, and
-  Head-Gordon]{Horn04}
-H.~W. Horn, W.~C. Swope, J.~W. Pitera, J.~D. Madura, T.~J. Dick, G.~L. Hura,
-  and T.~Head-Gordon.
-\newblock Development of an improved four-site water model for biomolecular
-  simulations: \uppercase{TIP4P-E}w.
-\newblock 120\penalty0 (20):\penalty0 9665--9678, 2004.
-\newblock \doi{10.1063/1.1683075}.
-
-\bibitem[H\"{u}nenberger and McCammon(1999{\natexlab{a}})]{Hunenberger99a}
-P.~H. H\"{u}nenberger and J.~A. McCammon.
-\newblock Ewald artifacts in computer simulations of ionic solvation and ion --
-  ion interaction: A continuum electrostatics study.
-\newblock \emph{J. Chem. Phys.}, 110\penalty0 (4):\penalty0 1856--1872,
-  1999{\natexlab{a}}.
-
-\bibitem[H\"{u}nenberger and McCammon(1999{\natexlab{b}})]{Hunenberger99b}
-P.~H. H\"{u}nenberger and J.~A. McCammon.
-\newblock Effect of artificial periodicity in simulations of biomolecules under
-  ewald boundary conditions: a continuum electrostatics study.
-\newblock \emph{Biophys. Chem.}, 78:\penalty0 69--88, 1999{\natexlab{b}}.
-
-\bibitem[Ichiye and Tan(2006)]{Ichiye06}
-T.~Ichiye and M.-L. Tan.
-\newblock Soft sticky dipole-quadrupole-octupole potential energy function for
-  liquid water: An approximate moment expansion.
-\newblock 124\penalty0 (13):\penalty0 134504--10, 2006.
-\newblock URL \url{Http://Link.Aip.Org/Link/?jcp/124/134504/1}.
-
-\bibitem[Impey et~al.(1982)Impey, Madden, and McDonald]{Impey82}
-R.~W. Impey, P.~A. Madden, and I.~R. McDonald.
-\newblock Spectroscopic and transport properties of water: \uppercase{M}odel
-  calculations and the interpretation of experimental results.
-\newblock 46\penalty0 (3):\penalty0 513--539, 1982.
-
-\bibitem[Izvekov et~al.(2008)Izvekov, Swanson, and Voth]{Izvekov08}
-S.~Izvekov, J.~M.~J. Swanson, and G.~A. Voth.
-\newblock Coarse-graining in interaction space: A systematic approach for
-  replacing long-range electrostatics with short-range potentials.
-\newblock 112:\penalty0 4711--4724, 2008.
-\newblock \doi{DOI 10.1021/jp710339n}.
-
-\bibitem[Jackson(1998)]{Jackson98}
-J.~D. Jackson.
-\newblock \emph{{Classical Electrodynamics Third Edition}}.
-\newblock Wiley, third edition, Aug. 1998.
-\newblock ISBN 047130932X.
-\newblock URL
-  \url{http://www.amazon.com/exec/obidos/redirect?tag=citeulike07-20\&path=ASIN/047130932X}.
-
-\bibitem[Jeon and Kim(2003{\natexlab{a}})]{JeonI03}
-J.~Jeon and H.~J. Kim.
-\newblock A continuum theory of solvation in quadrupolar solvents. i.
-  formulation.
-\newblock \emph{The Journal of Chemical Physics}, 119\penalty0 (16):\penalty0
-  8606--8625, 2003{\natexlab{a}}.
-\newblock \doi{http://dx.doi.org/10.1063/1.1605376}.
-\newblock URL
-  \url{http://scitation.aip.org/content/aip/journal/jcp/119/16/10.1063/1.1605376}.
-
-\bibitem[Jeon and Kim(2003{\natexlab{b}})]{JeonII03}
-J.~Jeon and H.~J. Kim.
-\newblock A continuum theory of solvation in quadrupolar solvents. ii.
-  solvation free energetics, dynamics, and solvatochromism.
-\newblock \emph{The Journal of Chemical Physics}, 119\penalty0 (16):\penalty0
-  8626--8635, 2003{\natexlab{b}}.
-\newblock \doi{http://dx.doi.org/10.1063/1.1605377}.
-\newblock URL
-  \url{http://scitation.aip.org/content/aip/journal/jcp/119/16/10.1063/1.1605377}.
-
-\bibitem[Kannam et~al.(2013)Kannam, Todd, Hansen, and Daivis]{kannam13}
-S.~K. Kannam, B.~D. Todd, J.~S. Hansen, and P.~J. Daivis.
-\newblock How fast does water flow in carbon nanotubes?
-\newblock 138\penalty0 (9):\penalty0 094701, 2013.
-\newblock \doi{10.1063/1.4793396}.
-\newblock URL \url{http://link.aip.org/link/?JCP/138/094701/1}.
-
-\bibitem[Kast et~al.(2003)Kast, Schmidt, and Schilling]{Kast03}
-S.~M. Kast, K.~F. Schmidt, and B.~Schilling.
-\newblock Integral equation theory for correcting truncation errors in
-  molecular simulations.
-\newblock 367:\penalty0 398--404, 2003.
-
-\bibitem[Kirkwood(1939)]{Kirkwood39}
-J.~G. Kirkwood.
-\newblock The dielectric polarization of polar liquids.
-\newblock \emph{The Journal of Chemical Physics}, 7\penalty0 (10):\penalty0
-  911--919, 1939.
-\newblock \doi{http://dx.doi.org/10.1063/1.1750343}.
-\newblock URL
-  \url{http://scitation.aip.org/content/aip/journal/jcp/7/10/10.1063/1.1750343}.
-
-\bibitem[Lamichhane et~al.(2014)Lamichhane, Gezelter, and
-  Newman]{Lamichhane14_I}
-M.~Lamichhane, J.~D. Gezelter, and K.~E. Newman.
-\newblock Real space electrostatics for multipoles. i. development of methods.
-\newblock \emph{The Journal of Chemical Physics}, 141\penalty0 (13):\penalty0
-  134109, 2014.
-\newblock \doi{http://dx.doi.org/10.1063/1.4896627}.
-\newblock URL
-  \url{http://scitation.aip.org/content/aip/journal/jcp/141/13/10.1063/1.4896627}.
-
-\bibitem[Logan(1981)]{LoganI81}
-D.~E. Logan.
-\newblock On the dielectric theory of fluids.
-\newblock \emph{Molecular Physics}, 44\penalty0 (6):\penalty0 1271--1295, 1981.
-\newblock \doi{10.1080/00268978100103181}.
-\newblock URL \url{http://dx.doi.org/10.1080/00268978100103181}.
-
-\bibitem[Logan(1982{\natexlab{a}})]{LoganII82}
-D.~E. Logan.
-\newblock On the dielectric theory of fluids.
-\newblock \emph{Molecular Physics}, 46\penalty0 (2):\penalty0 271--285,
-  1982{\natexlab{a}}.
-\newblock \doi{10.1080/00268978200101251}.
-\newblock URL \url{http://dx.doi.org/10.1080/00268978200101251}.
-
-\bibitem[Logan(1982{\natexlab{b}})]{LoganIII82}
-D.~E. Logan.
-\newblock On the dielectric theory of fluids.
-\newblock \emph{Molecular Physics}, 46\penalty0 (6):\penalty0 1155--1194,
-  1982{\natexlab{b}}.
-\newblock \doi{10.1080/00268978200101871}.
-\newblock URL \url{http://dx.doi.org/10.1080/00268978200101871}.
-
-\bibitem[Louden et~al.(2013)Louden, Schoenborn, and Lawrence]{Louden13}
-P.~Louden, R.~Schoenborn, and C.~P. Lawrence.
-\newblock Molecular dynamics simulations of the condensation coefficient of
-  water.
-\newblock \emph{Fluid Phase Equilibria}, 349\penalty0 (0):\penalty0 83--86,
-  2013.
-\newblock \doi{http://dx.doi.org/10.1016/j.fluid.2013.04.006}.
-\newblock URL
-  \url{http://www.sciencedirect.com/science/article/pii/S037838121300174X}.
-
-\bibitem[Luttinger and Tisza(1946)]{LT}
-J.~M. Luttinger and L.~Tisza.
-\newblock Theory of dipole interaction in crystals.
-\newblock \emph{Phys. Rev.}, 70:\penalty0 954--964, Dec 1946.
-\newblock \doi{10.1103/PhysRev.70.954}.
-\newblock URL \url{http://link.aps.org/doi/10.1103/PhysRev.70.954}.
-
-\bibitem[Luttinger and Tisza(1947)]{LT2}
-J.~M. Luttinger and L.~Tisza.
-\newblock Errata: Theory of dipole interaction in crystals [phys. rev. 70, 954
-  (1946)].
-\newblock \emph{Phys. Rev.}, 72:\penalty0 257--257, Aug 1947.
-\newblock \doi{10.1103/PhysRev.72.257}.
-\newblock URL \url{http://link.aps.org/doi/10.1103/PhysRev.72.257}.
-
-\bibitem[Luty and {van~Gunsteren}(1996)]{Luty96}
-B.~A. Luty and W.~F. {van~Gunsteren}.
-\newblock Calculating electrostatic interactions using the particle-particle
-  particle-mesh method with nonperiodic long-range interactions.
-\newblock \emph{J. Phys. Chem.}, 100\penalty0 (7):\penalty0 2581--2587, 1996.
-
-\bibitem[Luty et~al.(1994)Luty, Davis, Tironi, and Gunsteren]{Luty94}
-B.~A. Luty, M.~E. Davis, I.~G. Tironi, and W.~F.~V. Gunsteren.
-\newblock A comparison of particle-particle, particle-mesh and ewald methods
-  for calculating electrostatic interactions in periodic molecular systems.
-\newblock \emph{Molecular Simulation}, 14\penalty0 (1):\penalty0 11--20, 1994.
-\newblock \doi{10.1080/08927029408022004}.
-\newblock URL \url{http://dx.doi.org/10.1080/08927029408022004}.
-
-\bibitem[Luty et~al.(1995)Luty, Tironi, and van Gunsteren]{Luty95}
-B.~A. Luty, I.~G. Tironi, and W.~F. van Gunsteren.
-\newblock Lattice‐sum methods for calculating electrostatic interactions in
-  molecular simulations.
-\newblock \emph{The Journal of Chemical Physics}, 103\penalty0 (8), 1995.
-
-\bibitem[Ma and Garofalini(2005)]{Ma05}
-Y.~Ma and S.~H. Garofalini.
-\newblock Modified wolf electrostatic summation: Incorporating an empirical
-  charge overlap.
-\newblock \emph{Mol. Simul.}, 31\penalty0 (11):\penalty0 739--748, 2005.
-
-\bibitem[M.Born and Karman(1912)]{Born1912}
-M.Born and T.~V. Karman.
-\newblock \emph{Physik}, Z\penalty0 (13):\penalty0 297, 1912.
-
-\bibitem[McCann and Acevedo(2013)]{McCann13}
-B.~W. McCann and O.~Acevedo.
-\newblock Pairwise alternatives to {E}wald summation for calculating long-range
-  electrostatics in ionic liquids.
-\newblock 9:\penalty0 944--950, 2013.
-\newblock \doi{DOI 10.1021/ct300961e}.
-
-\bibitem[Metropolis et~al.(1953)Metropolis, Rosenbluth, Rosenbluth, Teller, and
-  Teller]{Metropolis53}
-N.~Metropolis, A.~W. Rosenbluth, M.~N. Rosenbluth, A.~H. Teller, and E.~Teller.
-\newblock Equation of state calculations by fast computing machines.
-\newblock \emph{The Journal of Chemical Physics}, 21\penalty0 (6), 1953.
-
-\bibitem[Nagai and Nakamura(1960)]{Nagai60}
-O.~Nagai and T.~Nakamura.
-\newblock Quadrupole interaction in crystals.
-\newblock \emph{Progress of Theoretical Physics}, 24\penalty0 (2):\penalty0
-  432--454, 1960.
-\newblock \doi{10.1143/PTP.24.432}.
-\newblock URL \url{http://ptp.oxfordjournals.org/content/24/2/432.abstract}.
-
-\bibitem[Nagai and Nakamura(1963)]{Nagai63}
-O.~Nagai and T.~Nakamura.
-\newblock Quadrupole interaction in crystals.
-\newblock \emph{Progress of Theoretical Physics}, 30\penalty0 (3):\penalty0
-  412, 1963.
-\newblock \doi{10.1143/PTP.30.412a}.
-\newblock URL \url{http://ptp.oxfordjournals.org/content/30/3/412.1.short}.
-
+\bibitem[Adams and Adams(1981)Adams, and Adams]{Adams81}
+Adams,~D.; Adams,~E. \emph{Mol. Phys.} \textbf{1981}, \emph{42}, 907--926\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
 \bibitem[Neumann(1983)]{NeumannI83}
-M.~Neumann.
-\newblock Dipole moment fluctuation formulas in computer simulations of polar
-  systems.
-\newblock \emph{Molecular Physics}, 50\penalty0 (4):\penalty0 841--858, 1983.
-\newblock \doi{10.1080/00268978300102721}.
-
-\bibitem[Neumann(1985)]{Neumann85}
-M.~Neumann.
-\newblock The dielectric constant of water. \uppercase{C}omputer simulations
-  with the \uppercase{MCY} potential.
-\newblock 82\penalty0 (12):\penalty0 5663--5672, 1985.
-
-\bibitem[Neumann and Steinhauser(1983)]{NeumannII83}
-M.~Neumann and O.~Steinhauser.
-\newblock On the calculation of the dielectric constant using the
-  ewald-kornfeld tensor.
-\newblock \emph{Chemical Physics Letters}, 95\penalty0 (4--5):\penalty0 417 --
-  422, 1983.
-\newblock ISSN 0009-2614.
-\newblock \doi{http://dx.doi.org/10.1016/0009-2614(83)80585-5}.
-
-\bibitem[Neumann et~al.(1984)Neumann, Steinhauser, and Pawley]{Neumann84}
-M.~Neumann, O.~Steinhauser, and G.~S. Pawley.
-\newblock Consistent calculation of the static and frequency-dependent
-  dielectric constant in computer simulations.
-\newblock 52\penalty0 (1):\penalty0 97--113, 1984.
-
-\bibitem[Onsager(1936)]{Onsagar36}
-L.~Onsager.
-\newblock Electric moments of molecules in liquids.
-\newblock \emph{Journal of the American Chemical Society}, 58\penalty0
-  (8):\penalty0 1486--1493, 1936.
-\newblock \doi{10.1021/ja01299a050}.
-\newblock URL \url{http://dx.doi.org/10.1021/ja01299a050}.
-
-\bibitem[Orsi and Essex({2011})]{Orsi11}
-M.~Orsi and J.~W. Essex.
-\newblock {The ELBA Force Field for Coarse-Grain Modeling of Lipid Membranes}.
-\newblock \emph{{PLOS ONE}}, {6}\penalty0 ({12}):\penalty0 {e28637}, {2011}.
-\newblock ISSN {1932-6203}.
-
-\bibitem[Orsi et~al.({2010})Orsi, Michel, and Essex]{Orsi10}
-M.~Orsi, J.~Michel, and J.~W. Essex.
-\newblock {Coarse-grain modelling of DMPC and DOPC lipid bilayers}.
-\newblock \emph{J. Phys. - Cond. Matt.}, {22}\penalty0 ({15}):\penalty0
-  {155106}, {2010}.
-\newblock ISSN {0953-8984}.
-
-\bibitem[Perram et~al.(1988)Perram, Petersen, and Leeuw]{Perram88}
-J.~W. Perram, H.~G. Petersen, and S.~W.~D. Leeuw.
-\newblock An algorithm for the simulation of condensed matter which grows as
-  the 3/2 power of the number of particles.
-\newblock \emph{Molecular Physics}, 65\penalty0 (4):\penalty0 875--893, 1988.
-\newblock \doi{10.1080/00268978800101471}.
-\newblock URL \url{http://dx.doi.org/10.1080/00268978800101471}.
-
-\bibitem[Ponder et~al.(2010)Ponder, Wu, Ren, Pande, Chodera, Schnieders, Haque,
-  Mobley, Lambrecht, DiStasio, Head-Gordon, Clark, Johnson, and
-  Head-Gordon]{Ponder10}
-J.~W. Ponder, C.~Wu, P.~Ren, V.~S. Pande, J.~D. Chodera, M.~J. Schnieders,
-  I.~Haque, D.~L. Mobley, D.~S. Lambrecht, R.~A. DiStasio, Jr, M.~Head-Gordon,
-  G.~N.~I. Clark, M.~E. Johnson, and T.~Head-Gordon.
-\newblock Current status of the {AMOEBA} polarizable force field.
-\newblock 114\penalty0 (8):\penalty0 2549--64, 2010.
-\newblock \doi{10.1021/jp910674d}.
-
-\bibitem[Price et~al.(1984)Price, Stone, and Alderton]{Price84}
-S.~Price, A.~Stone, and M.~Alderton.
-\newblock Explicit formulae for the electrostatic energy, forces and torques
-  between a pair of molecules of arbitrary symmetry.
-\newblock 52\penalty0 (4):\penalty0 987--1001, 1984.
-\newblock \doi{10.1080/00268978400101721}.
-\newblock URL
-  \url{http://www.tandfonline.com/doi/abs/10.1080/00268978400101721}.
-
-\bibitem[Rajagopal and Needs(1994)]{Rajagopal94}
-G.~Rajagopal and R.~Needs.
-\newblock An optimized ewald method for long-ranged potentials.
-\newblock \emph{Journal of Computational Physics}, 115\penalty0 (2):\penalty0
-  399 -- 405, 1994.
-\newblock ISSN 0021-9991.
-\newblock \doi{http://dx.doi.org/10.1006/jcph.1994.1205}.
-\newblock URL
-  \url{http://www.sciencedirect.com/science/article/pii/S0021999184712058}.
-
-\bibitem[Ren et~al.(2011)Ren, Wu, and Ponder]{Ren11}
-P.~Ren, C.~Wu, and J.~W. Ponder.
-\newblock Polarizable atomic multipole-based molecular mechanics for organic
-  molecules.
-\newblock 7\penalty0 (10):\penalty0 3143--3161, 2011.
-\newblock \doi{10.1021/ct200304d}.
-
-\bibitem[Roberts and Schnitker(1994)]{Roberts94}
-J.~E. Roberts and J.~Schnitker.
-\newblock How the unit cell surface charge distriubution affects the energetics
-  of ion-solvent interactions in simulations.
-\newblock \emph{J. Chem. Phys.}, 101\penalty0 (6):\penalty0 5024--5031, 1994.
-
-\bibitem[Roberts and Schnitker(1995)]{Roberts95}
-J.~E. Roberts and J.~Schnitker.
-\newblock Boundary conditions in sumulations of aqueous ionic solutions: A
-  systematic study.
-\newblock \emph{J. Phys. Chem.}, 99:\penalty0 1322--1331, 1995.
-
-\bibitem[Rodgers et~al.(2006)Rodgers, Kaur, Chen, and Weeks]{Rodgers06}
-J.~M. Rodgers, C.~Kaur, Y.-G. Chen, and J.~D. Weeks.
-\newblock Attraction between like-charged walls: Short-ranged simulations using
-  local molecular field theory.
-\newblock \emph{Phys. Rev. Lett.}, 97:\penalty0 097801, Aug 2006.
-\newblock \doi{10.1103/PhysRevLett.97.097801}.
-\newblock URL \url{http://link.aps.org/doi/10.1103/PhysRevLett.97.097801}.
-
-\bibitem[Rycerz and Jacobs(1992)]{Jacobs92}
-Z.~A. Rycerz and P.~W.~M. Jacobs.
-\newblock Ewald summation in the molecular dynamics simulation of large ionic
-  systems.
-\newblock \emph{Molecular Simulation}, 8\penalty0 (3-5):\penalty0 197--213,
-  1992.
-\newblock \doi{10.1080/08927029208022476}.
-\newblock URL \url{http://dx.doi.org/10.1080/08927029208022476}.
-
-\bibitem[Sauer(1940)]{Sauer}
-J.~A. Sauer.
-\newblock Magnetic energy constants of dipolar lattices.
-\newblock \emph{Phys. Rev.}, 57:\penalty0 142--146, 1940.
-\newblock \doi{10.1103/PhysRev.57.142}.
-\newblock URL \url{http://link.aps.org/doi/10.1103/PhysRev.57.142}.
-
-\bibitem[Schnieders et~al.(2007)Schnieders, Baker, Ren, and
-  Ponder]{schnieders07}
-M.~J. Schnieders, N.~A. Baker, P.~Ren, and J.~W. Ponder.
-\newblock Polarizable atomic multipole solutes in a poisson-boltzmann
-  continuum.
-\newblock 126\penalty0 (12):\penalty0 124114, 2007.
-\newblock \doi{10.1063/1.2714528}.
-\newblock URL \url{http://link.aip.org/link/?JCP/126/124114/1}.
-
-\bibitem[Shi and Luebke(2013)]{Shi13}
-W.~Shi and D.~R. Luebke.
-\newblock Enhanced gas absorption in the ionic liquid
-  1-n-hexyl-3-methylimidazolium bis(trifluoromethylsulfonyl)amide
-  ([hmim][{Tf2N}]) confined in silica slit pores: A molecular simulation study.
-\newblock \emph{Langmuir}, 29\penalty0 (18):\penalty0 5563--5572, 2013.
-\newblock \doi{10.1021/la400226g}.
-
-\bibitem[Shimada et~al.(1993)Shimada, Kaneko, and Takada]{Shimada93}
-J.~Shimada, H.~Kaneko, and T.~Takada.
-\newblock Efficient calculations of coulombic interactions in biomolecular
-  simulations with periodic boundary conditions.
-\newblock \emph{Journal of Computational Chemistry}, 14\penalty0 (7):\penalty0
-  867--878, 1993.
-\newblock ISSN 1096-987X.
-\newblock \doi{10.1002/jcc.540140712}.
-\newblock URL \url{http://dx.doi.org/10.1002/jcc.540140712}.
-
-\bibitem[Slavchov(2014)]{SalvchovII14}
-R.~I. Slavchov.
-\newblock Quadrupole terms in the maxwell equations: Debye-hückel theory in
-  quadrupolarizable solvent and self-salting-out of electrolytes.
-\newblock \emph{The Journal of Chemical Physics}, 140\penalty0 (16):\penalty0
-  164510, 2014.
-\newblock \doi{http://dx.doi.org/10.1063/1.4871661}.
-\newblock URL
-  \url{http://scitation.aip.org/content/aip/journal/jcp/140/16/10.1063/1.4871661}.
-
-\bibitem[Slavchov and Ivanov(2014)]{SalvchovI14}
-R.~I. Slavchov and T.~I. Ivanov.
-\newblock Quadrupole terms in the maxwell equations: Born energy, partial molar
-  volume, and entropy of ions.
-\newblock \emph{The Journal of Chemical Physics}, 140\penalty0 (7):\penalty0
-  074503, 2014.
-\newblock \doi{http://dx.doi.org/10.1063/1.4865878}.
-\newblock URL
-  \url{http://scitation.aip.org/content/aip/journal/jcp/140/7/10.1063/1.4865878}.
-
-\bibitem[Smith(1982)]{Smith82}
-W.~Smith.
-\newblock Point multipoles in the \uppercase{E}wald summation.
-\newblock \emph{CCP5 Information Quarterly}, 4:\penalty0 13--25, 1982.
-
-\bibitem[Smith(1998)]{Smith98}
-W.~Smith.
-\newblock Point multipoles in the \uppercase{E}wald summation (revisited).
-\newblock \emph{CCP5 Information Quarterly}, 46:\penalty0 18--30, 1998.
-
-\bibitem[Stern and Feller(2003{\natexlab{a}})]{Stern-Feller03}
-H.~A. Stern and S.~E. Feller.
-\newblock Calculation of the dielectric permittivity profile for a nonuniform
-  system: Application to a lipid bilayer simulation.
-\newblock \emph{The Journal of Chemical Physics}, 118\penalty0 (7):\penalty0
-  3401--3412, 2003{\natexlab{a}}.
-\newblock \doi{http://dx.doi.org/10.1063/1.1537244}.
-\newblock URL
-  \url{http://scitation.aip.org/content/aip/journal/jcp/118/7/10.1063/1.1537244}.
-
-\bibitem[Stern and Feller(2003{\natexlab{b}})]{Stern03}
-H.~A. Stern and S.~E. Feller.
-\newblock Calculation of the dielectric permittivity profile for a nonuniform
-  system: Application to a lipid bilayer simulation.
-\newblock \emph{The Journal of Chemical Physics}, 118\penalty0 (7):\penalty0
-  3401--3412, 2003{\natexlab{b}}.
-\newblock \doi{http://dx.doi.org/10.1063/1.1537244}.
-\newblock URL
-  \url{http://scitation.aip.org/content/aip/journal/jcp/118/7/10.1063/1.1537244}.
-
-\bibitem[Te and Ichiye(2010{\natexlab{a}})]{Te10vn}
-J.~A. Te and T.~Ichiye.
-\newblock Understanding structural effects of multipole moments on aqueous
-  solvation of ions using the soft-sticky dipole-quadrupole-octupole water
-  model.
-\newblock 499\penalty0 (4-6):\penalty0 219--225, 2010{\natexlab{a}}.
-\newblock ISSN 0009-2614.
-\newblock \doi{10.1016/j.cplett.2010.09.043}.
-
-\bibitem[Te and Ichiye(2010{\natexlab{b}})]{Te10ys}
-J.~A. Te and T.~Ichiye.
-\newblock Temperature and pressure dependence of the optimized soft-sticky
-  dipole-quadrupole-octupole water model.
-\newblock 132\penalty0 (11):\penalty0 114511, 2010{\natexlab{b}}.
-\newblock ISSN 0021-9606.
-\newblock \doi{10.1063/1.3359432}.
-
-\bibitem[Te et~al.(2010)Te, Tan, and Ichiye]{Te10rt}
-J.~A. Te, M.-L. Tan, and T.~Ichiye.
-\newblock Solvation of glucose, trehalose, and sucrose by the soft-sticky
-  dipole-quadrupole-octupole water model.
-\newblock 491\penalty0 (4-6):\penalty0 218--223, 2010.
-\newblock ISSN 0009-2614.
-\newblock \doi{10.1016/j.cplett.2010.04.020}.
-
-\bibitem[Tokumasu et~al.(2013)Tokumasu, Meurisse, Fillot, and
+Neumann,~M. \emph{Mol. Phys.} \textbf{1983}, \emph{50}, 841--858\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Adams(1980)]{Adams80}
+Adams,~D. \emph{Mol. Phys.} \textbf{1980}, \emph{40}, 1261--1271\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Perram \latin{et~al.}(1988)Perram, Petersen, and Leeuw]{Perram88}
+Perram,~J.~W.; Petersen,~H.~G.; Leeuw,~S. W.~D. \emph{Mol. Phys.}
+  \textbf{1988}, \emph{65}, 875--893\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Shimada \latin{et~al.}(1993)Shimada, Kaneko, and Takada]{Shimada93}
+Shimada,~J.; Kaneko,~H.; Takada,~T. \emph{J. Comput. Chem.} \textbf{1993},
+  \emph{14}, 867--878\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Luty \latin{et~al.}(1995)Luty, Tironi, and Van~Gunsteren]{Luty95}
+Luty,~B.~A.; Tironi,~I.~G.; Van~Gunsteren,~W.~F. \emph{J. Chem. Phys.}
+  \textbf{1995}, \emph{103}, 3014--3021\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Darden \latin{et~al.}(1993)Darden, York, and Pedersen]{Darden93}
+Darden,~T.; York,~D.; Pedersen,~L. \emph{J. Chem. Phys.} \textbf{1993},
+  \emph{98}, 10089--10092\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Essmann \latin{et~al.}(1995)Essmann, Perera, Berkowitz, Darden, Lee,
+  and Pedersen]{Essmann95}
+Essmann,~U.; Perera,~L.; Berkowitz,~M.~L.; Darden,~T.; Lee,~H.; Pedersen,~L.~G.
+  \emph{J. Chem. Phys.} \textbf{1995}, \emph{103}, 8577--8593\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Roberts and Schnitker(1994)Roberts, and Schnitker]{Roberts94}
+Roberts,~J.~E.; Schnitker,~J. \emph{J. Chem. Phys.} \textbf{1994}, \emph{101},
+  5024--5031\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Roberts and Schnitker(1995)Roberts, and Schnitker]{Roberts95}
+Roberts,~J.~E.; Schnitker,~J. \emph{J. Phys. Chem.} \textbf{1995}, \emph{99},
+  1322--1331\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Luty and {van~Gunsteren}(1996)Luty, and {van~Gunsteren}]{Luty96}
+Luty,~B.~A.; {van~Gunsteren},~W.~F. \emph{J. Phys. Chem.} \textbf{1996},
+  \emph{100}, 2581--2587\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[H\"{u}nenberger and McCammon(1999)H\"{u}nenberger, and
+  McCammon]{Hunenberger99a}
+H\"{u}nenberger,~P.~H.; McCammon,~J.~A. \emph{J. Chem. Phys.} \textbf{1999},
+  \emph{110}, 1856--1872\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[H\"{u}nenberger and McCammon(1999)H\"{u}nenberger, and
+  McCammon]{Hunenberger99b}
+H\"{u}nenberger,~P.~H.; McCammon,~J.~A. \emph{Biophys. Chem.} \textbf{1999},
+  \emph{78}, 69--88\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Weber \latin{et~al.}(2000)Weber, H\"{u}nenberger, and
+  McCammon]{Weber00}
+Weber,~W.; H\"{u}nenberger,~P.~H.; McCammon,~J.~A. \emph{J. Phys. Chem. B}
+  \textbf{2000}, \emph{104}, 3668--3675\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Fennell and Gezelter(2006)Fennell, and Gezelter]{Gezelter06}
+Fennell,~C.~J.; Gezelter,~J.~D. \emph{J. Chem. Phys.} \textbf{2006},
+  \emph{124}, 234104\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Wolf \latin{et~al.}(1999)Wolf, Keblinski, Phillpot, and
+  Eggebrecht]{Wolf99}
+Wolf,~D.; Keblinski,~P.; Phillpot,~S.~R.; Eggebrecht,~J. \emph{J. Chem. Phys.}
+  \textbf{1999}, \emph{110}, 8254--8282\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Dirk \latin{et~al.}(2002)Dirk, Bernd, and Stefan]{Zahn02}
+Dirk,~Z.; Bernd,~S.; Stefan,~M.~K. \emph{J. Phys. Chem. B} \textbf{2002},
+  \emph{106}, 10725--10732\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Gezelter \latin{et~al.}(version 2.4, {\tt http://openmd.org} (accessed
+  4/8/2016))Gezelter, Lamichhane, Michalka, Louden, Stocker, Kuang, Marr, Li,
+  Vardeman, Lin, Fennell, Sun, Daily, Zheng, and Meineke]{openmd}
+Gezelter,~J.~D.; Lamichhane,~M.; Michalka,~J.; Louden,~P.; Stocker,~K.~M.;
+  Kuang,~S.; Marr,~J.; Li,~C.; Vardeman,~C.~F.; Lin,~T.; Fennell,~C.~J.;
+  Sun,~X.; Daily,~K.; Zheng,~Y.; Meineke,~M.~A. \emph{OpenMD}; An open source
+  molecular dynamics engine, version 2.4, {\tt http://openmd.org} (accessed
+  4/8/2016)\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Born and Karman(1912)Born, and Karman]{Born1912}
+Born,~M.; Karman,~T.~V. \emph{Physik} \textbf{1912}, \emph{Z}, 297\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Allen(2004)]{Allen04}
+Allen,~M.~P. Introduction to molecular dynamics simulation. 2004\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Metropolis \latin{et~al.}(1953)Metropolis, Rosenbluth, Rosenbluth,
+  Teller, and Teller]{Metropolis53}
+Metropolis,~N.; Rosenbluth,~A.~W.; Rosenbluth,~M.~N.; Teller,~A.~H.; Teller,~E.
+  \emph{J. Chem. Phys.} \textbf{1953}, \emph{21}, 1087--1092\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Allen and Tildesley(1989)Allen, and Tildesley]{Allen89}
+Allen,~M.~P.; Tildesley,~D.~J. \emph{Computer Simulation of Liquids}; Clarendon
+  Press: New York, NY, USA, 1989\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Toukmaji and Jr.(1996)Toukmaji, and Jr.]{Toukmaji96}
+Toukmaji,~A.~Y.; Jr.,~J. A.~B. \emph{Comput. Phys. Commun.} \textbf{1996},
+  \emph{95}, 73 -- 92\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Rycerz and Jacobs(1992)Rycerz, and Jacobs]{Jacobs92}
+Rycerz,~Z.~A.; Jacobs,~P. W.~M. \emph{Mol. Simul.} \textbf{1992}, \emph{8},
+  197--213\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Hockney and Eastwood(1988)Hockney, and Eastwood]{Hockney88}
+Hockney,~R.~W.; Eastwood,~J.~W. \emph{Computer simulation using particles}; CRC
+  Press, 1988\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Luty \latin{et~al.}(1994)Luty, Davis, Tironi, and Gunsteren]{Luty94}
+Luty,~B.~A.; Davis,~M.~E.; Tironi,~I.~G.; Gunsteren,~W. F.~V. \emph{Mol.
+  Simul.} \textbf{1994}, \emph{14}, 11--20\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Rajagopal and Needs(1994)Rajagopal, and Needs]{Rajagopal94}
+Rajagopal,~G.; Needs,~R. \emph{J. Comput. Phys.} \textbf{1994}, \emph{115}, 399
+  -- 405\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Fukuda(2013)]{Fukuda13}
+Fukuda,~I. \emph{J. Chem. Phys.} \textbf{2013}, \emph{139}, 174107\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Lamichhane \latin{et~al.}(2014)Lamichhane, Gezelter, and
+  Newman]{Lamichhane14_I}
+Lamichhane,~M.; Gezelter,~J.~D.; Newman,~K.~E. \emph{J. Chem. Phys.}
+  \textbf{2014}, \emph{141}, 134109\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Kast \latin{et~al.}(2003)Kast, Schmidt, and Schilling]{Kast03}
+Kast,~S.~M.; Schmidt,~K.~F.; Schilling,~B. \emph{Chem. Phys. Lett.}
+  \textbf{2003}, \emph{367}, 398--404\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Beck \latin{et~al.}(2005)Beck, Armen, and Daggett]{Beck05}
+Beck,~D.; Armen,~R.; Daggett,~V. \emph{Biochem.} \textbf{2005}, \emph{44},
+  609--616\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Ma and Garofalini(2005)Ma, and Garofalini]{Ma05}
+Ma,~Y.; Garofalini,~S.~H. \emph{Mol. Simul.} \textbf{2005}, \emph{31},
+  739--748\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Chen \latin{et~al.}(2004)Chen, Kaur, and Weeks]{Chen04}
+Chen,~Y.; Kaur,~C.; Weeks,~J. \emph{J. Phys. Chem. B} \textbf{2004},
+  \emph{108}, 19874--19884\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Chen and Weeks(2006)Chen, and Weeks]{Chen06}
+Chen,~Y.; Weeks,~J. \emph{Proc. Natl. Acad. Sci.} \textbf{2006}, \emph{103},
+  7560--7565\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Rodgers \latin{et~al.}(2006)Rodgers, Kaur, Chen, and Weeks]{Rodgers06}
+Rodgers,~J.~M.; Kaur,~C.; Chen,~Y.-G.; Weeks,~J.~D. \emph{Phys. Rev. Lett.}
+  \textbf{2006}, \emph{97}, 097801\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Denesyuk and Weeks(2008)Denesyuk, and Weeks]{Denesyuk08}
+Denesyuk,~N.~A.; Weeks,~J.~D. \emph{J. Chem. Phys.} \textbf{2008}, \emph{128},
+  124109\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Izvekov \latin{et~al.}(2008)Izvekov, Swanson, and Voth]{Izvekov08}
+Izvekov,~S.; Swanson,~J. M.~J.; Voth,~G.~A. \emph{J. Phys. Chem. B}
+  \textbf{2008}, \emph{112}, 4711--4724\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Hansen \latin{et~al.}(2012)Hansen, Schroder, and Dyre]{Hansen12}
+Hansen,~J.~S.; Schroder,~T.~B.; Dyre,~J.~C. \emph{J. Phys. Chem. B}
+  \textbf{2012}, \emph{116}, 5738--5743\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Shi and Luebke(2013)Shi, and Luebke]{Shi13}
+Shi,~W.; Luebke,~D.~R. \emph{Langmuir} \textbf{2013}, \emph{29},
+  5563--5572\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[McCann and Acevedo(2013)McCann, and Acevedo]{McCann13}
+McCann,~B.~W.; Acevedo,~O. \emph{J. Chem. Theory Comput.} \textbf{2013},
+  \emph{9}, 944--950\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Kannam \latin{et~al.}(2013)Kannam, Todd, Hansen, and Daivis]{Kannam13}
+Kannam,~S.~K.; Todd,~B.~D.; Hansen,~J.~S.; Daivis,~P.~J. \emph{J. Chem. Phys.}
+  \textbf{2013}, \emph{138}, 094701\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Forrest \latin{et~al.}(2012)Forrest, Pham, McLaughlin, Belof, Stern,
+  Zaworotko, and Space]{Forrest12}
+Forrest,~K.~A.; Pham,~T.; McLaughlin,~K.; Belof,~J.~L.; Stern,~A.~C.;
+  Zaworotko,~M.~J.; Space,~B. \emph{J. Phys. Chem. C} \textbf{2012},
+  \emph{116}, 15538--15549\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[English(2008)]{English08}
+English,~N.~J. \emph{Mol. Phys.} \textbf{2008}, \emph{106}, 1887--1898\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Louden \latin{et~al.}(2013)Louden, Schoenborn, and Lawrence]{Louden13}
+Louden,~P.; Schoenborn,~R.; Lawrence,~C.~P. \emph{Fluid Phase Equilib.}
+  \textbf{2013}, \emph{349}, 83--86\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Tokumasu \latin{et~al.}(2013)Tokumasu, Meurisse, Fillot, and
   Vergne]{Tokumasu13}
-T.~Tokumasu, M.-H. Meurisse, N.~Fillot, and P.~Vergne.
-\newblock A molecular dynamics study of a nanoscale liquid bridge under shear.
-\newblock \emph{Tribology International}, 59:\penalty0 10--16, 2013.
-\newblock \doi{DOI 10.1016/j.triboint.2012.08.009}.
-
-\bibitem[Toukmaji and Jr.(1996)]{Toukmaji96}
-A.~Y. Toukmaji and J.~A.~B. Jr.
-\newblock Ewald summation techniques in perspective: a survey.
-\newblock \emph{Computer Physics Communications}, 95\penalty0 (2–3):\penalty0
-  73 -- 92, 1996.
-\newblock ISSN 0010-4655.
-\newblock \doi{http://dx.doi.org/10.1016/0010-4655(96)00016-1}.
-\newblock URL
-  \url{http://www.sciencedirect.com/science/article/pii/0010465596000161}.
-
-\bibitem[Trzesniak et~al.(2007)Trzesniak, Kunz, and van Gunsteren]{Wilfred07}
-D.~Trzesniak, A.-P.~E. Kunz, and W.~F. van Gunsteren.
-\newblock A comparison of methods to compute the potential of mean force.
-\newblock \emph{ChemPhysChem}, 8\penalty0 (1):\penalty0 162--169, 2007.
-\newblock ISSN 1439-7641.
-\newblock \doi{10.1002/cphc.200600527}.
-\newblock URL \url{http://dx.doi.org/10.1002/cphc.200600527}.
-
-\bibitem[Weber et~al.(2000)Weber, H\"{u}nenberger, and McCammon]{Weber00}
-W.~Weber, P.~H. H\"{u}nenberger, and J.~A. McCammon.
-\newblock Molecular dynamics simulations of a polyalanine octapeptide under
-  ewald boundary conditions: Influence of artificial periodicity on peptide
-  conformation.
-\newblock \emph{J. Phys. Chem. B}, 104\penalty0 (15):\penalty0 3668--3675,
-  2000.
-\newblock \doi{10.1021/jp9937757}.
-\newblock URL \url{http://dx.doi.org/10.1021/jp9937757}.
-
+Tokumasu,~T.; Meurisse,~M.-H.; Fillot,~N.; Vergne,~P. \emph{Tribol. Int.}
+  \textbf{2013}, \emph{59}, 10--16\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Golubkov and Ren(2006)Golubkov, and Ren]{Golubkov06}
+Golubkov,~P.~A.; Ren,~R. \emph{J. Chem. Phys.} \textbf{2006}, \emph{125},
+  064103\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Orsi \latin{et~al.}({2010})Orsi, Michel, and Essex]{Orsi10}
+Orsi,~M.; Michel,~J.; Essex,~J.~W. \emph{J. Phys. Cond. Matt.} \textbf{{2010}},
+  \emph{{22}}, {155106}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Orsi and Essex({2011})Orsi, and Essex]{Orsi11}
+Orsi,~M.; Essex,~J.~W. \emph{{PLoS One}} \textbf{{2011}}, \emph{{6}},
+  {e28637}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Chowdhuri \latin{et~al.}(2006)Chowdhuri, Tan, and Ichiye]{Chowdhuri06}
+Chowdhuri,~S.; Tan,~M.-L.; Ichiye,~T. \emph{J. Chem. Phys.} \textbf{2006},
+  \emph{125}, 144513\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Te \latin{et~al.}()Te, Tan, and Ichiye]{Te10rt}
+Te,~J.~A.; Tan,~M.-L.; Ichiye,~T. \relax
+\mciteBstWouldAddEndPunctfalse
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Te and Ichiye(2010)Te, and Ichiye]{Te10ys}
+Te,~J.~A.; Ichiye,~T. \emph{J. Chem. Phys.} \textbf{2010}, \emph{132},
+  114511\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Te and Ichiye(2010)Te, and Ichiye]{Te10vn}
+Te,~J.~A.; Ichiye,~T. \emph{Chem. Phys. Lett.} \textbf{2010}, \emph{499},
+  219--225\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Ichiye and Tan(2006)Ichiye, and Tan]{Ichiye06}
+Ichiye,~T.; Tan,~M.-L. \emph{J. Chem. Phys.} \textbf{2006}, \emph{124},
+  134504--10\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Ponder \latin{et~al.}(2010)Ponder, Wu, Ren, Pande, Chodera,
+  Schnieders, Haque, Mobley, Lambrecht, DiStasio, Head-Gordon, Clark, Johnson,
+  and Head-Gordon]{Ponder10}
+Ponder,~J.~W.; Wu,~C.; Ren,~P.; Pande,~V.~S.; Chodera,~J.~D.;
+  Schnieders,~M.~J.; Haque,~I.; Mobley,~D.~L.; Lambrecht,~D.~S.;
+  DiStasio,~R.~A.,~Jr; Head-Gordon,~M.; Clark,~G. N.~I.; Johnson,~M.~E.;
+  Head-Gordon,~T. \emph{J. Phys. Chem. B} \textbf{2010}, \emph{114},
+  2549--64\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Schnieders \latin{et~al.}(2007)Schnieders, Baker, Ren, and
+  Ponder]{schnieders07}
+Schnieders,~M.~J.; Baker,~N.~A.; Ren,~P.; Ponder,~J.~W. \textbf{2007},
+  \emph{126}, 124114\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Ren \latin{et~al.}(2011)Ren, Wu, and Ponder]{Ren11}
+Ren,~P.; Wu,~C.; Ponder,~J.~W. \emph{J. Chem. Theory Comput.} \textbf{2011},
+  \emph{7}, 3143--3161\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[{de Leeuw} \latin{et~al.}(1980){de Leeuw}, Perram, and
+  Smith]{deLeeuw80}
+{de Leeuw},~S.~W.; Perram,~J.~W.; Smith,~E.~R. \emph{Proc. R. Soc. London Ser.
+  A} \textbf{1980}, \emph{373}, 27--56\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Fukuda \latin{et~al.}(2011)Fukuda, Yonezawa, and Nakamura]{Fukuda11}
+Fukuda,~I.; Yonezawa,~Y.; Nakamura,~H. \emph{J. Chem. Phys.} \textbf{2011},
+  \emph{134}, 164107\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Fukuda \latin{et~al.}(2012)Fukuda, Kamiya, Yonezawa, and
+  Nakamura]{Fukuda12}
+Fukuda,~I.; Kamiya,~N.; Yonezawa,~Y.; Nakamura,~H. \emph{J. Chem. Phys.}
+  \textbf{2012}, \emph{137}, 054314\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Allen and Germano(2006)Allen, and Germano]{Allen06}
+Allen,~M.~P.; Germano,~G. \emph{Mol. Phys.} \textbf{2006}, \emph{104},
+  3225--3235\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Price \latin{et~al.}(1984)Price, Stone, and Alderton]{Price84}
+Price,~S.; Stone,~A.; Alderton,~M. \emph{Mol. Phys.} \textbf{1984}, \emph{52},
+  987--1001\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Lamichhane \latin{et~al.}(2014)Lamichhane, Gezelter, and
+  Newman]{PaperI}
+Lamichhane,~M.; Gezelter,~J.~D.; Newman,~K.~E. \emph{J. Chem. Phys.}
+  \textbf{2014}, \emph{141}, 134109\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Smith(1982)]{Smith82}
+Smith,~W. \emph{CCP5 Information Quarterly} \textbf{1982}, \emph{4},
+  13--25\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Smith(1998)]{Smith98}
+Smith,~W. \emph{CCP5 Information Quarterly} \textbf{1998}, \emph{46},
+  18--30\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Aguado and Madden(2003)Aguado, and Madden]{Aguado03}
+Aguado,~A.; Madden,~P.~A. \emph{J. Chem. Phys.} \textbf{2003}, \emph{119},
+  7471--7483\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Sauer(1940)]{Sauer}
+Sauer,~J.~A. \emph{Phys. Rev.} \textbf{1940}, \emph{57}, 142--146\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Luttinger and Tisza(1946)Luttinger, and Tisza]{LT}
+Luttinger,~J.~M.; Tisza,~L. \emph{Phys. Rev.} \textbf{1946}, \emph{70},
+  954--964\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Luttinger and Tisza(1947)Luttinger, and Tisza]{LT2}
+Luttinger,~J.~M.; Tisza,~L. \emph{Phys. Rev.} \textbf{1947}, \emph{72},
+  257--257\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Nagai and Nakamura(1960)Nagai, and Nakamura]{Nagai60}
+Nagai,~O.; Nakamura,~T. \emph{Progr. Theoret. Phys.} \textbf{1960}, \emph{24},
+  432--454\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Nagai and Nakamura(1963)Nagai, and Nakamura]{Nagai63}
+Nagai,~O.; Nakamura,~T. \emph{Progr. Theoret. Phys.} \textbf{1963}, \emph{30},
+  412\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
 \bibitem[Wolf(1992)]{Wolf92}
-D.~Wolf.
-\newblock Reconstruction of nacl surfaces from a dipolar solution to the
-  madelung problem.
-\newblock 68\penalty0 (22):\penalty0 3315--3318, 1992.
-
+Wolf,~D. \emph{Phys. Rev. Lett.} \textbf{1992}, \emph{68}, 3315--3318\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
 \bibitem[Wolf(1995)]{Wolf95}
-D.~Wolf.
-\newblock Simulation of ionic surfaces from an absolutely convergent solution
-  of the madelung problem.
-\newblock In D.~Landau, K.~Mon, and H.-B. Sch{\"u}ttler, editors,
-  \emph{Computer Simulation Studies in Condensed-Matter Physics VIII},
-  volume~80 of \emph{Springer Proceedings in Physics}, pages 57--68. Springer
-  Berlin Heidelberg, 1995.
-\newblock ISBN 978-3-642-79993-8.
-\newblock \doi{10.1007/978-3-642-79991-4_6}.
-\newblock URL \url{http://dx.doi.org/10.1007/978-3-642-79991-4_6}.
-
-\bibitem[Wolf et~al.(1999)Wolf, Keblinski, Phillpot, and Eggebrecht]{Wolf99}
-D.~Wolf, P.~Keblinski, S.~R. Phillpot, and J.~Eggebrecht.
-\newblock Exact method for the simulation of coulombic systems by spherically
-  truncated, pairwise r−1 summation.
-\newblock \emph{The Journal of Chemical Physics}, 110\penalty0 (17), 1999.
-
-\bibitem[Wu and Brooks(2005)]{Wu05}
-X.~Wu and B.~R. Brooks.
-\newblock Isotropic periodic sum: A method for the calculation of long-range
-  interactions.
-\newblock 122\penalty0 (4):\penalty0 044107, 2005.
-\newblock \doi{10.1063/1.1836733}.
-\newblock URL \url{Http://Link.Aip.Org/Link/?jcp/122/044107/1}.
-
-\end{thebibliography}
+Wolf,~D. In \emph{Computer Simulation Studies in Condensed-Matter Physics
+  VIII}; Landau,~D., Mon,~K., Sch{\"u}ttler,~H.-B., Eds.; Springer Proceedings
+  in Physics; Springer Berlin Heidelberg, 1995; Vol.~80; pp 57--68\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Lacman(1965)]{Lacman65}
+Lacman,~R. \emph{Colloq. Int. CNRS} \textbf{1965}, \emph{152}, 195\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Wu and Brooks(2005)Wu, and Brooks]{Wu05}
+Wu,~X.; Brooks,~B.~R. \emph{J. Chem. Phys.} \textbf{2005}, \emph{122},
+  044107\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Dullweber \latin{et~al.}(1997)Dullweber, Leimkuhler, and
+  McLachlan]{Dullweber97}
+Dullweber,~A.; Leimkuhler,~B.; McLachlan,~R. \emph{J. Chem. Phys.}
+  \textbf{1997}, \emph{107}, 5840--5851\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Fisher(1953)]{Fisher53}
+Fisher,~R. \emph{Proc. R. Soc. Lond. A} \textbf{1953}, \emph{217},
+  295--305\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Allen \latin{et~al.}(1991)Allen, Doyle, and Taylor]{Allen91}
+Allen,~F.~H.; Doyle,~M.~J.; Taylor,~R. \emph{Acta Cryst. B} \textbf{1991},
+  \emph{47}, 29--40\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Impey \latin{et~al.}(1982)Impey, Madden, and McDonald]{Impey82}
+Impey,~R.~W.; Madden,~P.~A.; McDonald,~I.~R. \emph{Mol. Phys.} \textbf{1982},
+  \emph{46}, 513--539\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Kirkwood(1939)]{Kirkwood39}
+Kirkwood,~J.~G. \emph{J. Chem. Phys.} \textbf{1939}, \emph{7}, 911--919\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Onsager(1936)]{Onsagar36}
+Onsager,~L. \emph{J. Am. Chem. Soc.} \textbf{1936}, \emph{58}, 1486--1493\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Chitanvis(1996)]{Chitanvis96}
+Chitanvis,~S.~M. \emph{J. Chem. Phys.} \textbf{1996}, \emph{104},
+  9065--9074\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Stern and Feller(2003)Stern, and Feller]{Stern-Feller03}
+Stern,~H.~A.; Feller,~S.~E. \emph{J. Chem. Phys.} \textbf{2003}, \emph{118},
+  3401--3412\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Slavchov and Ivanov(2014)Slavchov, and Ivanov]{SalvchovI14}
+Slavchov,~R.~I.; Ivanov,~T.~I. \emph{J. Chem. Phys.} \textbf{2014}, \emph{140},
+  074503\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Slavchov(2014)]{SalvchovII14}
+Slavchov,~R.~I. \emph{J. Chem. Phys.} \textbf{2014}, \emph{140}, 164510\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Neumann and Steinhauser(1983)Neumann, and Steinhauser]{NeumannII83}
+Neumann,~M.; Steinhauser,~O. \emph{Chem. Phys. Lett.} \textbf{1983}, \emph{95},
+  417 -- 422\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Ernst \latin{et~al.}(1992)Ernst, Wu, Liu, Nagel, and Neubert]{Ernst92}
+Ernst,~R.~M.; Wu,~L.; Liu,~C.~H.; Nagel,~S.~R.; Neubert,~M.~E. \emph{Phys. Rev.
+  B} \textbf{1992}, \emph{45}, 667--672\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Jeon and Kim(2003)Jeon, and Kim]{JeonI03}
+Jeon,~J.; Kim,~H.~J. \emph{J. Chem. Phys.} \textbf{2003}, \emph{119},
+  8606--8625\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Jeon and Kim(2003)Jeon, and Kim]{JeonII03}
+Jeon,~J.; Kim,~H.~J. \emph{J. Chem. Phys.} \textbf{2003}, \emph{119},
+  8626--8635\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Lamichhane \latin{et~al.}(2014)Lamichhane, Newman, and
+  Gezelter]{PaperII}
+Lamichhane,~M.; Newman,~K.~E.; Gezelter,~J.~D. \emph{J. Chem. Phys.}
+  \textbf{2014}, \emph{141}, 134110\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Neumann \latin{et~al.}(1984)Neumann, Steinhauser, and
+  Pawley]{Neumann84}
+Neumann,~M.; Steinhauser,~O.; Pawley,~G.~S. \emph{Mol. Phys.} \textbf{1984},
+  \emph{52}, 97--113\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Neumann(1985)]{Neumann85}
+Neumann,~M. \emph{J. Chem. Phys.} \textbf{1985}, \emph{82}, 5663--5672\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Stenqvist \latin{et~al.}(2015)Stenqvist, Trulsson, Abrikosov, and
+  Lund]{Stenqvist:2015ph}
+Stenqvist,~B.; Trulsson,~M.; Abrikosov,~A.~I.; Lund,~M. \emph{J. Chem. Phys.}
+  \textbf{2015}, \emph{143}, 014109\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Adu-Gyamfi(1978)]{AduGyamfi78}
+Adu-Gyamfi,~D. \emph{Physica A} \textbf{1978}, \emph{93}, 553 -- 558\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Adu-Gyamfi(1981)]{AduGyamfi81}
+Adu-Gyamfi,~D. \emph{Physica A} \textbf{1981}, \emph{108}, 205 -- 210\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Logan(1981)]{LoganI81}
+Logan,~D.~E. \emph{Mol. Phys.} \textbf{1981}, \emph{44}, 1271--1295\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Logan(1982)]{LoganII82}
+Logan,~D.~E. \emph{Mol. Phys.} \textbf{1982}, \emph{46}, 271--285\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Logan(1982)]{LoganIII82}
+Logan,~D.~E. \emph{Mol. Phys.} \textbf{1982}, \emph{46}, 1155--1194\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Trzesniak \latin{et~al.}(2007)Trzesniak, Kunz, and van
+  Gunsteren]{Wilfred07}
+Trzesniak,~D.; Kunz,~A.-P.~E.; van Gunsteren,~W.~F. \emph{ChemPhysChem}
+  \textbf{2007}, \emph{8}, 162--169\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Fixman(1974)]{Fixman:1974fk}
+Fixman,~M. \emph{Proc. Natl. Acad. Sci. USA} \textbf{1974}, \emph{71},
+  3050--3053\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Meineke \latin{et~al.}(2005)Meineke, {Vardeman II}, Lin, Fennell, and
+  Gezelter]{Meineke05}
+Meineke,~M.~A.; {Vardeman II},~C.~F.; Lin,~T.; Fennell,~C.~J.; Gezelter,~J.~D.
+  \emph{J. Comp. Chem.} \textbf{2005}, \emph{26}, 252--271\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Adams and McDonald(1976)Adams, and McDonald]{Adams76}
+Adams,~D.~J.; McDonald,~I.~R. \emph{Molecular Physics} \textbf{1976},
+  \emph{32}, 931--947\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Torres~del Castillo and M\'{e}ndez~Garrido(2006)Torres~del Castillo,
+  and M\'{e}ndez~Garrido]{Torres-del-Castillo:2006uo}
+Torres~del Castillo,~G.~F.; M\'{e}ndez~Garrido,~A. \emph{Revista Mexicana de
+  F\'{i}sica} \textbf{2006}, \emph{52}, 501--506\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Jackson(1998)]{Jackson98}
+Jackson,~J.~D. \emph{{Classical Electrodynamics Third Edition}}, 3rd ed.;
+  Wiley, 1998\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Morse and Feshbach(1946)Morse, and Feshbach]{Morse:1946zr}
+Morse,~P.; Feshbach,~H. \emph{{Methods of Theoretical Physics}}; Technology
+  Press, 1946\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Stone(1997)]{Stone:1997ly}
+Stone,~A. \emph{The Theory of Intermolecular Forces}; International Series of
+  Monographs on Chemistry; Clarendon Press, 1997\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Raab and de~Lange(2004)Raab, and de~Lange]{Raab:2004ve}
+Raab,~R.; de~Lange,~O. \emph{Multipole Theory in Electromagnetism: Classical,
+  quantum, and symmetry aspects, with applications}; International Series of
+  Monographs on Physics; OUP Oxford, 2004\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem[Arfken \latin{et~al.}(2005)Arfken, Weber, and Harris]{Arfkan}
+Arfken,~G.~B.; Weber,~H.~J.; Harris,~F.~E. \emph{{Mathematical Methods for
+  Physicists}}, 6th ed.; Academic Press, 2005\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\end{mcitethebibliography}

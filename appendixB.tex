@@ -26,75 +26,407 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\chapter{POINT MULTIPOLES, FIELD, AND FIELD GRADIENT }
+\chapter{}
+
+\section{Contraction of the quadrupolar tensor with the traceless
+  quadrupole moment}
+\label{ap:quadContraction}
+For quadrupolar liquids modeled using point quadrupoles, the
+interaction tensor is shown in Eq. (\ref{quadRadial}).  The Fourier
+transformation of this tensor for $ \mathbf{k} = 0$ is,
+\begin{equation}
+\tilde{T}_{\alpha\beta\gamma\delta}(0) = \int_V T_{\alpha\beta\gamma\delta}(\mathbf{r}) d \mathbf{r}
+\end{equation}
+On the basis of symmetry, the 81 elements can be placed in four
+different groups: $\tilde{T}_{aaaa}$, $\tilde{T}_{aaab}$,
+$\tilde{T}_{aabb}$, and $\tilde{T}_{aabc}$, where $a$, $b$, and $c$,
+and can take on distinct values from the set $\left\{x, y, z\right\}$.
+The elements belonging to each of these groups can be obtained using
+permutations of the indices.  Integration of all of the elements shows
+that only the groups with indices ${aaaa}$ and ${aabb}$ are non-zero.
+
+We can derive values of the components of $\tilde{T}_{aaaa}$ and
+$\tilde{T}_{aabb}$ as follows;
+\begin{eqnarray}
+\tilde{T}_{xxxx}(0) &=&
+\int_{\textrm{V}} 
+\left[ 3v_{41}(R)+6x^2v_{42}(r)/r^2 + x^4\,v_{43}(r)/r^4 \right] d\mathbf{r} \nonumber \\ 
+&=&12\pi \int_0^{r_c} 
+\left[ v_{41}(r)+\frac{2}{3} v_{42}(r) + \frac{1}{15}v_{43}(r) \right] r^2\,dr =
+\mathrm{12 \pi B}
+\end{eqnarray}
+and 
+\begin{eqnarray}
+  \tilde{T}_{xxyy}(0)&=&
+                         \int_{\textrm{V}} 
+                         \left[ v_{41}(R)+(x^2+y^2) v_{42}(r)/r^2 + x^2 y^2\,v_{43}(r)/r^4 \right] d\mathbf{r} \nonumber \\
+                     &=&4\pi \int_0^{r_c}
+                         \left[ v_{41}(r)+\frac{2}{3} v_{42}(r) + \frac{1}{15}v_{43}(r) \right] r^2\,dr =
+                         \mathrm{4 \pi B}.
+\end{eqnarray}
+These integrals yield the same values for all permutations of the
+indices in both tensor element groups.  In Eq.~\ref{fourierQuadZeroK}, for a particular value of the quadrupolar
+polarization $\tilde{\Theta}_{aa}$ we can contract
+$\tilde{T}_{aa\gamma\delta}(0)$ with $\tilde{\Theta}_{\gamma\delta}$,
+using the traceless properties of the quadrupolar moment,
+\begin{eqnarray}
+\tilde{T}_{xx\gamma\delta}(0)\tilde{\Theta}_{\gamma\delta}(0) &=& \tilde{T}_{xxxx}(0)\tilde{\Theta}_{xx}(0) + \tilde{T}_{xxyy}(0)\tilde{\Theta}_{yy}(0) + \tilde{T}_{xxzz}(0)\tilde{\Theta}_{zz}(0) \nonumber \\
+&=& 12 \pi \mathrm{B}\tilde{\Theta}_{xx}(0) +
+    4 \pi \mathrm{B}\tilde{\Theta}_{yy}(0) +
+    4 \pi \mathrm{B}\tilde{\Theta}_{zz}(0) \nonumber \\
+&=& 8 \pi \mathrm{B}\tilde{\Theta}_{xx}(0) + 4 \pi
+    \mathrm{B}\left(\tilde{\Theta}_{xx}(0)+\tilde{\Theta}_{yy}(0) +
+    \tilde{\Theta}_{zz}(0)\right) \nonumber \\
+&=& 8 \pi \mathrm{B}\tilde{\Theta}_{xx}(0)
+\end{eqnarray} 
+Similarly for a quadrupolar polarization $\tilde{\Theta}_{xy}$ in
+Eq.~\ref{fourierQuadZeroK}, we can contract
+$\tilde{T}_{xy\gamma\delta}(0)$ with $\tilde{\Theta}_{\gamma\delta}$,
+using the only surviving terms of the tensor, 
+\begin{eqnarray}
+\tilde{T}_{xy\gamma\delta}(0)\tilde{\Theta}_{\gamma\delta}(0) &=& \tilde{T}_{xyxy}(0)\tilde{\Theta}_{xy}(0) + \tilde{T}_{xyyx}(0)\tilde{\Theta}_{yx}(0) \nonumber \\
+&=& 4 \pi \mathrm{B}\tilde{\Theta}_{xy}(0) +
+    4 \pi \mathrm{B}\tilde{\Theta}_{yx}(0) \nonumber \\
+&=& 8 \pi \mathrm{B}\tilde{\Theta}_{xy}(0)
+\end{eqnarray}
+Here, we have used the symmetry of the quadrupole tensor to combine
+the symmetric terms. Therefore we can write matrix contraction for
+$\tilde{T}_{\alpha\beta\gamma\delta}(\mathrm{0})$ and
+$ \tilde{\Theta}_{\gamma\delta}(\mathrm{0})$ in a general form,
+\begin{equation}
+\tilde{T}_{\alpha\beta\gamma\delta}(\mathrm{0})\tilde{\Theta}_{\gamma\delta}(\mathrm{0})
+= 8 \pi \mathrm{B} \tilde{\Theta}_{\alpha\beta}(\mathrm{0}),
+\label{contract}
+\end{equation}
+which is the same as Eq. (\ref{quadContraction}).
+
+When the molecular quadrupoles are represented by point charges, the
+symmetry of the quadrupolar tensor is same as for point quadrupoles
+(see Eqs.~\ref{quadCharge} and (\ref{quadRadial}). However, for
+molecular quadrupoles represented by point dipoles, the symmetry of
+the quadrupolar tensor must be handled separately (compare
+Eqs.~(\ref{quadDip}) and (\ref{quadRadial}). Although there is a
+difference in symmetry, the final result (Eq.~\ref{contract}) also holds
+true for dipolar representations.
+
+\section{Quadrupolar correction factor for the Ewald-Kornfeld (EK)
+  method}
+The interaction tensor between two point quadrupoles in the Ewald
+method may be expressed,\cite{Smith98,NeumannII83}
+\begin{align}
+{T}_{\alpha\beta\gamma\delta}(\mathbf{r}) = &\frac{4\pi}{V
+                                              }\sum_{k\neq0}^{\infty}
+                                              e^{-k^2 / 4
+                                              \kappa^2} e^{-i\mathbf{k}\cdot
+                                              \mathbf{r}} \left(\frac{r_\alpha r_\beta k_\delta k_\gamma}{k^2}\right)  \nonumber \\
+&+ \left(\delta_{\alpha\beta}\delta_{\gamma\delta}+\delta_{\alpha\gamma}\delta_{\beta\delta}+\delta_{\alpha\delta}\delta_{\beta\gamma}\right) 
+B_2(r) \nonumber \\
+&- \left(\delta_{\gamma\delta} r_\alpha r_\beta +  \mathrm{ 5\; permutations}\right) B_3(r) \nonumber \\
+&+ \left(r_\alpha r_\beta r_\gamma r_\delta \right)  B_4(r)
+\label{ewaldTensor}
+\end{align}
+where $B_n(r)$ are radial functions defined in Ref.~\cite{Smith98},
+\begin{align}
+B_2(r)  =& \frac{3}{r^5} \left(\frac{2r\kappa e^{-r^2 \kappa^2}}{\sqrt{\pi}}+\frac{4r^3\kappa^3 e^{-r^2 \kappa^2}}{3\sqrt{\pi}}+\mathrm{erfc(\kappa r)} \right) \\
+B_3(r) =& - \frac{15}{r^7}\left(\frac{2r\kappa e^{-r^2 \kappa^2}}{\sqrt{\pi}}+\frac{4r^3\kappa^3 e^{-r^2 \kappa^2}}{3\sqrt{\pi}}+\frac{8r^5\kappa^5 e^{-r^2 \kappa^2}}{15\sqrt{\pi}}+\mathrm{erfc(\kappa r)} \right) \\
+B_4(r) =& \frac{105}{r^9}\left(\frac{2r\kappa e^{-r^2
+          \kappa^2}}{\sqrt{\pi}}+\frac{4r^3\kappa^3 e^{-r^2 \kappa^2}}{3\sqrt{\pi}} +\frac{8r^5\kappa^5 e^{-r^2 \kappa^2}}{15\sqrt{\pi}} \right. \nonumber \\
+ &+ \left. \frac{16r^7\kappa^7 e^{-r^2 \kappa^2}}{105\sqrt{\pi}} +  \mathrm{erfc(\kappa r)} \right)
+\end{align}  
+
+We can divide ${T}_{\alpha\beta\gamma\delta}(\mathbf{r})$ into three
+parts:
+\begin{eqnarray}
+& & \mathbf{T}(\mathbf{r}) =
+    \mathbf{T}^\mathrm{K}(\mathbf{r}) +
+    \mathbf{T}^\mathrm{R1}(\mathbf{r}) +
+    \mathbf{T}^\mathrm{R2}(\mathbf{r}) 
+\end{eqnarray}
+where the first term is the reciprocal space portion.  Since the
+quadrupolar correction factor $B = \tilde{T}_{abab}(0) / 4\pi$ and
+$\mathbf{k} = 0 $ is excluded from the reciprocal space sum,
+$\mathbf{T}^\mathrm{K}$ will not contribute.\cite{NeumannII83} The
+remaining terms,
+\begin{align}
+\mathbf{T}^\mathrm{R1}(\mathbf{r}) =&  \mathbf{T}^\mathrm{bare}(\mathbf{r}) \left(\frac{2r\kappa e^{-r^2
+          \kappa^2}}{\sqrt{\pi}}+\frac{4r^3\kappa^3 e^{-r^2 \kappa^2}}{3\sqrt{\pi}}+\frac{8r^5\kappa^5 e^{-r^2 \kappa^2}}{15\sqrt{\pi}} \right. \nonumber \\
+ &+ \left. \frac{16r^7\kappa^7 e^{-r^2 \kappa^2}}{105\sqrt{\pi}} +  \mathrm{erfc(\kappa r)} \right)
+\end{align}
+and
+\begin{align}
+T^\mathrm{R2}_{\alpha\beta\gamma\delta}(\mathbf{r}) =&  \left(\delta_{\gamma\delta} r_\alpha r_\beta +  \mathrm{ 5\; permutations}\right) \frac{16 \kappa^7 e^{-r^2 \kappa^2}}{7\sqrt{\pi}} \nonumber \\
+& -\left(\delta_{\alpha\beta}\delta_{\gamma\delta}+\delta_{\alpha\gamma}\delta_{\beta\delta}+\delta_{\alpha\delta}\delta_{\beta\gamma}\right) \left(\frac{8 \kappa^5 e^{-r^2 \kappa^2}}{5\sqrt{\pi}}+ \frac{16 r^2\kappa^7 e^{-r^2 \kappa^2}}{35\sqrt{\pi} }\right)
+\end{align}
+are contributions from the real space
+sum.\cite{Adams76,Adams80,Adams81} Here
+$\mathbf{T}^\mathrm{bare}(\mathbf{r})$ is the unmodified quadrupolar
+tensor (for undamped quadrupoles).  Due to the angular symmetry of the
+unmodified tensor, the integral of
+$\mathbf{T}^\mathrm{R1}(\mathbf{r})$ will vanish when integrated over
+a spherical region. The only term contributing to the correction
+factor (B) is therefore
+$T^\mathrm{R2}_{\alpha\beta\gamma\delta}(\mathbf{r})$, which allows us
+to derive the correction factor for the Ewald-Kornfeld (EK) method,
+\begin{eqnarray}
+\mathrm{B} &=& \frac{1}{4\pi} \int_V T^\mathrm{R2}_{abab}(\mathbf{r}) \nonumber \\
+&=& -\frac{8r_c^3 \kappa^5 e^{-\kappa^2 r_c^2}}{15\sqrt{\pi}}
+\end{eqnarray}  
+which is essentially identical with the correction factor from the
+direct spherical cutoff (SC) method.
+
+\section{Generating Uniform Field Gradients}
+One important task in carrying out the simulations mentioned in the
+Chapter 4 was to generate uniform electric field gradients.  To do
+this, we relied heavily on both the notation and results from Torres
+del Castillo and Mend\'{e}z Garido.\cite{Torres-del-Castillo:2006uo}
+In this work, tensors were expressed in Cartesian components, using at
+times a dyadic notation. This proves quite useful for computer
+simulations that make use of toroidal boundary conditions.
+
+An alternative formalism uses the theory of angular momentum and
+spherical harmonics and is common in standard physics texts such as
+Jackson,\cite{Jackson98} Morse and Feshbach,\cite{Morse:1946zr} and
+Stone.\cite{Stone:1997ly} Because this approach has its own
+advantages, relationships are provided below comparing that
+terminology to the Cartesian tensor notation.
+
+The gradient of the electric field is given by
+\begin{equation*}
+\mathsf{G}(\mathbf{r}) = -\nabla \nabla \Phi(\mathbf{r}),
+\end{equation*}
+where $\Phi(\mathbf{r})$ is the electrostatic potential.  In a
+charge-free region of space, $\nabla \cdot \mathbf{E}=0$, and
+$\mathsf{G}$ is a symmetric traceless tensor.  From symmetry
+arguments, we know that this tensor can be written in terms of just
+five independent components.
+
+Following Torres del Castillo and Mend\'{e}z Garido's notation, the
+gradient of the electric field may also be written in terms of two
+vectors $\mathbf{a}$ and $\mathbf{b}$,
+\begin{equation*}
+G_{ij}=\frac{1}{2} (a_i b_j + a_j b_i) - \frac{1}{3}(\mathbf a \cdot \mathbf b) \delta_{ij} .
+\end{equation*} 
+If the vectors $\mathbf{a}$ and $\mathbf{b}$ are unit vectors, the
+electrostatic potential that generates a uniform gradient may be
+written:
+\begin{align}
+\Phi(x, y, z) =\; -\frac{g_o}{2} & \left(\left(a_1b_1 -
+                         \frac{cos\psi}{3}\right)\;x^2+\left(a_2b_2
+                         - \frac{cos\psi}{3}\right)\;y^2 +
+                         \left(a_3b_3 -
+                         \frac{cos\psi}{3}\right)\;z^2 \right. \nonumber \\
+ & + (a_1b_2 + a_2b_1)\; xy + (a_1b_3 + a_3b_1)\; xz + (a_2b_3 + a_3b_2)\; yz \bigg) .
+\label{eq:appliedPotential}
+\end{align} 
+Note $\mathbf{a}\cdot\mathbf{a} = \mathbf{b} \cdot \mathbf{b} = 1$,
+$\mathbf{a} \cdot \mathbf{b}=\cos \psi$, and $g_0$ is the overall
+strength of the potential.
+
+Taking the gradient of Eq.~(\ref{eq:appliedPotential}), we find the
+field due to this potential,
+\begin{equation}
+\mathbf{E} = -\nabla \Phi
+=\frac{g_o}{2} \left(\begin{array}{ccc}
+2(a_1 b_1 - \frac{cos\psi}{3})\; x & +\; (a_1 b_2 + a_2 b_1)\; y & +\; (a_1 b_3 + a_3 b_1)\; z \\
+ (a_2 b_1 + a_1 b_2)\; x & +\; 2(a_2 b_2 - \frac{cos\psi}{3})\; y & +\;  (a_2 b_3 + a_3 b_3)\; z \\
+(a_3 b_1 + a_3 b_2)\; x & +\;  (a_3 b_2 + a_2 b_3)\; y & +\; 2(a_3 b_3 - \frac{cos\psi}{3})\; z 
+\end{array} \right),
+\label{eq:CE}
+\end{equation} 
+while the gradient of the electric field in this form,
+\begin{equation}
+\mathsf{G} = \nabla\mathbf{E} 
+= \frac{g_o}{2}\left(\begin{array}{ccc}
+2(a_1\; b_1 - \frac{cos\psi}{3}) &  (a_1\; b_2 \;+ a_2\; b_1) & (a_1\; b_3 \;+ a_3\; b_1) \\
+ (a_2\; b_1 \;+ a_1\; b_2) & 2(a_2\; b_2 \;- \frac{cos\psi}{3}) & (a_2\; b_3 \;+ a_3\; b_3) \\
+(a_3\; b_1 \;+ a_3\; b_2) & (a_3\; b_2 \;+ a_2\; b_3) & 2(a_3\; b_3 \;- \frac{cos\psi}{3})
+\end{array} \right),
+\label{eq:GC}
+\end{equation}  
+is uniform over the entire space.  Therefore, to describe a uniform
+gradient in this notation, two unit vectors ($\mathbf{a}$ and
+$\mathbf{b}$) as well as a potential strength, $g_0$, must be
+specified. As expected, this requires five independent parameters.
+
+The common alternative to the Cartesian notation expresses the
+electrostatic potential using the notation of Morse and
+Feshbach,\cite{Morse:1946zr}
+\begin{equation} \label{eq:quad_phi} 
+\Phi(x,y,z) = -\left[ a_{20} \frac{2 z^2 -x^2 - y^2}{2}
++ 3 a_{21}^e \,xz + 3 a_{21}^o \,yz  
+ + 6a_{22}^e \,xy +  3 a_{22}^o (x^2 - y^2) \right].
+\end{equation}
+Here we use the standard $(l,m)$ form for the $a_{lm}$ coefficients,
+with superscript $e$ and $o$ denoting even and odd, respectively.
+This form makes the functional analogy to ``d'' atomic states
+apparent. 
+
+Applying the gradient operator to Eq. (\ref{eq:quad_phi}) the electric
+field due to this potential,
+\begin{equation}
+\mathbf{E} = -\nabla \Phi
+= \left(\begin{array}{ccc}
+\left( 6a_{22}^o -a_{20} \right)\; x &+\; 6a_{22}^e\; y &+\; 3a_{21}^e\;  z  \\
+6a_{22}^e\; x & -\; (a_{20} + 6a_{22}^o)\; y & +\; 3a_{21}^o\; z \\
+3a_{21}^e\; x & +\; 3a_{21}^o\; y & +\; 2a_{20}\; z
+\end{array} \right),
+\label{eq:MFE}
+\end{equation}
+while the gradient of the electric field in this form is:
+\begin{equation} \label{eq:grad_e2}
+\mathsf{G} = 
+\begin{pmatrix}
+6 a_{22}^o - a_{20} & 6a_{22}^e & 3a_{21}^e\\
+6a_{22}^e & -(a_{20}+6a_{22}^o) & 3a_{21}^o \\
+3a_{21}^e  &  3a_{21}^o & 2a_{20} \\
+\end{pmatrix} \\
+\end{equation}
+which is also uniform over the entire space.  This form for the
+gradient can be factored as
+\begin{gather}
+\begin{aligned}
+\mathsf{G}  = a_{20} 
+\begin{pmatrix}
+-1 & 0 & 0\\
+0 & -1 & 0\\
+0 & 0 & 2\\
+\end{pmatrix}
++3a_{21}^e
+\begin{pmatrix}
+0 & 0 & 1\\
+0 & 0 & 0\\
+1 & 0 & 0\\
+\end{pmatrix}
++3a_{21}^o
+\begin{pmatrix}
+0 & 0 & 0\\
+0 & 0 & 1\\
+0 & 1 & 0\\
+\end{pmatrix} \\
++6a_{22}^e
+\begin{pmatrix}
+0 & 1 & 0\\
+1 & 0 & 0\\
+0 & 0 & 0\\
+\end{pmatrix}
++6a_{22}^o
+\begin{pmatrix}
+1 & 0 & 0\\
+0 & -1 & 0\\
+0 & 0 & 0\\
+\end{pmatrix}.
+\end{aligned}
+ \label{eq:intro_tensors}
+\end{gather}
+The five matrices in the expression above represent five different
+symmetric traceless tensors of rank 2. 
+
+It is useful to find the Cartesian vectors $\mathbf a$ and $\mathbf b$
+that generate the five types of tensors shown in
+Eq.~(\ref{eq:intro_tensors}).  If the two vectors are co-linear, e.g.,
+$\psi=0$, $\mathbf{a}=(0,0,1)$ and $\mathbf{b}=(0,0,1)$, then
+\begin{equation*}
+\mathsf{G} = \frac{g_0}{3}
+\begin{pmatrix}
+-1 & 0 & 0 \\
+0 & -1 & 0 \\
+0 & 0 & 2 \\
+\end{pmatrix} ,
+\end{equation*}
+which is the $a_{20}$ symmetry.
+To generate the $a_{22}^o$ symmetry, we take:
+$\mathbf{a}= (\frac{1}{\sqrt{2}}, \frac{1}{\sqrt{2}},0)$ and
+$\mathbf{b}=(\frac{1}{\sqrt{2}}, -\frac{1}{\sqrt{2}},0)$
+and find:
+\begin{equation*}
+\mathsf{G}=\frac{g_0}{2}
+\begin{pmatrix}
+1 & 0 & 0 \\
+0 & -1 & 0 \\
+0 & 0 & 0 \\
+\end{pmatrix} .
+\end{equation*}
+To generate the $a_{22}^e$ symmetry, we take:
+$\mathbf{a}= (1, 0, 0)$ and $\mathbf{b} = (0,1,0)$ and find:
+\begin{equation*}
+\mathsf{G}=\frac{g_0}{2}
+\begin{pmatrix}
+0 & 1 & 0 \\
+1 & 0 & 0 \\
+0 & 0 & 0 \\
+\end{pmatrix} .
+\end{equation*}
+The pattern is straightforward to continue for the other symmetries.
+
+We find the notation of Ref. \cite{Torres-del-Castillo:2006uo}
+helpful when creating specific types of constant gradient electric
+fields in simulations. For this reason,
+Eqs. (\ref{eq:appliedPotential}), (\ref{eq:CE}), and (\ref{eq:GC}) are
+implemented in our code.  In the simulations using constant applied
+gradients that are mentioned in the main text, we utilized a field
+with the $a_{22}^e$ symmetry using vectors, $\mathbf{a}= (1, 0, 0)$
+and $\mathbf{b} = (0,1,0)$.
 
 \section{Point-multipolar interactions with a spatially-varying electric field}
 
-We can treat objects $a$, $b$, and $c$ containing embedded collections
-of charges. When we define the primitive moments, we sum over that
-collections of charges using a local coordinate system within each
-object.  The point charge, dipole, and quadrupole for object $a$ are
-given by $C_a$, $\mathbf{D}_a$, and $\mathsf{Q}_a$, respectively.
-These are the primitive multipoles which can be expressed as a
-distribution of charges,
+This section develops formulas for the force and torque exerted by an
+external electric field, $\mathbf{E}(\mathbf{r})$, on object
+$a$.\cite{Raab:2004ve} Object $a$ has an embedded collection of
+charges and in simulations will represent a molecule, ion, or a
+coarse-grained substructure. We describe the charge distributions
+using primitive multipoles defined in Ref.~\cite{PaperI} by
 \begin{align}
 C_a =&\sum_{k \, \text{in }a} q_k , \label{eq:charge} \\
 D_{a\alpha} =&\sum_{k \, \text{in }a} q_k r_{k\alpha}, \label{eq:dipole}\\
 Q_{a\alpha\beta} =& \frac{1}{2} \sum_{k \, \text{in }  a} q_k
-r_{k\alpha}  r_{k\beta} . \label{eq:quadrupole}
+r_{k\alpha}  r_{k\beta},
+\label{eq:quadrupole}
 \end{align}
-Note that the definition of the primitive quadrupole here differs from
-the standard traceless form, and contains an additional Taylor-series
-based factor of $1/2$.  In Paper 1, we derived the forces and torques
-each object exerts on the others.
+where $\mathbf{r}_k$ is the local coordinate system for the object
+(usually the center of mass of object $a$).  Components of vectors and
+tensors are given using the Einstein repeated summation notation. Note
+that the definition of the primitive quadrupole here differs from the
+standard traceless form, and contains an additional Taylor-series
+based factor of $1/2$. In Ref.~\cite{PaperI}, we derived the
+forces and torques each object exerts on the other objects in the
+system.
 
 Here we must also consider an external electric field that varies in
 space: $\mathbf E(\mathbf r)$.  Each of the local charges $q_k$ in
 object $a$ will then experience a slightly different field.  This
 electric field can be expanded in a Taylor series around the local
-origin of each object.  A different Taylor series expansion is carried
-out for each object.
-
-For a particular charge $q_k$, the electric field at that site's
-position is given by:
+origin of each object. For a particular charge $q_k$, the electric
+field at that site's position is given by:
 \begin{equation}
-E_\gamma + \nabla_\delta E_\gamma r_{k \delta} 
-+ \frac {1}{2} \nabla_\delta \nabla_\varepsilon E_\gamma r_{k \delta}
+\mathbf{E}(\mathbf{r}_k) = E_\gamma|_{\mathbf{r}_k = 0} + \nabla_\delta E_\gamma |_{\mathbf{r}_k = 0}  r_{k \delta} 
++ \frac {1}{2} \nabla_\delta \nabla_\varepsilon E_\gamma|_{\mathbf{r}_k = 0}  r_{k \delta}
 r_{k \varepsilon} + ... 
 \end{equation}
-Note that the electric field is always evaluated at the origin of the
-objects, and treating each object using point multipoles simplifies
-this greatly.
-
-To find the force exerted on object $a$ by the electric field, one
-takes the electric field expression, and multiplies it by $q_k$, and
-then sum over all charges in $a$:
-
+Note that if one shrinks object $a$ to a single point, the
+${E}_\gamma$ terms are all evaluated at the center of the object (now
+a point). Thus later the ${E}_\gamma$ terms can be written using the
+same (molecular) origin for all point charges in the object. The force
+exerted on object $a$ by the electric field is given by,
 \begin{align}
-F_\gamma &=  \sum_{k \textrm{~in~} a} q_k \lbrace E_\gamma + \nabla_\delta E_\gamma r_{k \delta} 
+F^a_\gamma = \sum_{k \textrm{~in~} a} q_k E_\gamma(\mathbf{r}_k) &=  \sum_{k \textrm{~in~} a} q_k \lbrace E_\gamma + \nabla_\delta E_\gamma r_{k \delta} 
 + \frac {1}{2} \nabla_\delta \nabla_\varepsilon E_\gamma r_{k \delta}
 r_{k \varepsilon} + ...  \rbrace  \\
  &= C_a E_\gamma + D_{a  \delta} \nabla_\delta E_\gamma 
 + Q_{a \delta \varepsilon} \nabla_\delta \nabla_\varepsilon E_\gamma +
 ... 
 \end{align}
-
+Thus in terms of the global origin $\mathbf{r}$, ${F}_\gamma(\mathbf{r}) = C {E}_\gamma(\mathbf{r})$ etc. 
+  
 Similarly, the torque exerted by the field on $a$ can be expressed as
 \begin{align}
-\tau_\alpha &=  \sum_{k \textrm{~in~} a} (\mathbf r_k \times q_k \mathbf E)_\alpha \\
+\tau^a_\alpha &=  \sum_{k \textrm{~in~} a} (\mathbf r_k \times q_k \mathbf E)_\alpha \\
  & =  \sum_{k \textrm{~in~} a} \epsilon_{\alpha \beta \gamma} q_k
  r_{k\beta} E_\gamma(\mathbf r_k) \\
  & = \epsilon_{\alpha \beta \gamma} D_\beta E_\gamma 
 + 2 \epsilon_{\alpha \beta \gamma} Q_{\beta \delta} \nabla_\delta
 E_\gamma + ...
 \end{align}
-
-The last term is essentially identical with form derived by Torres del
-Castillo and M\'{e}ndez Garrido,\cite{Torres-del-Castillo:2006uo} although their derivation
-utilized a traceless form of the quadrupole that is different than the
-primitive definition in use here.  We note that the Levi-Civita symbol
-can be eliminated by utilizing the matrix cross product in an
-identical form as in Ref. \onlinecite{Smith98}:
+We note that the Levi-Civita symbol can be eliminated by utilizing the matrix cross product as defined in Ref.~\cite{Smith98}:
 \begin{equation}
 \left[\mathsf{A} \times \mathsf{B}\right]_\alpha = \sum_\beta
 \left[\mathsf{A}_{\alpha+1,\beta} \mathsf{B}_{\alpha+2,\beta}
@@ -103,169 +435,562 @@ identical form as in Ref. \onlinecite{Smith98}:
 \label{eq:matrixCross}
 \end{equation}
 where $\alpha+1$ and $\alpha+2$ are regarded as cyclic permuations of
-the matrix indices.  In table \ref{tab:UFT} we give compact
-expressions for how the multipole sites interact with an external
-field that has exhibits spatial variations.
+the matrix indices. Finally, the interaction energy $U^a$ of object $a$ with the external field is given by,
+\begin{equation}
+U^a = \sum_{k~in~a} q_k \phi_k (\mathrm{r}_k)
+\end{equation}
+Performing another Taylor series expansion about the local body origin,
+\begin{equation}
+\phi({\mathbf{r}_k}) = \phi|_{\mathbf{r}_k = 0 } + r_{k \alpha} \nabla_\alpha \phi_\alpha|_{\mathbf{r}_k = 0 } + \frac{1}{2} r_{k\alpha}r_{k\beta}\nabla_\alpha \nabla_\beta \phi|_{\mathbf{r}_k = 0} + ...
+\end{equation}
+Writing this in terms of the global origin $\mathbf{r}$, we find
+\begin{equation}
+U(\mathbf{r}) = \mathrm{C} \phi(\mathbf{r}) - \mathrm{D}_\alpha \mathrm{E}_\alpha - \mathrm{Q}_{\alpha\beta}\nabla_\alpha \mathrm{E}_\beta + ...
+\end{equation}
+These results have been summarized in Table \ref{tab:UFT}.
 
 \begin{table}
+\begin{center}
 \caption{Potential energy $(U)$, force $(\mathbf{F})$, and torque
-  $(\mathbf{\tau})$ expressions for a multipolar site embedded in an
-  electric field with spatial variations, $\mathbf{E}(\mathbf{r})$.
-\label{tab:UFT}}
-\centering
-\begin{tabular}{r|ccc}
+  $(\mathbf{\tau})$ expressions for a multipolar site at $\mathbf{r}$ in an
+  electric field, $\mathbf{E}(\mathbf{r})$ using the definitions of the multipoles in Eqs. (\ref{eq:charge}), (\ref{eq:dipole}) and (\ref{eq:quadrupole}).  
+  \label{tab:UFT}}
+\begin{tabular}{r|C{3cm}C{3cm}C{3cm}}
   & Charge & Dipole & Quadrupole \\ \hline
-$U$ &  $C \phi(\mathbf{r})$ & $-\mathbf{D} \cdot \mathbf{E}(\mathbf{r})$ & $- \mathsf{Q}:\nabla \mathbf{E}(\mathbf{r})$ \\
-$\mathbf{F}$ & $C \mathbf{E}(\mathbf{r})$ & $+\mathbf{D} \cdot \nabla \mathbf{E}(\mathbf{r})$ &  $+\mathsf{Q} : \nabla\nabla\mathbf{E}(\mathbf{r})$ \\
-$\mathbf{\tau}$ & & $\mathbf{D} \times \mathbf{E}(\mathbf{r})$ & $+2 \mathsf{Q} \times \nabla \mathbf{E}(\mathbf{r})$
+$U(\mathbf{r})$ &  $C \phi(\mathbf{r})$ & $-\mathbf{D} \cdot \mathbf{E}(\mathbf{r})$ & $- \mathsf{Q}:\nabla \mathbf{E}(\mathbf{r})$ \\
+$\mathbf{F}(\mathbf{r})$ & $C \mathbf{E}(\mathbf{r})$ & $\mathbf{D} \cdot \nabla \mathbf{E}(\mathbf{r})$ &  $\mathsf{Q} : \nabla\nabla\mathbf{E}(\mathbf{r})$ \\
+$\mathbf{\tau}(\mathbf{r})$ & & $\mathbf{D} \times \mathbf{E}(\mathbf{r})$ & $2 \mathsf{Q} \times \nabla \mathbf{E}(\mathbf{r})$
 \end{tabular}
+\end{center}
 \end{table}
 
-\newpage
+\section{Boltzmann averages for orientational polarization}
+If we consider a collection of molecules in the presence of external
+field, the perturbation experienced by any one molecule will include
+contributions to the field or field gradient produced by the all other
+molecules in the system. In subsections
+\ref{subsec:boltzAverage-Dipole} and \ref{subsec:boltzAverage-Quad},
+we discuss the molecular polarization due solely to external field
+perturbations.  This illustrates the origins of the polarizability
+Eqs.~(~\ref{flucDipole},\ref{pertDipole}, \ref{pertQuad} and \ref{flucQuad}).
+
+\subsection{Dipoles}
+\label{subsec:boltzAverage-Dipole}
+Consider a system of molecules, each with permanent dipole moment
+$p_o$. In the absence of an external field, thermal agitation orients
+the dipoles randomly, and the system moment, $\mathbf{P}$, is zero.
+External fields will line up the dipoles in the direction of applied
+field.  Here we consider the net field from all other molecules to be
+zero.  Therefore the total Hamiltonian acting on each molecule
+is,\cite{Jackson98}
+\begin{equation}
+H = H_o - \mathbf{p}_o \cdot \mathbf{E},
+\end{equation}
+where $H_o$ is a function of the internal coordinates of the molecule.
+The Boltzmann average of the dipole moment in the direction of the
+field is given by,
+\begin{equation}
+\langle p_{mol} \rangle = \frac{\displaystyle\int p_o \cos\theta
+  e^{~p_o E \cos\theta /k_B T}\; d\Omega}{\displaystyle\int  e^{~p_o E \cos\theta/k_B
+    T}\; d\Omega},
+\end{equation}
+where the $z$-axis is taken in the direction of the applied field,
+$\bf{E}$ and
+$\int d\Omega = \int_0^\pi \sin\theta\; d\theta \int_0^{2\pi} d\phi
+\int_0^{2\pi} d\psi$
+is an integration over Euler angles describing the orientation of the
+molecule.
+
+If the external fields are small, \textit{i.e.}
+$p_oE \cos\theta / k_B T << 1$,
+\begin{equation}
+\langle p_{mol} \rangle \approx \frac{{p_o}^2}{3 k_B T}E,
+\end{equation}
+where $ \alpha_p = \frac{{p_o}^2}{3 k_B T}$ is the molecular
+polarizability. The orientational polarization depends inversely on
+the temperature as the applied field must overcome thermal agitation
+to orient the dipoles.
+
+\subsection{Quadrupoles}
+\label{subsec:boltzAverage-Quad}
+If instead, our system consists of molecules with permanent
+\textit{quadrupole} tensor $q_{\alpha\beta}$. The average quadrupole
+at temperature $T$ in the presence of uniform applied field gradient
+is given by,\cite{AduGyamfi78, AduGyamfi81}
+\begin{equation}
+\langle q_{\alpha\beta} \rangle \;=\; \frac{\displaystyle\int
+  q_{\alpha\beta}\; e^{-H/k_B T}\; d\Omega}{\displaystyle\int
+  e^{-H/k_B T}\; d\Omega} \;=\; \frac{\displaystyle\int
+  q_{\alpha\beta}\; e^{~q_{\mu\nu}\;\partial_\nu E_\mu /k_B T}\;
+  d\Omega}{\displaystyle\int  e^{~q_{\mu\nu}\;\partial_\nu E_\mu /k_B
+    T}\; d\Omega },
+\label{boltzQuad}
+\end{equation}
+where $H = H_o - q_{\mu\nu}\;\partial_\nu E_\mu $ is the energy of a
+quadrupole in the gradient of the applied field and $H_o$ is a
+function of internal coordinates of the molecule. The energy and
+quadrupole moment can be transformed into the body frame using a
+rotation matrix $\mathsf{\eta}^{-1}$,
+\begin{align}
+q_{\alpha\beta} &= \eta_{\alpha\alpha'}\;\eta_{\beta\beta'}\;{q}^* _{\alpha'\beta'} \\
+H &= H_o - q:{\nabla}\mathbf{E} \\
+  &= H_o - q_{\mu\nu}\;\partial_\nu E_\mu  \\
+  &= H_o
+    -\eta_{\mu\mu'}\;\eta_{\nu\nu'}\;{q}^*_{\mu'\nu'}\;\partial_\nu
+    E_\mu. \label{energyQuad}
+\end{align}
+Here the starred tensors are the components in the body fixed
+frame. Substituting Eq.~(\ref{energyQuad}) in the Eq.~(\ref{boltzQuad}) and taking linear terms in the expansion we obtain,
+\begin{equation}
+\braket{q_{\alpha\beta}} = \frac{\displaystyle \int q_{\alpha\beta} \left(1 +
+    \frac{\eta_{\mu\mu'}\;\eta_{\nu\nu'}\;{q}^*_{\mu'\nu'}\;\partial_\nu
+      E_\mu }{k_B T}\right)\;  d\Omega}{\displaystyle \int \left(1 + \frac{\eta_{\mu\mu'}\;\eta_{\nu\nu'}\;{q}^*_{\mu'\nu'}\;\partial_\nu E_\mu }{k_B T}\right)\; d\Omega}.
+\end{equation}
+Note that $\eta_{\alpha\alpha'}$ is the inverse of the rotation
+matrix that transforms the body fixed coordinates to the space
+coordinates.
+% \[\eta_{\alpha\alpha'} 
+% = \left(\begin{array}{ccc}
+% cos\phi\; cos\psi - cos\theta\; sin\phi\; sin\psi & -cos\theta\; cos\psi\; sin\phi - cos\phi\; sin\psi & sin\theta\; sin\phi \\
+% cos\psi\; sin\phi + cos\theta\; cos\phi \; sin\psi & cos\theta\; cos\phi\; cos\psi - sin\phi\; sin\psi & -cos\phi\; sin\theta \\
+% sin\theta\; sin\psi & -cos\psi\; sin\theta & cos\theta
+% \end{array} \right).\]
+
+Integration of the first and second terms in the denominator gives
+$8 \pi^2$ and
+$8 \pi^2 ({\nabla} \cdot \mathbf{E}) \mathrm{Tr}(q^*) / 3 $
+respectively. The second term vanishes for charge free space (where
+${\nabla} \cdot \mathbf{E}=0$). Similarly, integration of the first
+term in the numerator produces
+$8 \pi^2 \delta_{\alpha\beta} \mathrm{Tr}(q^*) / 3$ and second
+produces
+$8 \pi^2 (3{q}^*_{\alpha'\beta'}{q}^*_{\beta'\alpha'} -
+{q}^*_{\alpha'\alpha'}{q}^*_{\beta'\beta'})\partial_\alpha E_\beta /
+15 k_B T $.
+Therefore the Boltzmann average of a quadrupole moment can be written
+as,
+\begin{equation}
+\langle q_{\alpha\beta} \rangle =  \frac{1}{3} \mathrm{Tr}(q^*)\;\delta_{\alpha\beta} + \frac{{\bar{q_o}}^2}{15k_BT}\;\partial_\alpha E_\beta,
+\end{equation}
+where $\alpha_q = \frac{{\bar{q_o}}^2}{15k_BT} $ is a molecular
+quadrupole polarizablity and
+${\bar{q_o}}^2=
+3{q}^*_{\alpha'\beta'}{q}^*_{\beta'\alpha'}-{q}^*_{\alpha'\alpha'}{q}^*_{\beta'\beta'}$
+is the square of the net quadrupole moment of a molecule.
 
 \section{Gradient of the field due to quadrupolar polarization}
 \label{singularQuad}
-In this section, we will discuss the gradient of the field produced by
-quadrupolar polarization. For this purpose, we consider a distribution
-of charge ${\rho}(r)$ which gives rise to an electric field
-$\vec{E}(r)$ and gradient of the field $\vec{\nabla} \vec{E}(r)$
-throughout space. The total gradient of the electric field over volume
-due to the all charges within the sphere of radius $R$ is given by
-(cf. Jackson equation 4.14):
+In section IV.C of the Chapter 4, we stated that for quadrupolar
+fluids, the self-contribution to the field gradient vanishes at the
+singularity. In this section, we prove this statement.  For this
+purpose, we consider a distribution of charge $\rho(\mathbf{r})$ which
+gives rise to an electric field $\mathbf{E}(\mathbf{r})$ and gradient
+of the field $\nabla\mathbf{E}(\mathbf{r})$ throughout space. The
+gradient of the electric field over volume due to the charges within
+the sphere of radius $R$ is given by (cf. Ref.~\cite{Jackson98},
+Eq.~4.14):
 \begin{equation}
-\int_{r<R} \vec{\nabla}\vec{E}\;d^3r = -\int_{r=R} R^2 \vec{E}\;\hat{n}\; d\Omega
+\int_{r<R} \nabla\mathbf{E} d\mathbf{r} = -\int_{r=R} R^2 \mathbf{E}\;\hat{n}\; d\Omega
 \label{eq:8}
 \end{equation}
 where $d\Omega$ is the solid angle and $\hat{n}$ is the normal vector
-of the surface of the sphere which is equal to
-$sin[\theta]cos[\phi]\hat{x} + sin[\theta]sin[\phi]\hat{y} +
-cos[\theta]\hat{z}$
-in spherical coordinates.  For the charge density ${\rho}(r')$, the
-total gradient of the electric field can be written as (cf. Jackson
-equation 4.16),
+of the surface of the sphere, 
 \begin{equation}
-\int_{r<R} \vec{\nabla}\vec{E}\; d^3r=-\int_{r=R} R^2\; \vec{\nabla}\Phi\; \hat{n}\; d\Omega  =-\frac{1}{4\pi\;\epsilon_o}\int_{r=R} R^2\; \vec{\nabla}\;\left(\int \frac{\rho(r')}{|\vec{r}-\vec{r'}|}\;d^3r'\right) \hat{n}\; d\Omega
+\hat{n} = \sin\theta\cos\phi\; \hat{x} + \sin\theta\sin\phi\; \hat{y} +
+\cos\theta\; \hat{z}
+\end{equation}
+in spherical coordinates.  For the charge density $\rho(\mathbf{r}')$, the
+total gradient of the electric field can be written as,\cite{Jackson98}
+\begin{equation}
+\int_{r<R} {\nabla}\mathbf {E}\; d\mathbf{r}=-\int_{r=R} R^2\;
+{\nabla}\Phi\; \hat{n}\; d\Omega
+=-\frac{1}{4\pi\;\epsilon_o}\int_{r=R} R^2\; {\nabla}\;\left(\int
+  \frac{\rho(\mathbf
+    r')}{|\mathbf{r}-\mathbf{r}'|}\;d\mathbf{r}'\right) \hat{n}\;
+d\Omega .
 \label{eq:9}
 \end{equation}
-The radial function in the equation (\ref{eq:9}) can be expressed in
-terms of spherical harmonics as (cf. Jackson equation 3.70),
+The radial function in the Eq.~(\ref{eq:9}) can be expressed in
+terms of spherical harmonics as,\cite{Jackson98}
 \begin{equation}
-\frac{1}{|\vec{r} - \vec{r'}|} = 4\pi \sum_{l=0}^{\infty}\sum_{m=-l}^{m=l}\frac{1}{2l+1}\;\frac{{r^l_<}}{{r^{l+1}_>}}\;{Y^*}_{lm}(\theta', \phi')\;Y_{lm}(\theta, \phi)
+\frac{1}{|\mathbf{r} - \mathbf{r}'|} = 4\pi \sum_{l=0}^{\infty}\sum_{m=-l}^{m=l}\frac{1}{2l+1}\;\frac{{r^l_<}}{{r^{l+1}_>}}\;{Y^*}_{lm}(\theta', \phi')\;Y_{lm}(\theta, \phi)
 \label{eq:10}
 \end{equation}
-If the sphere completely encloses the charge density then $ r_< = r'$ and $r_> = R$. Substituting equation (\ref{eq:10}) into (\ref{eq:9}) we get,
-\begin{equation}
-\begin{split}
-\int_{r<R} \vec{\nabla}\vec{E}\;d^3r &=-\frac{R^2}{\epsilon_o}\int_{r=R} \; \vec{\nabla}\;\left(\int \rho(r')\sum_{l=0}^{\infty}\sum_{m=-l}^{m=l}\frac{1}{2l+1}\;\frac{{r'^l}}{{R^{l+1}}}\;{Y^*}_{lm}(\theta', \phi')\;Y_{lm}(\theta, \phi)\;d^3r'\right) \hat{n}\; d\Omega \\
- &= -\frac{R^2}{\epsilon_o}\sum_{l=0}^{\infty}\sum_{m=-l}^{m=l}\frac{1}{2l+1}\;\int \rho(r')\;{r'^l}\;{Y^*}_{lm}(\theta', \phi')\left(\int_{r=R}\vec{\nabla}\left({R^{-(l+1)}}\;Y_{lm}(\theta, \phi)\right)\hat{n}\; d\Omega \right)d^3r
-'
-\end{split}
+If the sphere completely encloses the charge density then $ r_< = r'$ and $r_> = R$. Substituting Eq.~(\ref{eq:10}) into (\ref{eq:9}) we get,
+\begin{align}
+\int_{r<R} {\nabla}\mathbf{E}\;d\mathbf{r} &=-\frac{R^2}{\epsilon_o}\int_{r=R} \; {\nabla}\;\Bigl(\int \rho(\mathbf r')\sum_{l=0}^{\infty}\sum_{m=-l}^{m=l}\frac{1}{2l+1}\;\frac{{r'^l}}{{R^{l+1}}}\;  \nonumber \\
+&  {Y^*}_{lm}(\theta', \phi')\;Y_{lm}(\theta, \phi)\;d\mathbf{r}'\Bigr) \hat{n}\; d\Omega \nonumber \\
+ &= -\frac{R^2}{\epsilon_o}\sum_{l=0}^{\infty}\sum_{m=-l}^{m=l}\frac{1}{2l+1}\;\int \rho(\mathbf r')\;{r'^l}\;{Y^*}_{lm}(\theta', \phi') \nonumber \\
+ &\Bigl(\int_{r=R}\vec{\nabla}\left({R^{-(l+1)}}\;Y_{lm}(\theta, \phi)\right)\hat{n}\; d\Omega \Bigr)d\mathbf{r}
+' .
 \label{eq:11}
-\end{equation} 
+\end{align} 
 The gradient of the product of radial function and spherical harmonics
-is given by (cf. Arfken, p.811 eq. 16.94):
+is given by:\cite{Arfkan}
 \begin{equation}
 \begin{split}
-\vec{\nabla}\left[ f(r)\;Y_{lm}(\theta, \phi)\right] = &-\left(\frac{l+1}{2l+1}\right)^{1/2}\; \left[\frac{\partial}{\partial r}-\frac{l}{r} \right]f(r)\; Y_{l, l+1, m}(\theta, \phi)\\ &+ \left(\frac{l}{2l+1}\right)^{1/2}\left[\frac
+{\nabla}\left[ f(r)\;Y_{lm}(\theta, \phi)\right] =& -\left(\frac{l+1}{2l+1}\right)^{1/2}\; \left[\frac{\partial}{\partial r}-\frac{l}{r} \right]f(r)\; Y_{l, l+1, m}(\theta, \phi)\\ &+ \left(\frac{l}{2l+1}\right)^{1/2}\left[\frac
 {\partial}{\partial r}+\frac{l}{r} \right]f(r)\; Y_{l, l-1, m}(\theta, \phi).
 \end{split}
 \label{eq:12}
 \end{equation}
-Using equation (\ref{eq:12}) we get,
+where $Y_{l,l+1,m}(\theta, \phi)$ is a vector spherical
+harmonic.\cite{Arfkan} Using Eq.~(\ref{eq:12}) we get,
 \begin{equation}
-\vec{\nabla}\left({R^{-(l+1)}}\;Y_{lm}(\theta, \phi)\right) = [(l+1)(2l+1)]^{1/2}\; Y_{l,l+1,m}(\theta, \phi) \; \frac{1}{R^{l+2}},
+{\nabla}\left({R^{-(l+1)}}\;Y_{lm}(\theta, \phi)\right) = [(l+1)(2l+1)]^{1/2}\; Y_{l,l+1,m}(\theta, \phi) \; \frac{1}{R^{l+2}},
 \label{eq:13}
 \end{equation}
-where $ Y_{l,l+1,m}(\theta, \phi)$ is the vector spherical harmonics
-which can be expressed in terms of spherical harmonics as shown in
-below (cf. Arfkan p.811),
+Using Clebsch-Gordan coefficients $C(l+1,1,l|m_1,m_2,m)$, the vector
+spherical harmonics can be written in terms of spherical harmonics,
 \begin{equation}
-Y_{l,l+1,m}(\theta, \phi) = \sum_{m_1, m_2} C(l+1,1,l|m_1,m_2,m)\; {Y_{l+1}}^{m_1}(\theta,\phi)\; \hat{e}_{m_2},
+Y_{l,l+1,m}(\theta, \phi) = \sum_{m_1, m_2} C(l+1,1,l|m_1,m_2,m)\; Y_{l+1}^{m_1}(\theta,\phi)\; \hat{e}_{m_2}.
 \label{eq:14}
 \end{equation}
-where $C(l+1,1,l|m_1,m_2,m)$ is a Clebsch-Gordan coefficient and
-$\hat{e}_{m_2}$ is a spherical tensor of rank 1 which can be expressed
+Here $\hat{e}_{m_2}$ is a spherical tensor of rank 1 which can be expressed
 in terms of Cartesian coordinates,
 \begin{equation}
-{\hat{e}}_{+1} = - \frac{\hat{x}+i\hat{y}}{\sqrt{2}},\quad {\hat{e}}_{0} = \hat{z},\quad and \quad {\hat{e}}_{-1} = \frac{\hat{x}-i\hat{y}}{\sqrt{2}}
+{\hat{e}}_{+1} = - \frac{\hat{x}+i\hat{y}}{\sqrt{2}},\quad {\hat{e}}_{0} = \hat{z},\quad and \quad {\hat{e}}_{-1} = \frac{\hat{x}-i\hat{y}}{\sqrt{2}}.
 \label{eq:15}
 \end{equation} 
-The normal vector $\hat{n} $ can be expressed in terms of spherical tensor of rank 1 as shown in below,
+The normal vector $\hat{n} $ is then expressed in terms of spherical tensor of rank 1 as shown in below,
 \begin{equation}
-\hat{n} = \sqrt{\frac{4\pi}{3}}\left(-{Y_1}^{-1}{\hat{e}}_1 -{Y_1}^{1}{\hat{e}}_{-1} + {Y_1}^{0}{\hat{e}}_0 \right)
+\hat{n} = \sqrt{\frac{4\pi}{3}}\left(-Y_1^{-1}{\hat{e}}_1 - Y_1^{1}{\hat{e}}_{-1} + Y_1^{0}{\hat{e}}_0 \right).
 \label{eq:16}
 \end{equation}
 The surface integral of the product of $\hat{n}$ and
-${Y_{l+1}}^{m_1}(\theta, \phi)$ gives,
+$Y_{l+1}^{m_1}(\theta, \phi)$ gives,
 \begin{equation}
 \begin{split}
-\int \hat{n}\;{Y_{l+1}}^{m_1}\;d\Omega &= \int \sqrt{\frac{4\pi}{3}}\left(-{Y_1}^{-1}{\hat{e}}_1 -{Y_1}^{1}{\hat{e}}_{-1} + {Y_1}^{0}{\hat{e}}_0 \right)\;{Y_{l+1}}^{m_1}\; d\Omega \\
-&=  \int \sqrt{\frac{4\pi}{3}}\left({{Y_1}^{1}}^* {\hat{e}}_1 +{{Y_1}^{-1}}^* {\hat{e}}_{-1} + {{Y_1}^{0}}^* {\hat{e}}_0 \right)\;{Y_{l+1}}^{m_1}\; d\Omega \\
+\int \hat{n}\;Y_{l+1}^{m_1}\;d\Omega &= \int \sqrt{\frac{4\pi}{3}}\left(-Y_1^{-1}{\hat{e}}_1 -Y_1^{1}{\hat{e}}_{-1} + Y_1^{0}{\hat{e}}_0 \right)\;Y_{l+1}^{m_1}\; d\Omega \\
+&=  \int \sqrt{\frac{4\pi}{3}}\left({Y_1^{1}}^* {\hat{e}}_1 +{Y_1^{-1}}^* {\hat{e}}_{-1} + {Y_1^{0}}^* {\hat{e}}_0 \right)\;Y_{l+1}^{m_1}\; d\Omega \\
 &=   \sqrt{\frac{4\pi}{3}}\left({\delta}_{l+1, 1}\;{\delta}_{1, m_1}\;{\hat{e}}_1 + {\delta}_{l+1, 1}\;{\delta}_{-1, m_1}\;{\hat{e}}_{-1}+ {\delta}_{l+1, 1}\;{\delta}_{0, m_1} \;{\hat{e}}_0\right),
 \end{split}
 \label{eq:17}
 \end{equation}
-where ${Y_{l}}^{-m} = (-1)^m\;{{Y_{l}}^{m}}^* $ and
-$ \int {{Y_{l}}^{m}}^*\;{Y_{l'}}^{m'}\;d\Omega =
+where $Y_{l}^{-m} = (-1)^m\;{Y_{l}^{m}}^* $ and
+$ \int {Y_{l}^{m}}^* Y_{l'}^{m'}\;d\Omega =
 \delta_{ll'}\delta_{mm'} $.
-Non-vanishing values of equation \ref{eq:17} require $l = 0$,
+Non-vanishing values of Eq.~\ref{eq:17} require $l = 0$,
 therefore the value of $ m = 0 $. Since the values of $ m_1$ are -1,
 1, and 0 then $m_2$ takes the values 1, -1, and 0, respectively
-provided that $m = m_1 + m_2$.  Equation \ref{eq:11} can therefore be
+provided that $m = m_1 + m_2$.  Eq.~\ref{eq:11} can therefore be
 modified,
 \begin{equation}
 \begin{split}
-\int_{r<R} \vec{\nabla}\vec{E}\;d^3r = &- \sqrt{\frac{4\pi}{{3}}}\;\frac{1}{\epsilon_o}\int \rho(r')\;{Y^*}_{00}(\theta', \phi')[ C(1, 1, 0|-1,1,0)\;{\hat{e}_{-1}}{\hat{e}_{1}}\\  &+ C(1, 1, 0|-1,1,0)\;{\hat{e}_{1}}{\hat{e}_{-1}}+C(
-1, 1, 0|0,0,0)\;{\hat{e}_{0}}{\hat{e}_{0}} ]\; d^3r'.
-\end{split}
-\label{eq:18} 
-\end{equation}
-After substituting ${Y^*}_{00} = \frac{1}{\sqrt{4\pi}} $ and using the
-values of the Clebsch-Gorden coefficients:  $ C(1, 1, 0|-1,1,0) =
-\frac{1}{\sqrt{3}}, \;   C(1, 1, 0|-1,1,0)= \frac{1}{\sqrt{3}}$ and $
-C(1, 1, 0|0,0,0) = -\frac{1}{\sqrt{3}}$ in equation \ref{eq:18} we
-obtain,
-\begin{equation}
-\begin{split}
-\int_{r<R} \vec{\nabla}\vec{E}\;d^3r &= -\sqrt{\frac{4\pi}{{3}}}\;\frac{1}{\epsilon_o}\int \rho(r')\;d^3r'\left({\hat{e}_{-1}}{\hat{e}_{1}}+{\hat{e}_{1}}{\hat{e}_{-1}}-{\hat{e}_{0}}{\hat{e}_{0}}\right)\\
-&= - \sqrt{\frac{4\pi}{{3}}}\;\frac{1}{\epsilon_o}\;C_{total}\;\left({\hat{e}_{-1}}{\hat{e}_{1}}+{\hat{e}_{1}}{\hat{e}_{-1}}-{\hat{e}_{0}}{\hat{e}_{0}}\right).
+\int_{r<R} {\nabla}\mathbf{E}\;d\mathbf{r} = &- \sqrt{\frac{4\pi}{{3}}}\;\frac{1}{\epsilon_o}\int \rho(r')\;{Y^*}_{00}(\theta', \phi')[ C(1, 1, 0|-1,1,0)\;{\hat{e}_{-1}}{\hat{e}_{1}}\\  &+ C(1, 1, 0|-1,1,0)\;{\hat{e}_{1}}{\hat{e}_{-1}}+C(
+1, 1, 0|0,0,0)\;{\hat{e}_{0}}{\hat{e}_{0}} ]\; d\mathbf{r}' \\
+&= -\sqrt{\frac{4\pi}{{3}}}\;\frac{1}{\epsilon_o}\int \rho(r')\;d\mathbf{r}'\left({\hat{e}_{-1}}{\hat{e}_{1}}+{\hat{e}_{1}}{\hat{e}_{-1}}-{\hat{e}_{0}}{\hat{e}_{0}}\right)\\
+&= - \sqrt{\frac{4\pi}{{3}}}\;\frac{1}{\epsilon_o}\;C_\mathrm{total}\;\left({\hat{e}_{-1}}{\hat{e}_{1}}+{\hat{e}_{1}}{\hat{e}_{-1}}-{\hat{e}_{0}}{\hat{e}_{0}}\right).
 \end{split}
 \label{eq:19} 
 \end{equation}
-Equation (\ref{eq:19}) gives the total gradient of the field over a
-sphere due to the distribution of the charges. For quadrupolar fluids
-the total charge within a sphere is zero, therefore
-$ \int_{r<R} \vec{\nabla}\vec{E}\;d^3r = 0 $.  Hence the quadrupolar
+In the last step, the charge density was integrated over the sphere,
+yielding a total charge $C_\mathrm{total}$. Eq.~(\ref{eq:19})
+gives the total gradient of the field over a sphere due to the
+distribution of the charges.  For quadrupolar fluids the total charge
+within a sphere is zero, therefore
+$ \int_{r<R} {\nabla}\mathbf{E}\;d\mathbf{r} = 0 $.  Hence the quadrupolar
 polarization produces zero net gradient of the field inside the
 sphere.
 
-\newpage
+\section{Quadrupole tensors and electric field gradients}
 
-\section{Applied field or field gradient}
-\label{Ap:fieldOrGradient}
+In this section of this appendix, useful relationships for quadrupole tensors and electric field gradients are derived.
+We use heavily both the notation and results from Torres del Castillo and Mend\'{e}z Garido (Ref.~\cite{Torres-del-Castillo:2006uo}).  
+In this reference, tensors are expressed in Cartesian components, using at times a dyadic notation.  
+This proves to be useful for our work since in simulations, we frequently will want to use
+toroidal boundary conditions, which are much more easily implemented using Cartesian coordinate
+systems.  
 
-To satisfy the condition $ \nabla . E = 0 $, within the box of molecules we have taken electrostatic potential in the following form
+An alternative formalism uses the theory of angular momentum and spherical harmonics;  e.g., see standard physics texts such as Jackson, Morse and Feshbach. Because this approach has its own advantages, relationships are provided below comparing that terminology to the tensor notation.
+
+\subsection{General results}
+
+In calculations, we have defined both a traced quadrupole tensor
+\begin{equation*}
+Q_{\alpha \beta} = \frac{1}{2} \sum_k q_k r_{k \alpha} r_{k \beta} = 
+\frac{1}{2} \int r^{\prime}_i r^{\prime}_j  \rho(\mathbf{r}^{\prime}) d^3 r^{\prime} 
+\end{equation*}
+and a traceless form:
+\begin{equation*}
+\Theta_{\alpha \beta}=3Q_{\alpha \beta} - \delta_{\alpha \beta}\textrm{Tr} \mathsf{Q} .
+\end{equation*} 
+Here, we continue to use notation and results from Torres del Castillo and Mendez Gardio \cite{Torres-del-Castillo:2006uo}
+\begin{equation*}
+Q^C_{ij}=\int(3r^{\prime}_i r^{\prime}_j - r^{{\prime}2}\delta_{ij}) \rho(\mathbf{r}^{\prime}) d^3 r^{\prime}=2\Theta_{ij}  ,
+\end{equation*}
+in order to discuss generalized forms of traceless tensors $\mathsf{Q}^C$ 
+and the gradients of the electric field.
+In their notation, 
+\begin{equation*}
+\mathsf{G}=-\nabla _i \nabla_j \Phi(\mathbf{r})|_{\mathbf{r}=0}  ,
+\end{equation*}
+where $\Phi(\mathbf{r})$ is the electrostatic potential.  
+Since in a charge-free region of space, $\nabla \cdot \mathbf{E}=0$, both
+$\mathsf{Q}^C$  and $\mathsf{G}$  are symmetric traceless tensors.  From symmetry
+arguments, we know that each tensor can be written in terms of just five independent components.
+We choose these when needed to be  $Q^C_{11}$, $Q^C_{22}$, $Q^C_{12}$, $Q^C_{13}$, and $Q^C_{23}$ and
+$G_{11}$, $G_{22}$, $G_{12}$, $G_{13}$, and $G_{23}$.
+A better way to characterize these tensors is in terms of their eigenvalues, which are all real, 
+and eigenvectors, which  are real and can be made to be orthonormal.  Following Ref.~\cite{Torres-del-Castillo:2006uo}, the eigenvalues and eigenvectors of 
+$\mathsf{Q}$  are written respectively in the order $\lambda$, $\mu$, and $\nu$ and $\hat{X}$, $\hat{Y}$, and $\hat{Z}$,
+where the eigenvalues are named in the order $\lambda \ge \nu \ge \mu$.  Thus a preferred plane $XY$ is singled out by the largest
+and smallest eigenvalue.  A similar notation (with primes) is used for $\mathsf{G}$, $\lambda^\prime \ge \nu^\prime \ge \mu^\prime$.
+Thus the traceless condition is written $\lambda+\mu+\nu=0$ and $\lambda^\prime+\mu^\prime+\nu^\prime=0$  and the 
+two tensors are represented by:
+\begin{equation*}
+Q_{ij}^C=\lambda \hat{X}_i  \hat{X}_j + \mu \hat{Y}_i \hat{Y}_j + \nu \hat{Z}_i  \hat{Z}_j
+\qquad \textrm{and} \qquad
+G_{ij}=\lambda^\prime \hat{X}^\prime_i  \hat{X}^\prime_j 
++ \mu^\prime \hat{Y}^\prime_i \hat{Y}^\prime_j + \nu^\prime \hat{Z}^\prime_i  \hat{Z}_j^\prime  .
+\end{equation*}
+
+Using again the notation of Ref.~\cite{Torres-del-Castillo:2006uo}, the interaction energy of a quadrupole $\mathsf{Q}^C$ with the gradient of the 
+electric field $\mathsf{G}$ is
+\begin{equation*}
+U=-\frac{1}{6}\sum_{i,j} G_{ij} Q^C_{ij}  .
+\end{equation*}
+Assuming that $\mathsf{G}$ in written in the space frame, 
+generally one would need to transform $\mathsf{Q}^C$
+from body to space frame:
+\begin{equation*}
+Q^C_{ij} = \eta_{i i^{\prime}} \eta_{j j^{\prime}} Q_{i^{\prime} j^{\prime}}^{C*}  .
+\end{equation*}
+Natural coordinates for the body frame of $\mathsf{Q}^C$ are its eigenvectors.
+
+Now a single quadrupole can be considered to be embedded in the gradient of an electric field.
+Torres del Castillo and Mend\'{e}z  Garido have shown that the lowest energy state is the one where the eigenvector axes align with each other;
+$\hat{X}$ with $\hat{X}^\prime$, $\hat{Y}$ with $\hat{Y}^\prime$, and $\hat{Z}$ with $\hat{Z}^\prime$.
+For that case of idealized alignment, tensor $\mathsf{Q}^C$ will be in its body frame.  Thus
+\begin{equation*}
+U=-\frac{1}{6} (\lambda \lambda^\prime + \mu \mu^\prime +\nu \nu^\prime)  .
+\end{equation*}
+This equation is used below in the derivation of the quadrupolar scaling factor $B$.
+
+\subsection{Special cases of quadrupole tensors}
+
+Any general quadrupole can be written in terms of 
+position vectors $\mathbf{c}$ and $\mathbf{d}$ which 
+go from one negative charge $-q$ to the two positive charges $q$, thus forming two of the sides of a parallelogram:
+\begin{equation*}
+Q^C_{ij}=3q(c_i d_j + c_j d_i) -2q(\mathbf c \cdot \mathbf d) \delta_{ij} .
+\end{equation*}
+Placing the origin a the center of the parallelogram that is in the $xy$ plane, 
+charges $-q$ and $q$ are located at
+$\pm(\mathbf{c}+\mathbf{d})/2$ and $\pm(\mathbf{c}-\mathbf{d})/2$, respectively;
+\begin{equation*}
+\mathsf{Q}^C = 2q
+\begin{pmatrix}
+2c_xd_x - c_yd_y & 3(c_xd_y + c_yd_x)& 0 \\
+3(c_xd_y + c_yd_x) & 2c_yd_y - c_xd_x& 0 \\
+0 & 0 & -(c_xd_x+c_yd_y)\\
+\end{pmatrix}  .
+\end{equation*}
+As discussed previously, this tensor will have three distinct eigenvalues;  
+in Ref.~\cite{Torres-del-Castillo:2006uo} this is rewritten it by eliminating the middle eigenvalue $\nu$ and its eigenvector $\hat{Z}$,
+which leads to the form
+\begin{equation*}
+Q^C_{ij}=(2\lambda+\mu) \hat{X}_i \hat{X}_j + (2\mu + \lambda) \hat{Y}_i \hat{Y}_j
+-(\lambda + \mu)\delta_{ij} .
+\end{equation*}
+Continuing to use Ref.~\cite{Torres-del-Castillo:2006uo} notation, vectors $\mathbf{v}$ and $\mathbf{w}$ are defined:
+\begin{equation*}
+\mathbf{v}=\sqrt{2\lambda+\mu}\,\hat{X} +\sqrt{-2\mu-\lambda} \, \hat{Y}
+\qquad \textrm{and} \qquad 
+\mathbf{w}=\sqrt{2\lambda+\mu}\,\hat{X} -\sqrt{-2\mu-\lambda}\,\hat{Y}  .
+\end{equation*}
+Now $|\mathbf{v}|=|\mathbf{w}|=\lambda-\mu$ and the angle between $\mathbf{v}$
+and $\mathbf{w}$ is $\frac{3(\lambda+\nu)}{(\lambda-\nu)}$. 
+Rewriting vectors $\mathbf{c}$ and $\mathbf{d}$ in rescaled form as 
+\begin{equation*}
+\mathbf{v}= \Big ( 6q\frac{|\mathbf{d}|}{|\mathbf{c}|} \Big )^{1/2} \mathbf{c}
+\qquad \textrm{and} \qquad  
+\mathbf{w}= \Big ( 6q\frac{|\mathbf{c}|}{|\mathbf{d}|} \Big )^{1/2} \mathbf{d} ,
+\end{equation*}
+one finds:
+\begin{equation*}
+Q^C_{ij}=\frac{1}{2} (c_i d_j + c_j d_i) - \frac{1}{3}(\mathbf c \cdot \mathbf d) \delta_{ij} .
+\end{equation*}
+
+Discussing special cases now, if vectors $\mathbf{v}$ and $\mathbf{w}$
+are orthogonal, then $\lambda=-\nu$.  Using axes as defined above, 
+this represents a square planar quadrupole which is located in the $XY$ plane where
+\begin{equation*}
+\mathsf{Q}^C=
+\begin{pmatrix}
+\lambda &0 & 0 \\
+0 & -\lambda & 0 \\
+0 & 0 & 0\\
+\end{pmatrix} .
+\end{equation*}
+In a similar way,
+a linear quadrupole with a natural body axis in the $\hat{Z}$ direction can be written:
+\begin{equation*}
+\mathsf{Q}^C=
+\begin{pmatrix}
+\nu &0 & 0 \\
+0 & \nu & 0 \\
+0 & 0 & -2\nu\\
+\end{pmatrix} 
+\qquad \textrm{or} \qquad
+\mathsf{Q}^C=
+\begin{pmatrix}
+2\nu &0 & 0 \\
+0 & -\nu & 0 \\
+0 & 0 & -\nu\\
+\end{pmatrix} .
+\end{equation*}
+
+If needed, the tensor components  $Q^C_{11}$, $Q^C_{22}$, $Q^C_{12}$, $Q^C_{13}$, and $Q^C_{23}$
+can be written in terms of the five multipole moments associated with $l=2$ (Ref.~\cite{Jackson98}):
+\begin{equation*}
+q_{lm}=\int Y^*_{lm}(\theta^{\prime}, \phi^{\prime})r^{{\prime}l} \rho(\mathbf{r}^{\prime}) d^3 r^{\prime} .
+\end{equation*}
+
+\section{Alternative method for calculating correction factor $\mathrm{B}$}
+
+Here, the method of calculation the quadrupole correction factor $B$ is explained.  We start from Eq.\ref{fourierQuad}, which reads:
 \begin{equation}
-\begin{split}
-\phi(x, y, z) =\; &-g_o \left(\frac{1}{2}(a_1\;b_1 - \frac{cos\psi}{3})\;x^2+\frac{1}{2}(a_2\;b_2 - \frac{cos\psi}{3})\;y^2 + \frac{1}{2}(a_3\;b_3 - \frac{cos\psi}{3})\;z^2 \right. \\
-& \left. + \frac{(a_1\;b_2 + a_2\;b_1)}{2} x\;y + \frac{(a_1\;b_3 + a_3\;b_1)}{2} x\;z +  \frac{(a_2\;b_3 + a_3\;b_2)}{2} y\;z \right),
-\end{split}
-\label{eq:appliedPotential}
-\end{equation} 
-where $a = (a_1, a_2, a_3)$ and $b = (b_1, b_2, b_3)$ are basis vectors  determine coefficients in x, y, and z direction. And $g_o$ and $\psi$ are overall strength of the potential and angle between basis vectors respectively. The electric field derived from the above potential is,
-\[\bf{E} 
-=\frac{g_o}{2} \left(\begin{array}{ccc}
-2(a_1\; b_1 - \frac{cos\psi}{3})\;x \;+  (a_1\; b_2 \;+ a_2\; b_1)\;y + (a_1\; b_3 \;+ a_3\; b_1)\;z \\
- (a_2\; b_1 \;+ a_1\; b_2)\;x + 2(a_2\; b_2 \;- \frac{cos\psi}{3})\;y +  (a_2\; b_3 \;+ a_3\; b_3)\;z \\
-(a_3\; b_1 \;+ a_3\; b_2)\;x +  (a_3\; b_2 \;+ a_2\; b_3)y + 2(a_3\; b_3 \;- \frac{cos\psi}{3})\;z 
-\end{array} \right).\] 
-The gradient of the applied field derived from the potential can be written in the following form,
-\[\nabla\bf{E} 
-= \frac{g_o}{2}\left(\begin{array}{ccc}
-2(a_1\; b_1 - \frac{cos\psi}{3}) &  (a_1\; b_2 \;+ a_2\; b_1) & (a_1\; b_3 \;+ a_3\; b_1)\;z \\
- (a_2\; b_1 \;+ a_1\; b_2) & 2(a_2\; b_2 \;- \frac{cos\psi}{3}) & (a_2\; b_3 \;+ a_3\; b_3)\;z \\
-(a_3\; b_1 \;+ a_3\; b_2) & (a_3\; b_2 \;+ a_2\; b_3) & 2(a_3\; b_3 \;- \frac{cos\psi}{3})\;z 
-\end{array} \right).\] 
+\frac{1}{3} \Theta_{\alpha \beta}(\mathbf{r}) = \epsilon_0 \chi_Q
+\Big (\partial_\alpha E_\beta^0(\mathbf{r}) + \frac{1}{24 \pi \epsilon_0}
+\int_{|\mathbf{r}-\mathbf{r}^\prime| > 0}
+T_{\alpha \beta \gamma \delta} (|\mathbf{r}-\mathbf{r}^\prime|) 
+\Theta_{\gamma \delta} (\mathbf{r}) d\mathbf{r}^\prime \Big ).
+\label{eq:p34}
+\end{equation}
+We reason in analogy to the dipole case.  For dipoles, one
+considers a constant electric field oriented in the $\hat{z}$ direction.  
+Then the dipole correction factor A, Eq.~(\ref{dipCorrFactor}), is derived.
+For quadrupoles, we must consider a constant gradient electric field and
+its effect of the orientation of an isolated quadrupole.  This can be done
+using the dyadic forms for both $\Theta_{\alpha,\beta}$ and $\partial_\alpha E_\beta^0$, see Sec.~\ref{sec:corrFactor}. Using that  notation, 
+$\Theta=\lambda \hat{X}  \hat{X} + \mu \hat{Y} \hat{Y} + \nu \hat{Z}  \hat{Z}$
+and $\nabla \mathbf{E}^0=
+\lambda^\prime \hat{X}^\prime  \hat{X}^\prime
++ \mu^\prime \hat{Y}^\prime \hat{Y}^\prime + \nu^\prime \hat{Z}^\prime  \hat{Z}^\prime$. The quadrupole orients itself into its lowest energy state; Cartesian axes 
+$\hat{X}$, $\hat{Y}$, and $\hat{Z}$ and $\hat{X}^\prime$, $\hat{Y}^\prime$, and $\hat{Z}^\prime$ align,
+as explained previously. Then both $\Theta_{\alpha,\beta}$ and $\partial_\alpha E_\beta^0$ are diagonal
+and can be written simply in terms of their eigenvalues.
+
+Now the contraction $T_{\alpha \beta \gamma \delta} \Theta_{\gamma \delta}$ can be more easily considered.  
+The only components of $T_{\alpha \beta \gamma \delta}$ that are required are the nine terms with
+$(\alpha,\beta) = (11), (22), (33)$ and $(\gamma,\delta)=(11), (22), (33)$.
+Because of the symmetry of $T_{\alpha \beta \gamma \delta}$, the nine terms can be used to write a
+symmetric matrix:
+\begin{equation*}
+\mathsf{M}(R)=
+\begin{pmatrix}
+{T}_{1111}(R) & {T}_{1122}(R) & {T}_{1133}(R)\\
+{T}_{2211}(R) & {T}_{2222}(R) & {T}_{2233}(R)\\
+{T}_{3311}(R) & {T}_{3322}(R) & {T}_{3333}(R)\\
+\end{pmatrix}
+\end{equation*}
+where $\mathbf{R}=\mathbf{r}- \mathbf{r^\prime}$, $R=|\mathbf{r}- \mathbf{r^\prime}|$.\
+and $\mathbf{R}_1=X$, etc.
+Taking for example the case of a point quadrupole (Eq.~\ref{quadRadial} of the paper):
+\begin{gather*}
+T_{\alpha \beta \gamma \epsilon}(R) = 
+(\delta_{\alpha \beta} \delta_{\gamma \epsilon} 
++ \delta_{\alpha \gamma} \delta_{\beta \epsilon}  +\delta_{\beta \gamma}  \delta_{\alpha \epsilon} )\,v_{41}(R) \\
++ (R_\alpha R_\beta \delta_{\gamma  \epsilon} + R_\alpha R_\gamma \delta_{\beta \epsilon} 
++ R_\alpha R_ \epsilon \delta_{\beta \gamma} + R_\beta R_\gamma \delta_{\alpha \epsilon} 
++ R_\beta R_\epsilon \delta_{\alpha \gamma}  + R_\gamma R_\epsilon \delta_{\alpha \beta})
+v_{42}(R)/R^2\\
++ R_\alpha R_\beta R_\gamma R_\epsilon v_{43}(R)/R^4 ,
+\end{gather*}
+we explicitly find:
+\begin{gather*}
+T_{1111}(R)=3v_{41}(R)+6X^2v_{42}(R)/R^2+X^4v_{43}(R)/R^4\\
+T_{2222}(R)=3v_{41}(R)+6Y^2v_{42}(R)/R^2+Y^4v_{43}(R)/R^4\\
+T_{3333}(R)=3v_{41}(R)+6Z^2v_{42}(R)/R^2+Z^4v_{43}(R)/R^4\\
+T_{1122}(R)=T_{2211}(R)=v_{41}(R)+(X^2+Y^2)v_{42}(R)/R^2+X^2Y^2v_{43}(R)/R^4\\
+T_{1133}(R)=T_{3311}(R)=v_{41}(R)+(X^2+Z^2)v_{42}(R)/R^2+X^2Z^2v_{43}(R)/R^4\\
+T_{2233}(R)=T_{3322}(R)=v_{41}(R)+(Y^2+Z^2)v_{42}(R)/R^2+Y^2Z^2v_{43}(R)/R^4  .\\
+\end{gather*}
+Now we follow Neumann and Steinhauser and Fourier transform Eq.~(\ref{fourierQuad}).  Then we assume that 
+the applied field gradient is homogeneous over the entire volume (tensor $\mathsf{G}$ is a constant), the only relevant contribution of the interaction tensor is at $\mathbf{k}=0$.  Schematically, the form of the equation is:
+\begin{gather}
+\begin{aligned}
+\frac{1}{3}
+\begin{pmatrix}
+\lambda\\
+\mu\\
+\nu\\
+\end{pmatrix}
+= \epsilon_0 \chi_q
+\begin{pmatrix}
+\lambda^\prime\\
+\mu^\prime\\
+\nu^\prime\\
+\end{pmatrix}
++\frac{\chi_q}{24\pi}
+\begin{pmatrix}
+\tilde{T}_{1111}(0) & \tilde{T}_{1122}(0) & \tilde{T}_{1133}(0)\\
+\tilde{T}_{2211}(0) & \tilde{T}_{2222}(0) & \tilde{T}_{2233}(0)\\
+\tilde{T}_{3311}(0) & \tilde{T}_{3322}(0) & \tilde{T}_{3333}(0)\\
+\end{pmatrix}
+\begin{pmatrix}
+\lambda\\
+\mu\\
+\nu\\
+\end{pmatrix} .
+\end{aligned}
+\label{eq:schematic}
+\end{gather}
+The matrix in this equation is the Fourier transform of matrix $\mathsf{M}(R)$ evaluated at
+$\mathbf{k}=0$, which would be written as $\tilde{M}(0)$, and shows the 
+nine needed components of $\tilde{T}_{\alpha \beta \gamma \epsilon}(0)$ to be computed.
+Factors such as  $X^2$, $Y^2$, and $X^2 Y^2$ get angle averaged, and the nine components
+are given a temporary name.  For example,
+\begin{gather*}
+\tilde{T}_{1111}(0)=
+\int_{\textrm{cutoff sphere}} 
+\big [ 3v_{41}(R)+6X^2v_{42}(R)/R^2 + X^4\,v_{43}(R)/R^4 \big] d^3R \\ 
+=12\pi \int_0^{R_c}
+\big [ v_{41}(R)+\frac{2}{3} v_{42}(R) + \frac{1}{15}v_{43}(R) \big] R^2\,dR =
+3B^\prime
+\end{gather*}
+and 
+\begin{gather*}
+\tilde{T}_{1122}(0)=
+\int_{\textrm{cutoff sphere}} 
+\big [ v_{41}(R)+(X^2+Y^2) v_{42}(R)/R^2 + X^2 Y^2\,v_{43}(R)/R^4 \big] d^3R \\
+=4\pi \int_0^{R_c}
+\big [ v_{41}(R)+\frac{2}{3} v_{42}(R) + \frac{1}{15}v_{43}(R) \big] R^2\,dR =
+B^\prime .
+\end{gather*}
+Now we see that
+\begin{equation*}
+\mathsf{\tilde{M}}(0)=
+\begin{pmatrix}
+3B^\prime & B^\prime & B^\prime\\
+B^\prime & 3B^\prime & B^\prime\\
+B^\prime & B^\prime & 3B^\prime\\
+\end{pmatrix} .
+\end{equation*}
+Then Eq.~(\ref{eq:schematic}) can be written as three separate equations:
+\begin{gather*}
+\lambda=\epsilon_0 \chi_q \lambda^\prime+\frac{\chi_q}{8\pi}(3B^\prime \lambda+B^\prime \mu +B^\prime \nu)\\
+\mu=\epsilon_0 \chi_q \mu^\prime+\frac{\chi_q}{8\pi}(B^\prime \lambda+3B^\prime \mu +B^\prime \nu)\\
+\nu=\epsilon_0 \chi_q \nu^\prime+\frac{\chi_q}{8\pi}(B^\prime \lambda+B^\prime \mu +3B^\prime \nu)
+\end{gather*}
+Using the traceless condition $\lambda+\mu+\nu=0$,
+we find
+\begin{gather*}
+\lambda=\frac{3 \epsilon_0 \chi_q \lambda^\prime}{1-\frac{\chi_q B^\prime}{4\pi}}  \textrm{, etc.}
+\end{gather*}
+Comparing with Eq.~(\ref{tracedConstQuad}), 
+\begin{equation}
+\frac{\Theta}{3}=\mathsf{Q} - \frac{1}{3}\mathsf{1}
+=\frac{\epsilon_0 \chi_q}{1-\chi_q B}\nabla \mathbf{E}^0
+=\frac{\epsilon_0 \chi_q \lambda^\prime}{1-\frac{\chi_q B^\prime}{4\pi}}
+\end{equation}
+from which we find $B^\prime/(4\pi)=B$
+and thus
+\begin{equation} 
+B=\int_0^{R_c}
+\big [ v_{41}(R)+\frac{2}{3} v_{42}(R) + \frac{1}{15}v_{43}(R) \big] R^2\,dR .
+\end{equation}
 
 % % uncomment the following lines,
 % if using chapter-wise bibliography

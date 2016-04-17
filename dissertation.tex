@@ -78,6 +78,7 @@
 % sort&compress (sorts and compresses numerical citations;
 %           is identical to sort when used with textrefs)
 \usepackage{braket}
+\usepackage{multirow}
 
 \begin{document}
 
@@ -109,20 +110,18 @@
 
 % An abstract is optional for a mster's thesis, and required for a doctoral dissertation.
 \begin{abstract}
- 
-% This is just a way of writing equation 
-\begin{align*}
- a = a + b 
- \end{align*}
+Computing electrostatic interaction is the most expensive portion of a  molecular simulation. Generally, traditional and modified Ewald methods are well known for calculating electrostatic interaction in molecular dynamics (MD) communities. But these methods are computationally very expensive for larger system. Nowadays there is a growing interest in developing real space method, scales linearly with the system size. The real space method for the charge-charge interaction was originally developed by \textit{Wolf} and extended by \textit{Gezelter et al.}. In this dissertation, I present three new real-space methods: Shifted Potential (SP), Gradient-Shifted Force (GSF), and Taylor-Shifted Force (TSF), for computing electrostatic interaction between dipoles and quadrupoles. I also discuss the various static and dynamic properties evaluated using newly developed real space methods.  Additionally, I present three methods: fluctuation, perturbation, and potential of mean force (PMF) methods, for computing dielectric properties for multipolar fluids. 
 
- 
+The SP method is the multipolar version of the \textit{Wolf}'s electrostatic method. Similarly, the GSF and TSF method are natural extension of original Damped Shifted Force (DSF) method developed by  \textit{Fennell} and \textit{Gezelter}. The energies evaluated using SP method shows quantitative agreement with Ewald sum, therefore good choice for monte carlo (MC) simulation. The energies, forces, and torques calculated from the GSF method agrees with the Ewald's result and produce excellent conservation of energy in MD simulations. Both SP and GSF method with suitable damping parameter performs remarkably well in predicting static and dynamic properties of the liquid systems. 
+
+For the both dipolar and quadrupolar fluids, the dielectric properties predicted using perturbation method agree with fluctuation formula. We need a correction factor to obtain the dielectric constant and susceptibility from the directly measurable polarizability from the simulation. I tabulate the correction factors for both dipolar and quadrupolar fluid for all real-space as well as Ewald method. Finally, the dielectric screening from the perturbation and fluctuation method are compared with directly measured screening factor using PMF method.  
 \end{abstract}
 
 % A dedication is optional.
 %\renewcommand{\dedicationname}{DEDICATION}
-%\begin{dedication}
-%  To my father Late Hari Bahadur Lamichhane and mother Dropati Lamichhane for their hard work, consistent support, love, and inspiration. 
-%\end{dedication}
+\begin{dedication}
+  To my late father Hari Bahadur Lamichhane and mother Dropati Lamichhane for their hard work, consistent support, love, and inspiration. 
+\end{dedication}
 
 % These are required, and must be in this order.
 \tableofcontents
@@ -145,14 +144,15 @@
 
 % It's hard to tell from the information available from the Graduate
 % School in Spring 2013 whether or not an acknowledgements section is optional.
-%\begin{acknowledge}
-%
-%\end{acknowledge}
-%
-%% A symbols section is optional.
-%\begin{symbols}
-%  
-%\end{symbols}
+\begin{acknowledge}
+First of all, I would like to express my deepest appreciations to my advisors, Professor Kathie E. Newman and Professor J. Dainel Gezelter for their persistent guidance, support, and inspiration. Without their help this dissertation would not have been possible.
+
+I am grateful to my dissertation committee; Professor Morten Eskildsen, Professor Mark Alber, and Professor Rebecca Surman, for their valuable time, support, and suggestions. I am also thankful my research group: Dr. Joseph Michalka, Patrick Louden, Suzanne Kucera, Hemanta Bhattarai, Dr. Kelsey Stocker, and Thomas Parsons for their help, support, and valuable discussion.
+
+I am very grateful to my wife Sumitra for her unconditional love, support, inspiration, and great patience throughout the course of my PhD research.  Without her, completing research would not this easy for me. I am also very thankful to my Parents: Hari B. Lamichhane and Dropati Lamichhane,  Brothers: Bishal and Prabin, and  Sisters: Indira and Rekha. My family has always been great source of inspiration for me. Without their support and encouragement, I would not have achieved this opportunity. I am indebted to my friends: Aboutaleb Amiri and Melinda Varga for their valuable support and discussion.
+
+Financial support for this research was provided by the National Science Foundation (NSF) under grant CHE-1362211 and computational time was provided by the Center for Research Computing (CRC) at the University of Notre Dame.
+\end{acknowledge}
 
 \mainmatter
 % Place the text body here.
@@ -179,12 +179,14 @@
 
 \include{chapter4}
 
-%
+% Chapter 5
+
+\include{chapter5}
 % Appendix (optional)
-%
+
 \appendix
 
-\include{appendix}
+\include{appendixA}
 %
 % Back stuff
 \include{appendixB}
@@ -194,7 +196,8 @@
 % if using chapter-wise bibliography
 
  \backmatter
- \bibliographystyle{abbrvnat} % The standard abbrvnat style should be acceptable. Also provided with both the advanced and standard
+ \bibliographystyle{achemso}
+ %\bibliographystyle{abbrvnat} % The standard abbrvnat style should be acceptable. Also provided with both the advanced and standard
  \bibliography{dissertation}       % distributions are nddiss2e and nddiss2enoarticletitles style options.
 % If you prefer to manually enter your bibliography, that is fine. Comment out the previous two lines, and enter your bibliography
 % as usual. Note that if you choose this route, formatting the bibliography is your responsibility. An example is below, including the

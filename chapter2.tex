@@ -31,7 +31,7 @@
 
 \chapter{DEVELOPMENT OF METHODS}
 \label{chap:development}
-This chapter describes the detail mathematical development of the three real-space methods for computing electrostatic interactions between point multipoles. We generalize Wolf's Shfited-Potential (SP) for higher order charge multipoles (dipoles and quadrupoles). Additionally we extend Damped Shifted Force (DSF) method for dipoles and quadrupoles to develop Gradient Shifted Force (GSF) and Taylor Shifted Force (TSF) methods. Finally we evaluate lattice energy constant for different dipolar and quadrupolar crystals using newly developed real-space methods and compare with the analytically derived results.
+This chapter describes the detailed mathematical development of the three real-space methods: Shifted Potential (SP), Gradient Shifted Force (GSF), and Taylor Shifted Force (TSF) for computing electrostatic interactions between point multipoles in molecular simulations. We generalize Wolf's shfited potential for charge-charge interaction to develop multipolar SP method for dipoles and quadrupoles. We also extend original Damped Shifted Force (DSF) method for charge-charge interaction to develop Gradient Shifted Force (GSF) and Taylor Shifted Force (TSF) methods for higher order multipoles. Finally I report the lattice energy constants for different dipolar and quadrupolar crystals evaluated using the newly developed real-space methods and compare with analytical result.
 
 \section{Introduction}
 There has been increasing interest in real-space methods for
@@ -54,7 +54,7 @@ similar methods where the force vanishes at $r_{c}$ are
 essentially quantitative.\cite{Izvekov08} The DSF and other
 related methods have now been widely investigated,\cite{Hansen12}
 and DSF is now used routinely in a diverse set of chemical
-environments.\cite{Shi13,McCann13,kannam13,Forrest12,English08,Louden13,Tokumasu13}
+environments.\cite{Shi13,McCann13,Kannam13,Forrest12,English08,Louden13,Tokumasu13}
 DSF electrostatics provides a compromise between the computational
 speed of real-space cutoffs and the accuracy of fully-periodic Ewald
 treatments.
@@ -136,15 +136,16 @@ charges on the surface of the cutoff sphere for each pair interaction
 computed within $r_c$. Damping using a complementary error function is
 applied to the potential to accelerate convergence. The interaction
 for a pair of charges ($C_i$ and $C_j$) in the DSF method,
-\begin{equation*}
-U_\mathrm{DSF}(r_{ij}) = C_i C_j \Biggr{[}
+\begin{eqnarray}
+U_\mathrm{DSF}(r_{ij}) &=&  C_i C_j \left[
 \frac{\mathrm{erfc}\left(\alpha r_{ij}\right)}{r_{ij}} 
-- \frac{\mathrm{erfc}\left(\alpha r_c\right)}{r_c} + \left(\frac{\mathrm{erfc}\left(\alpha r_c\right)}{r_c^2} 
+- \frac{\mathrm{erfc}\left(\alpha r_c\right)}{r_c} \right.\nonumber \\
+& & + \left. \left(\frac{\mathrm{erfc}\left(\alpha r_c\right)}{r_c^2} 
 + \frac{2\alpha}{\pi^{1/2}}
 \frac{\exp\left(-\alpha^2r_c^2\right)}{r_c}
-\right)\left(r_{ij}-r_c\right)\ \Biggr{]} 
+\right)\left(r_{ij}-r_c\right)\ \right] 
 \label{eq:DSFPot}
-\end{equation*}
+\end{eqnarray}
 where $\alpha$ is the adjustable damping parameter.  Note that in this
 potential and in all electrostatic quantities that follow, the
 standard $1/4 \pi \epsilon_{0}$ has been omitted for clarity.
@@ -283,7 +284,7 @@ either $1/r$ or $B_0(r)$, and all of the techniques can be applied to
 bare or damped Coulomb kernels (or any other function) as long as
 derivatives of these functions are known.  Smith's convenient
 functions $B_l(r)$, which are used for derivatives of the damped
-kernel, are summarized in Appendix A.  (N.B. there is one important
+kernel, are summarized in Appendix~\ref{SmithFunc} (N.B. there is one important
 distinction between the two kernels, which is the behavior of
 $\nabla^2 \frac{1}{r}$ compared with $\nabla^2 B_0(r)$.  The former is
 zero everywhere except for a delta function evaluated at the origin.
@@ -406,7 +407,7 @@ torque terms, $g_n(r), h_n(r), s_n(r), \mathrm{~and~} t_n(r)$ are
 successive derivatives of the shifted electrostatic kernel, $f_n(r)$
 of the same index $n$.  The algebra required to evaluate energies,
 forces and torques is somewhat tedious, so only the final forms are
-presented in tables \ref{tab:tableenergy} and \ref{tab:tableFORCE}.
+presented in Tables~\ref{tab:tableenergy} and \ref{tab:tableFORCE}.
 One of the principal findings of our work is that the individual
 orientational contributions to the various multipole-multipole
 interactions must be treated with distinct radial functions, but each
@@ -442,7 +443,7 @@ U= \sum  (\text{angular factor}) (\text{radial factor}).
 \end{equation}
 
 Functional forms for both methods (TSF and GSF) can both be summarized
-using the form of Eq.~\ref{generic3}).  The basic forms for the
+using the form of Eq.~(\ref{generic3}).  The basic forms for the
 energy, force, and torque expressions are tabulated for both shifting
 approaches below -- for each separate orientational contribution, only
 the radial factors differ between the two methods.
@@ -520,17 +521,16 @@ U(r, \{\hat{\mathbf{A}}_m \cdot \hat{\mathbf{r}} \},
 %
 the forces come out relatively cleanly,
 %
-\begin{equation}
-\mathbf{F}_a=-\mathbf{F}_b =  \nabla U =
-\frac{\partial U}{\partial \mathbf{r}} 
-= \frac{\partial U}{\partial r} \hat{\mathbf{r}} 
+\begin{eqnarray}
+\mathbf{F}_a &=&-\mathbf{F}_b =  \nabla U = \frac{\partial U}{\partial \mathbf{r}} \nonumber \\   
+&=& \frac{\partial U}{\partial r} \hat{\mathbf{r}} 
  + \sum_m \left[ 
 \frac{\partial U}{\partial (\hat{\mathbf{A}}_m \cdot \hat{\mathbf{r}})} 
 \frac { \partial (\hat{\mathbf{A}}_m \cdot \hat{\mathbf{r}})}{\partial \mathbf{r}} 
 + \frac{\partial U}{\partial (\hat{\mathbf{B}}_m \cdot \hat{\mathbf{r}})} 
 \frac { \partial (\hat{\mathbf{B}}_m \cdot \hat{\mathbf{r}})}{\partial \mathbf{r}} 
 \right] \label{forceequation}.
-\end{equation}
+\end{eqnarray}
 
 The torques can also be found in a relatively similar
 manner,
@@ -587,7 +587,7 @@ contractions using space indices.
 In computing our force and torque expressions, we carried out most of
 the work in body coordinates, and have transformed the expressions
 back to space-frame coordinates, which are reported below.  Interested
-readers may consult the supplemental information for the paper I \cite{PaperI} for the intermediate body-frame expressions.\cite{supplemental}
+readers may consult supplemental information of the Ref. \cite{PaperI} for the intermediate body-frame expressions.
 
 \subsection{The Self-Interaction \label{sec:selfTerm}}
 
@@ -623,14 +623,15 @@ reciprocal-space portion is identical to half of the self-term
 obtained by Smith, and also by Aguado and Madden for the application
 of the Ewald sum to multipoles.\cite{Smith82,Smith98,Aguado03} For a
 given site which possesses a charge, dipole, and quadrupole, both types
-of contribution are given in table \ref{tab:tableSelf}.
+of contribution are given in Table~\ref{tab:tableSelf}.
 
 \begin{table*}
+\begin{center}
   \caption{\label{tab:tableSelf} Self-interaction contributions for 
     site ($a$) that has a charge $(C_a)$, dipole
     $(\mathbf{D}_a)$, and quadrupole $(\mathsf{Q}_a)$}.
 \begin{ruledtabular}
-\begin{tabular}{lccc}
+\begin{tabular}{|l|c|c|c|} \hline
 Multipole order & Summed Quantity & Self-neutralization  & Reciprocal \\ \hline
 Charge & $C_a^2$ & $-f(r_c)$ & $-\frac{\alpha}{\sqrt{\pi}}$ \\
 Dipole & $|\mathbf{D}_a|^2$ & $\frac{1}{3} \left( h(r_c) +
@@ -639,9 +640,10 @@ Quadrupole & $2 \mathsf{Q}_a:\mathsf{Q}_a + \text{Tr}(\mathsf{Q}_a)^2$ &
 $- \frac{1}{15} \left( t(r_c)+ \frac{4 s(r_c)}{r_c} \right)$ &
 $-\frac{4 \alpha^5}{5 \sqrt{\pi}}$ \\
 Charge-Quadrupole & $-2 C_a \text{Tr}(\mathsf{Q}_a)$ & $\frac{1}{3} \left(
-  h(r_c) + \frac{2 g(r_c)}{r_c} \right)$& $-\frac{2 \alpha^3}{3 \sqrt{\pi}}$ \\
+  h(r_c) + \frac{2 g(r_c)}{r_c} \right)$& $-\frac{2 \alpha^3}{3 \sqrt{\pi}}$ \\ \hline
 \end{tabular}
 \end{ruledtabular}
+\end{center}
 \end{table*}
 
 For sites which simultaneously contain charges and quadrupoles, the
@@ -666,7 +668,7 @@ approximations.  These expressions were derived using a set of generic
 radial functions.  Without using the shifting approximations mentioned
 above, some of these radial functions would be identical, and the
 expressions coalesce into the familiar forms for unmodified
-multipole-multipole interactions.  Table \ref{tab:tableenergy} maps
+multipole-multipole interactions.  Table~\ref{tab:tableenergy} maps
 between the generic functions and the radial functions derived for the
 three methods.  The energy equations are written in terms of lab-frame
 representations of the dipoles, quadrupoles, and the unit vector
@@ -801,7 +803,7 @@ along with the sign of the intersite vector, $\hat{\mathbf{r}}$.
     functions used in this table are defined in Appendices
     \ref{radialTSF} and \ref{radialGSF}.  The gradient shifted (GSF)
     functions include the shifted potential (SP)
-    contributions (\textit{cf.} Eqs. \ref{generic2} and
+    contributions (\textit{cf.} Eqs.~\ref{generic2} and
     \ref{eq:SP}).}
 \centering
 \resizebox{\textwidth}{!}{\begin{tabular}{|c|c|l|l|l|} \hline
@@ -902,7 +904,7 @@ $\phantom{SP-(r-r_c)}\left.+\frac{21s(r_c)}{r_c^2}-\frac{6t(r_c)}{r_c}+u(r_c) \r
 \caption{\label{tab:tableFORCE}Radial functions used in the force
   equations. Gradient shifted (GSF) functions are constructed using the shifted
     potential (SP) functions.  Some of these functions are simple
-    modifications of the functions found in table \ref{tab:tableenergy}}
+    modifications of the functions found in Table~\ref{tab:tableenergy}}
 \centering
 \resizebox{\textwidth}{!}{\begin{tabular}{|c|c|l|l|l|} \hline
 Function&Definition&Taylor-Shifted (TSF)& Shifted Potential (SP)
@@ -1030,7 +1032,7 @@ F_{a \alpha} = \hat{r}_\alpha \frac{\partial U_{C_a C_b}}{\partial r}
 %
 We list below the force equations written in terms of lab-frame
 coordinates.  The radial functions used in the three methods are listed
-in Table \ref{tab:tableFORCE}
+in Table~\ref{tab:tableFORCE}
 %
 %SPACE COORDINATES FORCE EQUATIONS
 %
@@ -1332,8 +1334,7 @@ permuations of the matrix indices.
 
 All of the radial functions required for torques are identical with
 the radial functions previously computed for the interaction energies.
-These are tabulated for all three methods in table
-\ref{tab:tableenergy}.  The torques for higher multipoles on site
+These are tabulated for all three methods in Table~\ref{tab:tableenergy}.  The torques for higher multipoles on site
 $a$ interacting with those of lower order on site
 $b$ can be obtained by swapping indices in the expressions
 above.
@@ -1376,7 +1377,7 @@ is given by:
 where $C$ is the energy constant (equivalent to the Madelung
 constant), $N$ is the number of dipoles per unit volume, and $\mu$ is
 the strength of the dipole. Energy constants (converged to 1 part in
-$10^9$) are given in the supplemental information.\cite{supplemental}
+$10^9$) are given in the supplemental information Ref. \cite{PaperI}.
 \begin{figure}[tpb]
   \begin{center}
     \centerline{\includegraphics[width = \linewidth]{Dipoles_rcut_threeAlpha.pdf}}

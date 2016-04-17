@@ -4,209 +4,69 @@ The top-level auxiliary file: dissertation.aux
 A level-1 auxiliary file: chapter1.aux
 A level-1 auxiliary file: chapter2.aux
 A level-1 auxiliary file: chapter3.aux
-Case mismatch error between cite keys Kannam13 and kannam13
----line 42 of file chapter3.aux
- : \citation{English08,Kannam13
- :                             ,Forrest12,Louden13,McCann13,Shi13,Tokumasu13}
-I'm skipping whatever remains of this command
-Case mismatch error between cite keys Kannam13 and kannam13
----line 49 of file chapter3.aux
- : \citation{Kannam13
- :                   }
-I'm skipping whatever remains of this command
-Case mismatch error between cite keys openmd2.3 and Openmd2.3
----line 63 of file chapter3.aux
- : \citation{openmd2.3
- :                    }
-I'm skipping whatever remains of this command
-Case mismatch error between cite keys openmd2.3 and Openmd2.3
----line 64 of file chapter3.aux
- : \citation{openmd2.3
- :                    }
-I'm skipping whatever remains of this command
 A level-1 auxiliary file: chapter4.aux
-Case mismatch error between cite keys openmd2.3 and Openmd2.3
----line 133 of file chapter4.aux
- : \citation{openmd2.3
- :                    }
-I'm skipping whatever remains of this command
-Case mismatch error between cite keys openmd2.3 and Openmd2.3
----line 134 of file chapter4.aux
- : \citation{openmd2.3
- :                    }
-I'm skipping whatever remains of this command
-A level-1 auxiliary file: appendix.aux
-The style file: abbrvnat.bst
+A level-1 auxiliary file: chapter5.aux
+A level-1 auxiliary file: appendixA.aux
+A level-1 auxiliary file: appendixB.aux
+The style file: achemso.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: dissertation.bib
-You're missing a field part---line 53 of file dissertation.bib
- :    eid = 
- :          ,
+I was expecting a `,' or a `}'---line 158 of file dissertation.bib
+ :     
+ :     volume = {23}
+(Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field part---line 66 of file dissertation.bib
- :    eid = 
- :          ,
-I'm skipping whatever remains of this entry
-You're missing a field part---line 78 of file dissertation.bib
- :    eid = 
- :          ,
-I'm skipping whatever remains of this entry
-You're missing a field part---line 90 of file dissertation.bib
- :    eid = 
- :          ,
-I'm skipping whatever remains of this entry
-You're missing a field part---line 204 of file dissertation.bib
- :    eid = 
- :          ,
+Warning--string name "chem." is undefined
+--line 503 of file dissertation.bib
+I was expecting a `,' or a `}'---line 503 of file dissertation.bib
+ :  journal = chem. 
+ :                  Phys. Lett.,
 I'm skipping whatever remains of this entry
 Warning--string name "jcp" is undefined
---line 303 of file dissertation.bib
-Warning--string name "jcp" is undefined
---line 319 of file dissertation.bib
-Warning--string name "jcp" is undefined
---line 335 of file dissertation.bib
-Warning--string name "cpl" is undefined
---line 381 of file dissertation.bib
-Warning--string name "jpcb" is undefined
---line 419 of file dissertation.bib
-Warning--string name "pnas" is undefined
---line 434 of file dissertation.bib
-Warning--string name "jcp" is undefined
---line 465 of file dissertation.bib
-Warning--string name "jpcb" is undefined
---line 479 of file dissertation.bib
-Warning--string name "jpcb" is undefined
---line 497 of file dissertation.bib
-Warning--string name "jctc" is undefined
---line 528 of file dissertation.bib
-Warning--string name "jcp" is undefined
---line 542 of file dissertation.bib
-Warning--string name "jpcc" is undefined
---line 564 of file dissertation.bib
-Warning--string name "mp" is undefined
---line 586 of file dissertation.bib
-Warning--string name "jcp" is undefined
---line 636 of file dissertation.bib
-Warning--string name "jcp" is undefined
---line 703 of file dissertation.bib
-Warning--string name "cpl" is undefined
---line 725 of file dissertation.bib
-Warning--string name "jcp" is undefined
---line 746 of file dissertation.bib
-Warning--string name "cpl" is undefined
---line 767 of file dissertation.bib
-Warning--string name "jcp" is undefined
---line 784 of file dissertation.bib
-Warning--string name "jpcb" is undefined
---line 803 of file dissertation.bib
-Warning--string name "jcp" is undefined
---line 822 of file dissertation.bib
-Warning--string name "jctc" is undefined
---line 840 of file dissertation.bib
-Warning--string name "mp" is undefined
---line 868 of file dissertation.bib
-Warning--string name "mp" is undefined
---line 883 of file dissertation.bib
-Warning--string name "prl" is undefined
---line 1051 of file dissertation.bib
-Warning--string name "jcp" is undefined
---line 1064 of file dissertation.bib
-Warning--string name "jcp" is undefined
---line 1081 of file dissertation.bib
-Warning--string name "mp" is undefined
---line 1092 of file dissertation.bib
-Warning--string name "mp" is undefined
---line 1166 of file dissertation.bib
-Warning--string name "jcp" is undefined
---line 1176 of file dissertation.bib
-Warning--string name "jcp" is undefined
---line 1188 of file dissertation.bib
-Repeated entry---line 1249 of file dissertation.bib
+--line 535 of file dissertation.bib
+Repeated entry---line 833 of file dissertation.bib
  : @article{Izvekov08
  :                   ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1434 of file dissertation.bib
- : @misc{openmd2.3
- :                ,
-I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "PaperI"
-Warning--I didn't find a database entry for "Lacman65"
-Warning--I didn't find a database entry for "Zahn0"
-Warning--I didn't find a database entry for "fisher53"
-Warning--I didn't find a database entry for "Allen91"
-Warning--to sort, need author or key in supplemental
-Warning--empty year in supplemental
-Warning--empty journal in Allen06
-Warning--empty journal in Chen06
-Warning--empty journal in Chen04
-Warning--empty journal in Chowdhuri06
-Warning--empty journal in Denesyuk08
-Warning--empty journal in Dullweber97
-Warning--empty journal in English08
-Warning--empty journal in Forrest12
-Warning--empty journal in Fukuda13
-Warning--empty journal in Fukuda11
-Warning--empty journal in Fukuda12
-Warning--empty year in Openmd2.3
-Warning--empty journal in Golubkov06
-Warning--empty journal in Hansen12
-Warning--empty journal in Horn04
-Warning--empty journal in Ichiye06
-Warning--empty journal in Impey82
-Warning--empty journal in Izvekov08
-Warning--empty journal in kannam13
-Warning--empty journal in Kast03
-Warning--empty title in Born1912
-Warning--empty journal in McCann13
-Warning--empty journal in Neumann85
-Warning--empty journal in Neumann84
-Warning--empty journal in Ponder10
-Warning--empty journal in Price84
-Warning--empty journal in Ren11
-Warning--empty journal in schnieders07
-Warning--empty journal in Te10vn
-Warning--empty journal in Te10ys
-Warning--empty journal in Te10rt
-Warning--empty journal in Wolf92
-Warning--empty journal in Wu05
-You've used 96 entries,
-            2773 wiz_defined-function locations,
-            1361 strings with 24876 characters,
-and the built_in function-call counts, 46295 in all, are:
-= -- 4269
-> -- 2531
-< -- 59
-+ -- 863
-- -- 762
-* -- 4063
-:= -- 7204
-add.period$ -- 410
-call.type$ -- 96
-change.case$ -- 538
-chr.to.int$ -- 91
-cite$ -- 228
-duplicate$ -- 1949
-empty$ -- 3745
-format.name$ -- 929
-if$ -- 9680
-int.to.chr$ -- 6
+You've used 107 entries,
+            2478 wiz_defined-function locations,
+            1450 strings with 23754 characters,
+and the built_in function-call counts, 33906 in all, are:
+= -- 2802
+> -- 1713
+< -- 69
++ -- 662
+- -- 558
+* -- 3771
+:= -- 4544
+add.period$ -- 108
+call.type$ -- 107
+change.case$ -- 2
+chr.to.int$ -- 3
+cite$ -- 107
+duplicate$ -- 1824
+empty$ -- 2535
+format.name$ -- 740
+if$ -- 6570
+int.to.chr$ -- 0
 int.to.str$ -- 1
-missing$ -- 96
-newline$ -- 609
-num.names$ -- 382
-pop$ -- 891
+missing$ -- 0
+newline$ -- 664
+num.names$ -- 323
+pop$ -- 185
 preamble$ -- 1
-purify$ -- 445
+purify$ -- 0
 quote$ -- 0
-skip$ -- 1470
+skip$ -- 1
 stack$ -- 0
-substring$ -- 1970
-swap$ -- 89
-text.length$ -- 2
+substring$ -- 2275
+swap$ -- 1709
+text.length$ -- 216
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 1041
-warning$ -- 35
-while$ -- 378
+type$ -- 725
+warning$ -- 0
+while$ -- 392
 width$ -- 0
-write$ -- 1462
-(There were 13 error messages)
+write$ -- 1299
+(There were 3 error messages)
